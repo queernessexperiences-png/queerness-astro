@@ -8,6 +8,13 @@ const displayDate = (updatedDate || pubDate).toLocaleDateString('en-US', { year:
     <p class="post-kicker">Queer Tulum Guide</p>
     <h1 class="post-h1">{title}</h1>
     <p class="post-meta">{updatedDate ? 'Updated' : 'Published'} {displayDate} · by Santi Solís</p>
+
+    <!-- Funnel: top mention, so it's visible before anyone scrolls -->
+    <a href="/guidebook" class="post-cta-top">
+      <span class="post-cta-top-eye">Want it all planned out?</span>
+      <span class="post-cta-top-link">Get the Full Guidebook →</span>
+    </a>
+
     {heroImage && <img class="post-hero" src={heroImage} alt={heroAlt || title} />}
     {!heroImage && <div class="post-hero-ph">PHOTO — HERO IMAGE FOR THIS POST</div>}
     <div class="post-body">
@@ -28,6 +35,9 @@ const displayDate = (updatedDate || pubDate).toLocaleDateString('en-US', { year:
     .post-kicker{font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--magenta);margin-bottom:var(--s-sm);}
     .post-h1{font-family:var(--ff);font-size:38px;line-height:1.1;text-transform:uppercase;color:var(--dark);margin-bottom:12px;letter-spacing:0.02em;}
     .post-meta{font-family:var(--fb);font-size:13px;color:var(--muted);margin-bottom:var(--s-md);}
+    .post-cta-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;background:var(--yellow);border:3px solid var(--dark);box-shadow:4px 4px 0 var(--dark);padding:12px 16px;margin-bottom:var(--s-md);text-decoration:none;}
+    .post-cta-top-eye{font-family:var(--fb);font-size:13px;font-weight:500;color:var(--dark);}
+    .post-cta-top-link{font-family:var(--fb);font-size:12px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--dark);border-bottom:2px solid var(--dark);}
     .post-hero,.post-hero-ph{width:100%;aspect-ratio:16/9;border:3px solid var(--dark);box-shadow:5px 5px 0 var(--yellow);margin-bottom:var(--s-lg);object-fit:cover;}
     .post-hero-ph{background:repeating-linear-gradient(135deg,rgba(26,26,24,0.05),rgba(26,26,24,0.05) 12px,rgba(26,26,24,0.09) 12px,rgba(26,26,24,0.09) 24px);display:flex;align-items:center;justify-content:center;font-family:var(--fb);font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(26,26,24,0.4);}
     /* Inline photo placeholder — drop one under any H2 in a post's markdown that needs a photo */
