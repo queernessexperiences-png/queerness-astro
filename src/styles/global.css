@@ -185,6 +185,7 @@ footer{background:var(--dark);padding:var(--s-md) var(--s-sm);border-top:3px sol
   .hero-photo{width:60%;}
   .who-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}
   .flagship-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--s-md);}
+  .flagship-row-3{grid-template-columns:1fr 1fr 1fr;}
   .flagship{margin-bottom:0;}
   .mini-grid{display:grid;grid-template-columns:repeat(3,1fr);}
 }
@@ -205,6 +206,7 @@ footer{background:var(--dark);padding:var(--s-md) var(--s-sm);border-top:3px sol
   .guide > *,.tours > *,.groups > *,.friend > *,.faq > *,.contact > *,.reviews > *{max-width:1120px;margin-left:auto;margin-right:auto;}
   .guide-inner,.tours-inner{max-width:1120px;margin:0 auto;}
   .flagship-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--s-md);}
+  .flagship-row-3{grid-template-columns:1fr 1fr 1fr;}
   .flagship{margin-bottom:0;}
   .mini-grid{display:grid;grid-template-columns:repeat(3,1fr);}
   .guide-box{max-width:620px;}
