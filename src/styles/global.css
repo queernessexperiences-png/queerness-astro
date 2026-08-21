@@ -1,7 +1,7 @@
 /* GLOBAL STYLES — Queerness Experiences. Shared across every page. */
 @font-face{
   font-family:'CheddarGothicStencil';
-  src:url('https://db.onlinewebfonts.com/t/b741399e65212214a65785c0e777b3e2.woff2') format('woff2');
+  src:url('/fonts/CheddarGothicStencil.woff2') format('woff2');
   font-weight:normal;font-style:normal;font-display:swap;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
