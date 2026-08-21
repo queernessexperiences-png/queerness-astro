@@ -30,6 +30,8 @@ const displayDate = (updatedDate || pubDate).toLocaleDateString('en-US', { year:
     .post-meta{font-family:var(--fb);font-size:13px;color:var(--muted);margin-bottom:var(--s-md);}
     .post-hero,.post-hero-ph{width:100%;aspect-ratio:16/9;border:3px solid var(--dark);box-shadow:5px 5px 0 var(--yellow);margin-bottom:var(--s-lg);object-fit:cover;}
     .post-hero-ph{background:repeating-linear-gradient(135deg,rgba(26,26,24,0.05),rgba(26,26,24,0.05) 12px,rgba(26,26,24,0.09) 12px,rgba(26,26,24,0.09) 24px);display:flex;align-items:center;justify-content:center;font-family:var(--fb);font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(26,26,24,0.4);}
+    /* Inline photo placeholder — drop one under any H2 in a post's markdown that needs a photo */
+    .post-photo-ph{width:100%;aspect-ratio:4/3;border:3px solid var(--dark);box-shadow:4px 4px 0 var(--magenta);margin:var(--s-sm) 0 var(--s-md);background:repeating-linear-gradient(135deg,rgba(26,26,24,0.05),rgba(26,26,24,0.05) 12px,rgba(26,26,24,0.09) 12px,rgba(26,26,24,0.09) 24px);display:flex;align-items:center;justify-content:center;font-family:var(--fb);font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(26,26,24,0.4);text-align:center;padding:12px;}
     .post-body{font-size:17px;line-height:1.8;color:var(--dark);}
     .post-body h2{font-family:var(--ff);font-size:26px;text-transform:uppercase;color:var(--dark);line-height:1.15;margin:var(--s-lg) 0 var(--s-sm);letter-spacing:0.02em;}
     .post-body h3{font-family:var(--fb);font-size:19px;font-weight:700;color:var(--dark);margin:var(--s-md) 0 8px;}

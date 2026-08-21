@@ -10,11 +10,15 @@ A few of the places I actually send friends to when they visit — the number on
 
 ## Negro Huitlacoxe
 
+<div class="post-photo-ph">PHOTO — NEGRO HUITLACOXE (courtyard, grilled elote, huitlacoche tacos)</div>
+
 **Pre-Hispanic Mexican food · Tulum Centro**
 
 A molino restaurant built around heirloom corn, fire, and pre-Hispanic Mexican cooking. Grilled elote, huitlacoche tacos in dual-toned heirloom tortillas, everything over open flame in a tree-shaded courtyard. Currently ranked the number one restaurant in Tulum, and it earns it. Go hungry.
 
 ## Story Horse
+
+<div class="post-photo-ph">PHOTO — STORY HORSE (coffee bar, roasting setup, morning light)</div>
 
 **Specialty coffee · Tulum Centro**
 
@@ -22,15 +26,21 @@ A specialty coffee shop roasting its own beans, started by a Mexican-Irish coupl
 
 ## La Guarida
 
+<div class="post-photo-ph">PHOTO — LA GUARIDA (rooftop bar, live music night)</div>
+
 **Café · bar · cultural center · Tulum Centro**
 
 Part café, part rooftop bar, part cultural center. A bohemian maze of rooms and hidden corners with live music, jam sessions, workshops, and movie nights, built around community rather than a tourist crowd. Settle in with a mezcal, end up on the rooftop. Check what's on the night you go; there's almost always something.
 
 ## Getting around Tulum
 
+<div class="post-photo-ph">PHOTO — EIBY APP / TULUM STREET (getting around)</div>
+
 There's no Uber in Tulum, which catches almost everyone off guard. The app locals use instead is **Eiby** — think of it as our version of a ride app. Download it before you need it and you'll get fair prices instead of the tourist markup.
 
 ## The ATM trick that saves you money
+
+<div class="post-photo-ph">PHOTO — ATM / CURRENCY SCREEN (decline conversion)</div>
 
 Tulum ATMs are set up to charge you on the currency conversion. They'll offer to "convert for you" at a terrible rate, and most people just tap yes. **Always decline the conversion.** When the machine asks whether to charge in your home currency or in pesos, choose pesos every time, and let your own bank do the conversion.
 
