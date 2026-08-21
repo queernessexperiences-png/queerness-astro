@@ -1,0 +1,50 @@
+---
+import Layout from './Layout.astro';
+const { title, description, keyword, pubDate, updatedDate, heroImage, heroAlt } = Astro.props;
+const displayDate = (updatedDate || pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+<Layout title={`${title} | Queerness Experiences`} description={description}>
+  <article class="post">
+    <p class="post-kicker">Queer Tulum Guide</p>
+    <h1 class="post-h1">{title}</h1>
+    <p class="post-meta">{updatedDate ? 'Updated' : 'Published'} {displayDate} · by Santi Solís</p>
+    {heroImage && <img class="post-hero" src={heroImage} alt={heroAlt || title} />}
+    {!heroImage && <div class="post-hero-ph">PHOTO — HERO IMAGE FOR THIS POST</div>}
+    <div class="post-body">
+      <slot />
+    </div>
+
+    <!-- Funnel: every post ends pointing at the guidebook -->
+    <div class="post-cta">
+      <p class="post-cta-eye">Planning your trip?</p>
+      <h2 class="post-cta-h2">Get the full Tulum guidebook</h2>
+      <p class="post-cta-text">Everything I'd tell a friend visiting Tulum, curated for queer travelers. Book any tour and it's yours free.</p>
+      <a href="/blog/queer-tulum-recommendations" class="post-cta-btn">See the Free Recommendations →</a>
+    </div>
+  </article>
+
+  <style is:global>
+    .post{max-width:680px;margin:0 auto;padding:var(--s-md) var(--s-sm) var(--s-lg);}
+    .post-kicker{font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--magenta);margin-bottom:var(--s-sm);}
+    .post-h1{font-family:var(--ff);font-size:38px;line-height:1.1;text-transform:uppercase;color:var(--dark);margin-bottom:12px;letter-spacing:0.02em;}
+    .post-meta{font-family:var(--fb);font-size:13px;color:var(--muted);margin-bottom:var(--s-md);}
+    .post-hero,.post-hero-ph{width:100%;aspect-ratio:16/9;border:3px solid var(--dark);box-shadow:5px 5px 0 var(--yellow);margin-bottom:var(--s-lg);object-fit:cover;}
+    .post-hero-ph{background:repeating-linear-gradient(135deg,rgba(26,26,24,0.05),rgba(26,26,24,0.05) 12px,rgba(26,26,24,0.09) 12px,rgba(26,26,24,0.09) 24px);display:flex;align-items:center;justify-content:center;font-family:var(--fb);font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(26,26,24,0.4);}
+    .post-body{font-size:17px;line-height:1.8;color:var(--dark);}
+    .post-body h2{font-family:var(--ff);font-size:26px;text-transform:uppercase;color:var(--dark);line-height:1.15;margin:var(--s-lg) 0 var(--s-sm);letter-spacing:0.02em;}
+    .post-body h3{font-family:var(--fb);font-size:19px;font-weight:700;color:var(--dark);margin:var(--s-md) 0 8px;}
+    .post-body p{margin-bottom:var(--s-sm);}
+    .post-body a{color:var(--magenta);font-weight:700;border-bottom:2px solid var(--magenta);}
+    .post-body strong{font-weight:700;}
+    .post-body ul,.post-body ol{margin:0 0 var(--s-sm) 20px;}
+    .post-body li{margin-bottom:8px;}
+    .post-body img{width:100%;border:3px solid var(--dark);margin:var(--s-md) 0;}
+    .post-body blockquote{border-left:5px solid var(--magenta);background:var(--bone);padding:14px 18px;margin:var(--s-md) 0;font-style:italic;}
+    .post-cta{background:var(--magenta);border:3px solid var(--dark);box-shadow:6px 6px 0 var(--dark);padding:24px;margin-top:var(--s-lg);}
+    .post-cta-eye{font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--yellow);margin-bottom:8px;}
+    .post-cta-h2{font-family:var(--ff);font-size:28px;text-transform:uppercase;color:var(--white);line-height:1.1;margin-bottom:10px;}
+    .post-cta-text{font-size:15px;color:rgba(255,255,255,0.92);line-height:1.6;margin-bottom:var(--s-md);}
+    .post-cta-btn{display:inline-block;background:var(--yellow);color:var(--dark);font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;padding:15px 26px;border:3px solid var(--dark);box-shadow:4px 4px 0 var(--dark);}
+    @media(min-width:720px){.post{padding:var(--s-lg) var(--s-sm);}.post-h1{font-size:52px;}}
+  </style>
+</Layout>

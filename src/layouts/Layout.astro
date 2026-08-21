@@ -1,0 +1,60 @@
+---
+// Shared layout: header, footer, global styles. Every page wraps its content in this.
+// Props let each page set its own <title> and meta description for SEO.
+export interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+import '../styles/global.css';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <!-- Cheddar Gothic Stencil is self-hosted. Drop the font file in /public/fonts/ and see global.css @font-face -->
+</head>
+<body>
+
+  <!-- SHARED HEADER -->
+  <nav>
+    <a href="/" class="logo" style="display:flex;align-items:center;gap:8px;">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border:2px dashed var(--magenta);border-radius:4px;font-size:7px;color:var(--magenta);text-align:center;line-height:1;">TOU-CAN</span>
+      Queerness Experiences
+    </a>
+    <div class="nav-r">
+      <a href="/#guide">Guidebook</a>
+      <a href="/tours">Tours</a>
+      <a href="/group-trips">Groups</a>
+      <a href="/blog">Blog</a>
+      <a href="/#contact" class="nav-book">Book</a>
+    </div>
+  </nav>
+
+  <!-- PAGE CONTENT -->
+  <slot />
+
+  <!-- SHARED FOOTER -->
+  <footer>
+    <a href="/" class="flogo" style="display:flex;align-items:center;gap:8px;">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border:2px dashed var(--yellow);border-radius:4px;font-size:7px;color:var(--yellow);text-align:center;line-height:1;">TOU-CAN</span>
+      Queerness Experiences
+    </a>
+    <ul class="flinks">
+      <li><a href="/#guide">Guidebook</a></li>
+      <li><a href="/tours">Tours</a></li>
+      <li><a href="/group-trips">Group Trips</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/#contact">Book</a></li>
+      <li><a href="https://instagram.com/">Instagram</a></li>
+    </ul>
+    <div class="femail">hello@queernessexperiences.com</div>
+  </footer>
+
+</body>
+</html>

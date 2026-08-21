@@ -1,0 +1,48 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+<Layout title="Queer Tulum Blog | Queerness Experiences" description="Honest guides to Tulum for queer travelers, families, and destination weddings — safety, where to go, and what locals actually know.">
+  <section class="blog-index">
+    <p class="sec-eye">The blog</p>
+    <h1 class="blog-h1">Queer Tulum,<br>the honest guide</h1>
+    <p class="blog-lead">Everything I'd tell a friend before they visit — written by someone who actually lives here.</p>
+
+    <div class="blog-list">
+      {posts.map((post) => (
+        <a href={`/blog/${post.slug}`} class="blog-card">
+          {post.data.heroImage
+            ? <img class="blog-card-img" src={post.data.heroImage} alt={post.data.heroAlt || post.data.title} />
+            : <div class="blog-card-ph">PHOTO</div>}
+          <div class="blog-card-body">
+            <h2 class="blog-card-title">{post.data.title}</h2>
+            <p class="blog-card-desc">{post.data.description}</p>
+            <span class="blog-card-link">Read →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <style is:global>
+    .blog-index{max-width:1120px;margin:0 auto;padding:var(--s-md) var(--s-sm) var(--s-lg);}
+    .blog-h1{font-family:var(--ff);font-size:40px;line-height:1.1;text-transform:uppercase;color:var(--dark);margin-bottom:12px;letter-spacing:0.02em;}
+    .blog-lead{font-size:16px;color:var(--muted);line-height:1.7;margin-bottom:var(--s-lg);max-width:520px;}
+    .blog-list{display:flex;flex-direction:column;gap:var(--s-md);}
+    .blog-card{display:block;border:3px solid var(--dark);box-shadow:5px 5px 0 var(--blue);background:var(--white);overflow:hidden;}
+    .blog-card-img,.blog-card-ph{width:100%;aspect-ratio:16/9;object-fit:cover;border-bottom:3px solid var(--dark);}
+    .blog-card-ph{background:repeating-linear-gradient(135deg,rgba(26,26,24,0.05),rgba(26,26,24,0.05) 12px,rgba(26,26,24,0.09) 12px,rgba(26,26,24,0.09) 24px);display:flex;align-items:center;justify-content:center;font-family:var(--fb);font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(26,26,24,0.4);}
+    .blog-card-body{padding:20px;}
+    .blog-card-title{font-family:var(--ff);font-size:24px;text-transform:uppercase;color:var(--dark);line-height:1.15;margin-bottom:8px;letter-spacing:0.01em;}
+    .blog-card-desc{font-size:14.5px;color:var(--muted);line-height:1.6;margin-bottom:12px;}
+    .blog-card-link{font-family:var(--fb);font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--magenta);}
+    @media(min-width:720px){
+      .blog-index{padding:var(--s-lg) 40px;}
+      .blog-h1{font-size:60px;}
+      .blog-list{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s-md);}
+    }
+  </style>
+</Layout>

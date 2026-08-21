@@ -1,0 +1,150 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Queer Group Trips & Retreats in Tulum | Queerness Experiences" description={"Queer group trips and retreats in Tulum and beyond, led by locals. For queer travelers, families, and destination weddings who want the real Mexico."}>
+
+<header class="head">
+  <div class="shape-y"></div>
+  <p class="head-eye">★ Queer group trips · Mexican-led</p>
+  <h1>Trips that actually<br>make it out of<br>the group chat.</h1>
+  <p>Real queer group trips, led by locals and rooted in the places we actually go. You'll meet queer and trans people building lives, projects, and businesses across Mexico and Latin America — not a resort bubble with a Mexican backdrop. Come solo or bring your people.</p>
+</header>
+
+<section class="trips">
+
+  <!-- QUEER CONNECT — CONFIRMED -->
+  <div class="trip">
+    <div class="trip-photo">
+      PHOTO — QUEER CONNECT TULUM TRIP
+      <span class="trip-status status-confirmed">Booking now · January</span>
+    </div>
+    <div class="trip-body">
+      <div class="trip-partner">In collaboration with Queer Connect</div>
+      <div class="trip-name">Queer Connect · Tulum</div>
+      <p class="trip-desc">A queer group trip to Tulum, co-hosted with Queer Connect. Cenotes, jungle, food, and the parts of Tulum most visitors never find — with a local co-host who actually lives here. Come solo or bring your people.</p>
+      <div class="trip-detail">
+        <span class="detail-pill">Tulum</span>
+        <span class="detail-pill">January</span>
+        <span class="detail-pill">Co-hosted</span>
+      </div>
+      <div class="trip-foot">
+        <a href="#" class="btn-trip">See the Trip →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- LUXURY LESBIANS — COMING SOON -->
+  <div class="trip">
+    <div class="trip-photo">
+      PHOTO — LUXURY LESBIANS TRIP
+      <span class="trip-status status-soon">Coming soon</span>
+    </div>
+    <div class="trip-body">
+      <div class="trip-partner">In collaboration with Luxury Lesbians</div>
+      <div class="trip-name">Luxury Lesbians</div>
+      <p class="trip-desc">[ Placeholder — trip details coming soon. Add the destination, dates, what's included, and who it's for. Keep the voice warm and specific: what will this trip actually feel like? ]</p>
+      <div class="trip-detail">
+        <span class="detail-pill">Dates TBA</span>
+        <span class="detail-pill">Details soon</span>
+      </div>
+      <div class="trip-foot">
+        <a href="#" class="btn-trip-wait">Join the Waitlist →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CAMP QUEERNESS — COMING SOON -->
+  <div class="trip">
+    <div class="trip-photo">
+      PHOTO — CAMP QUEERNESS TRIP
+      <span class="trip-status status-soon">Coming soon</span>
+    </div>
+    <div class="trip-body">
+      <div class="trip-partner">Camp Queerness</div>
+      <div class="trip-name">Camp Queerness</div>
+      <p class="trip-desc">[ Placeholder — trip details coming soon. Add the destination, dates, what's included, and the vibe. This is the one to lean into fun and community — what makes Camp Queerness different from a regular trip? ]</p>
+      <div class="trip-detail">
+        <span class="detail-pill">Dates TBA</span>
+        <span class="detail-pill">Details soon</span>
+      </div>
+      <div class="trip-foot">
+        <a href="#" class="btn-trip-wait">Join the Waitlist →</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- HOST CTA -->
+<section class="host">
+  <p class="host-eye">Run your own group?</p>
+  <h2>Bring your<br>group to Tulum</h2>
+  <p>Creator, organizer, or travel brand? I co-host group trips and retreats as the local expert on the ground, connecting your group to queer and trans people who actually live and work here. The vendors, the spaces, the makers, the real thing. You bring your people. I make sure they meet Mexico, not a resort wall.</p>
+  <a href="#" class="btn-host">Let's Talk →</a>
+</section>
+
+</Layout>
+
+<style is:global>
+@font-face{font-family:'CheddarGothicStencil';src:url('https://db.onlinewebfonts.com/t/b741399e65212214a65785c0e777b3e2.woff2') format('woff2');font-weight:normal;font-style:normal;font-display:swap;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --magenta:#C8185A;--yellow:#F5A623;--terra:#B5390F;--dark:#1a1a18;
+  --white:#FDFCF9;--bone:#F5F0E8;--muted:#4A4034;--border:rgba(26,26,24,0.12);
+  --s-sm:16px;--s-md:32px;--s-lg:64px;
+  --ff:'CheddarGothicStencil','Space Grotesk',sans-serif;--fb:'Space Grotesk',sans-serif;
+}
+body{background:var(--white);color:var(--dark);font-family:var(--fb);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+
+nav{position:sticky;top:0;z-index:100;background:var(--white);border-bottom:3px solid var(--dark);display:flex;align-items:center;justify-content:space-between;padding:0 var(--s-sm);height:52px;}
+.logo{font-family:var(--fb);font-size:15px;font-weight:700;color:var(--magenta);}
+.nav-r{display:flex;align-items:center;gap:4px;}
+.nav-r a{font-size:12px;font-weight:500;color:var(--muted);padding:5px 8px;}
+.nav-book{background:var(--magenta);color:var(--white)!important;padding:7px 14px!important;border:2px solid var(--dark);font-weight:700!important;box-shadow:3px 3px 0 var(--dark);}
+
+/* HEADER */
+.head{background:var(--terra);padding:var(--s-md) var(--s-sm) var(--s-lg);position:relative;overflow:hidden;}
+.shape-y{position:absolute;top:0;right:0;width:40%;height:50%;background:var(--yellow);clip-path:polygon(28% 0,100% 0,100% 100%,0 100%);z-index:0;}
+.head-eye{font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-bottom:var(--s-sm);position:relative;z-index:2;}
+.head h1{font-family:var(--ff);font-size:40px;line-height:0.96;text-transform:uppercase;color:var(--white);position:relative;z-index:2;-webkit-text-stroke:1.5px rgba(0,0,0,0.3);paint-order:stroke fill;margin-bottom:var(--s-sm);}
+.head p{font-size:14.5px;color:rgba(255,255,255,0.9);line-height:1.7;position:relative;z-index:2;max-width:520px;}
+
+/* TRIPS */
+.trips{padding:var(--s-md) var(--s-sm) var(--s-lg);}
+.trip{border:3px solid var(--dark);margin-bottom:var(--s-md);box-shadow:6px 6px 0 var(--dark);overflow:hidden;background:var(--white);}
+.trip-photo{width:100%;aspect-ratio:4/3;background:repeating-linear-gradient(135deg,rgba(26,26,24,0.05),rgba(26,26,24,0.05) 12px,rgba(26,26,24,0.09) 12px,rgba(26,26,24,0.09) 24px);display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(26,26,24,0.4);text-align:center;padding:12px;border-bottom:3px solid var(--dark);position:relative;}
+.trip-status{position:absolute;top:0;left:0;font-family:var(--fb);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:5px 10px;border-right:3px solid var(--dark);border-bottom:3px solid var(--dark);}
+.status-confirmed{background:var(--magenta);color:var(--white);}
+.status-soon{background:var(--yellow);color:var(--dark);}
+.trip-body{padding:20px;}
+.trip-partner{font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--magenta);margin-bottom:6px;}
+.trip-name{font-family:var(--ff);font-size:26px;color:var(--dark);text-transform:uppercase;line-height:1;margin-bottom:12px;}
+.trip-desc{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:var(--s-sm);}
+.trip-detail{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:var(--s-sm);}
+.detail-pill{font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;padding:4px 10px;background:var(--bone);border:2px solid var(--dark);color:var(--dark);}
+.trip-foot{border-top:2px solid var(--border);padding-top:14px;}
+.btn-trip{display:inline-block;background:var(--magenta);color:var(--white);font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:11px 18px;border:2px solid var(--dark);box-shadow:3px 3px 0 var(--dark);}
+.btn-trip-wait{display:inline-block;background:var(--white);color:var(--dark);font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:11px 18px;border:2px solid var(--dark);box-shadow:3px 3px 0 var(--dark);}
+
+/* HOST CTA — for organizers */
+.host{background:var(--dark);padding:var(--s-lg) var(--s-sm);}
+.host-eye{font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--yellow);margin-bottom:var(--s-sm);}
+.host h2{font-family:var(--ff);font-size:30px;color:var(--white);text-transform:uppercase;line-height:1;margin-bottom:var(--s-sm);}
+.host p{font-size:14px;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:var(--s-md);max-width:520px;}
+.btn-host{display:inline-block;background:var(--yellow);color:var(--dark);font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:15px 28px;border:3px solid var(--yellow);}
+
+footer{background:var(--dark);padding:var(--s-md) var(--s-sm);border-top:3px solid var(--yellow);display:flex;flex-direction:column;gap:var(--s-sm);}
+.flogo{font-family:var(--fb);font-size:16px;font-weight:700;color:var(--magenta);}
+.flinks{display:flex;flex-wrap:wrap;gap:var(--s-sm);list-style:none;}
+.flinks a{font-size:12px;font-weight:500;color:rgba(255,255,255,0.5);}
+
+@media(min-width:720px){
+  nav{padding:0 40px;}
+  .head{padding:var(--s-lg) 40px;}
+  .head h1{font-size:60px;}
+  .trips{padding:var(--s-md) 40px var(--s-lg);max-width:760px;margin:0 auto;}
+  .host{padding:var(--s-lg) 40px;}
+  footer{flex-direction:row;align-items:center;justify-content:space-between;padding:var(--s-md) 40px;}
+}
+</style>

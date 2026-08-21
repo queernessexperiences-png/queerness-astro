@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://queernessexperiences.com/sitemap-index.xml

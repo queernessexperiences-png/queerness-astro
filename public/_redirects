@@ -1,0 +1,18 @@
+# 301 REDIRECTS — old Wix URLs to new Astro URLs
+# Format: /old-wix-path  /new-astro-path  301
+#
+# CRITICAL: Fill these in with your ACTUAL current Wix URLs before launch.
+# Every page currently indexed by Google needs a redirect so you keep your ranking.
+# Find your current URLs in Google Search Console (Coverage report) or by searching
+# site:queernessexperiences.com on Google.
+#
+# EXAMPLES (replace with your real Wix paths):
+# /tours-1              /tours              301
+# /queer-tulum-tours    /tours              301
+# /blog-1               /blog               301
+# /group-trips-1        /group-trips        301
+# /recommendations      /free-recommendations   301
+#
+# Your homepage stays at / so it needs no redirect — this protects your #1 ranking.
+# Add one line per old URL below:
+
