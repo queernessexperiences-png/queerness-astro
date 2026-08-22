@@ -8,6 +8,8 @@ draft: false
 
 A few of the places I actually send friends to when they visit: the number one restaurant in Tulum for pre-Hispanic Mexican food, my favorite specialty coffee shop, and a café-bar-cultural-center that feels like the real Tulum. Plus the two practical things nobody tells you: how to get around, and how to stop the ATMs from robbing you.
 
+This free guide is about one day's worth of recommendations. The full guidebook is the real thing: 3-4 days, fully planned out.
+
 ## Negro Huitlacoxe
 
 <div class="post-photo-ph">PHOTO — NEGRO HUITLACOXE (courtyard, grilled elote, huitlacoche tacos)</div>
