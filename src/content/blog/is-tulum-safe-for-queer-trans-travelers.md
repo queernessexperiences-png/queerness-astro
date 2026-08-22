@@ -35,17 +35,42 @@ Because Tulum is so international, acceptance tends to come naturally. People fr
 
 ## FAQ
 
-### Is Tulum safe for gay travelers?
-Yes. Tulum is internationally diverse and generally very welcoming to queer and trans visitors. PDA between same-sex couples is normalized in the tourist areas. [ Add your specific first-hand reassurance. ]
+<div class="post-acc-item">
+  <input type="checkbox" id="facc1" class="post-acc-toggle">
+  <label for="facc1" class="post-acc-head"><span>Is Tulum safe for gay travelers?</span><span class="post-acc-plus">+</span></label>
+  <div class="post-acc-body"><div class="post-acc-body-inner">
+    <p>Yes. Tulum is internationally diverse and generally very welcoming to queer and trans visitors. PDA between same-sex couples is normalized in the tourist areas. [ Add your specific first-hand reassurance. ]</p>
+  </div></div>
+</div>
 
-### Is Tulum safe for trans travelers specifically?
-Yes, with no legal barriers. Quintana Roo (the state Tulum is in) legally recognizes federal self-ID gender marker changes. [ Add your honest, specific first-hand answer. ]
+<div class="post-acc-item">
+  <input type="checkbox" id="facc2" class="post-acc-toggle">
+  <label for="facc2" class="post-acc-head"><span>Is Tulum safe for trans travelers specifically?</span><span class="post-acc-plus">+</span></label>
+  <div class="post-acc-body"><div class="post-acc-body-inner">
+    <p>Yes, with no legal barriers. Quintana Roo (the state Tulum is in) legally recognizes federal self-ID gender marker changes. [ Add your honest, specific first-hand answer. ]</p>
+  </div></div>
+</div>
 
-### What's the best area to stay in Tulum for queer travelers?
-[ Your answer — name specific neighborhoods. ]
+<div class="post-acc-item">
+  <input type="checkbox" id="facc3" class="post-acc-toggle">
+  <label for="facc3" class="post-acc-head"><span>What's the best area to stay in Tulum for queer travelers?</span><span class="post-acc-plus">+</span></label>
+  <div class="post-acc-body"><div class="post-acc-body-inner">
+    <p>[ Your answer — name specific neighborhoods. ]</p>
+  </div></div>
+</div>
 
-### Are there queer bars or events in Tulum?
-There's no dedicated "gayborhood" here. Tulum's queer scene is woven into daily life rather than concentrated in one area. Red Room exists as a bar, though it leans specifically toward gay men rather than the broader queer community. The parties, DJs, and queer-friendly nights I'd actually point you to are in the full guidebook.
+<div class="post-acc-item">
+  <input type="checkbox" id="facc4" class="post-acc-toggle">
+  <label for="facc4" class="post-acc-head"><span>Are there queer bars or events in Tulum?</span><span class="post-acc-plus">+</span></label>
+  <div class="post-acc-body"><div class="post-acc-body-inner">
+    <p>There's no dedicated "gayborhood" here. Tulum's queer scene is woven into daily life rather than concentrated in one area. Red Room exists as a bar, though it leans specifically toward gay men rather than the broader queer community. The parties, DJs, and queer-friendly nights I'd actually point you to are in the full guidebook.</p>
+  </div></div>
+</div>
 
-### Is Tulum dangerous in general, aside from LGBTQ+ safety?
-The road between the town center and the beach zone has no lighting or sidewalk and isn't safe to walk at night. Take a taxi or colectivo after dark. This applies to everyone, not just queer and trans travelers.
+<div class="post-acc-item">
+  <input type="checkbox" id="facc5" class="post-acc-toggle">
+  <label for="facc5" class="post-acc-head"><span>Is Tulum dangerous in general, aside from LGBTQ+ safety?</span><span class="post-acc-plus">+</span></label>
+  <div class="post-acc-body"><div class="post-acc-body-inner">
+    <p>The road between the town center and the beach zone has no lighting or sidewalk and isn't safe to walk at night. Take a taxi or colectivo after dark. This applies to everyone, not just queer and trans travelers.</p>
+  </div></div>
+</div>

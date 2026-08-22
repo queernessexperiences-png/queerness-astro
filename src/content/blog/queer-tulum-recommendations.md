@@ -50,11 +50,26 @@ If you'd rather exchange cash, the place I send people is **[PLACEHOLDER — exc
 
 ## FAQ
 
-### What's the best restaurant in Tulum?
-Negro Huitlacoxe, a molino restaurant focused on pre-Hispanic Mexican cooking, is currently ranked number one in Tulum.
+<div class="post-acc-item">
+  <input type="checkbox" id="facc1" class="post-acc-toggle">
+  <label for="facc1" class="post-acc-head"><span>What's the best restaurant in Tulum?</span><span class="post-acc-plus">+</span></label>
+  <div class="post-acc-body"><div class="post-acc-body-inner">
+    <p>Negro Huitlacoxe, a molino restaurant focused on pre-Hispanic Mexican cooking, is currently ranked number one in Tulum.</p>
+  </div></div>
+</div>
 
-### Is there Uber in Tulum?
-No. Locals use the Eiby app instead for fair-priced rides.
+<div class="post-acc-item">
+  <input type="checkbox" id="facc2" class="post-acc-toggle">
+  <label for="facc2" class="post-acc-head"><span>Is there Uber in Tulum?</span><span class="post-acc-plus">+</span></label>
+  <div class="post-acc-body"><div class="post-acc-body-inner">
+    <p>No. Locals use the Eiby app instead for fair-priced rides.</p>
+  </div></div>
+</div>
 
-### Where can I exchange money in Tulum?
-[ Your answer — and remember you need your passport. ]
+<div class="post-acc-item">
+  <input type="checkbox" id="facc3" class="post-acc-toggle">
+  <label for="facc3" class="post-acc-head"><span>Where can I exchange money in Tulum?</span><span class="post-acc-plus">+</span></label>
+  <div class="post-acc-body"><div class="post-acc-body-inner">
+    <p>[ Your answer — and remember you need your passport. ]</p>
+  </div></div>
+</div>
