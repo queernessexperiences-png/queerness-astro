@@ -8,7 +8,7 @@ faq:
   - q: "Is Tulum queer friendly?"
     a: "Yes. Same-sex couples have been able to legally marry here since 2012, and there's little visible discrimination in the region. [ Your specific answer. ]"
   - q: "Does Tulum have a gay scene or a gay bar?"
-    a: "There's no separate 'gayborhood' — queerness is woven into daily life here rather than concentrated in one district. [ Honest answer — no centralized scene, but here's what exists. ]"
+    a: "There's no separate 'gayborhood' — queerness is woven into daily life here rather than concentrated in one district. Red Room exists as a bar, though it leans specifically toward gay men rather than the broader queer community. The parties, DJs, and queer-friendly nights I'd actually point you to are in the full guidebook."
   - q: "Where do queer locals hang out in Tulum?"
     a: "[ Name specific places like La Guarida. ]"
   - q: "Is Tulum good for a queer honeymoon or destination wedding?"
@@ -31,7 +31,7 @@ Yes, with real nuance worth understanding before you arrive. Tulum is queer and 
 Yes. Same-sex couples have been able to legally marry here since 2012, and there's little visible discrimination in the region. [ Your specific answer. ]
 
 ### Does Tulum have a gay scene or a gay bar?
-There's no separate "gayborhood" — queerness is woven into daily life here rather than concentrated in one district. [ Honest answer — no centralized scene, but here's what exists. ]
+There's no separate "gayborhood" — queerness is woven into daily life here rather than concentrated in one district. Red Room exists as a bar, though it leans specifically toward gay men rather than the broader queer community. The parties, DJs, and queer-friendly nights I'd actually point you to are in the full guidebook.
 
 ### Where do queer locals hang out in Tulum?
 [ Name specific places like La Guarida. ]

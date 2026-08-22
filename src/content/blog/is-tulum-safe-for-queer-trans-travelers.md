@@ -12,7 +12,7 @@ faq:
   - q: "What's the best area to stay in Tulum for queer travelers?"
     a: "[ Your answer — name specific neighborhoods. ]"
   - q: "Are there queer bars or events in Tulum?"
-    a: "There's no dedicated 'gayborhood' — Tulum's queer scene is woven into daily life rather than concentrated in one area. [ Your answer — honest about the lack of a centralized scene, and name any bars or regular events you'd actually recommend. ]"
+    a: "There's no dedicated 'gayborhood' — Tulum's queer scene is woven into daily life rather than concentrated in one area. Red Room exists as a bar, though it leans specifically toward gay men rather than the broader queer community. The parties, DJs, and queer-friendly nights I'd actually point you to are in the full guidebook."
   - q: "Is Tulum dangerous in general, aside from LGBTQ+ safety?"
     a: "The road between the town center and the beach zone has no lighting or sidewalk and isn't safe to walk at night — take a taxi or colectivo after dark. This applies to everyone, not just queer and trans travelers."
 ---
@@ -45,7 +45,7 @@ Yes, with no legal barriers — Quintana Roo (the state Tulum is in) legally rec
 [ Your answer — name specific neighborhoods. ]
 
 ### Are there queer bars or events in Tulum?
-There's no dedicated "gayborhood" here — Tulum's queer scene is woven into daily life rather than concentrated in one area. [ Your answer — honest about the lack of a centralized scene, but point to La Guarida and any events. ]
+There's no dedicated "gayborhood" here — Tulum's queer scene is woven into daily life rather than concentrated in one area. Red Room exists as a bar, though it leans specifically toward gay men rather than the broader queer community. The parties, DJs, and queer-friendly nights I'd actually point you to are in the full guidebook.
 
 ### Is Tulum dangerous in general, aside from LGBTQ+ safety?
 The road between the town center and the beach zone has no lighting or sidewalk and isn't safe to walk at night — take a taxi or colectivo after dark. This applies to everyone, not just queer and trans travelers.
