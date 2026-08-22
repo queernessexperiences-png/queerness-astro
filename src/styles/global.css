@@ -20,7 +20,7 @@
   --s-md:32px;
   --s-lg:64px;
   --s-xl:120px;
-  --ff:'CheddarGothicStencil','Space Grotesk',sans-serif;
+  --ff:'Archivo Black','Space Grotesk',sans-serif;
   --fb:'Space Grotesk',sans-serif;
 }
 body{background:var(--white);color:var(--dark);font-family:var(--fb);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
