@@ -13,6 +13,12 @@ const blog = defineCollection({
     heroImage: z.string().optional(),  // path like /images/post-hero.jpg
     heroAlt: z.string().optional(),    // alt text with keyword
     draft: z.boolean().default(false), // true = won't publish
+    // Optional FAQ pairs, output as FAQPage structured data so AI answer
+    // engines (ChatGPT, Perplexity, Google AI Overviews) can parse and
+    // cite them directly. Keep these in sync with the ### FAQ section
+    // in the post body — this doesn't replace that, it just makes the
+    // same Q&A machine-readable.
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
   }),
 });
 

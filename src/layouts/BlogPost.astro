@@ -1,9 +1,20 @@
 ---
 import Layout from './Layout.astro';
-const { title, description, keyword, pubDate, updatedDate, heroImage, heroAlt } = Astro.props;
+const { title, description, keyword, pubDate, updatedDate, heroImage, heroAlt, faq } = Astro.props;
 const displayDate = (updatedDate || pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+const faqSchema = faq && faq.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+} : null;
 ---
 <Layout title={`${title} | Queerness Experiences`} description={description}>
+  {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
   <article class="post">
     <p class="post-kicker">Queer Tulum Guide</p>
     <h1 class="post-h1">{title}</h1>
