@@ -38,7 +38,7 @@ I started Queerness Experiences because of how safe, comfortable, and accepted I
 
 Walk down the street or sit down at a restaurant here, and you'll generally just be treated like a person. That's it. That's the whole thing.
 
-If you dig deeper, sure, individual biases exist here like anywhere. But day to day, this is a place where I've taken trans, feminine, and nonbinary travelers to cenotes in bikinis, swimming alongside locals and visitors from all over the world, and nobody says a thing.
+If you dig deeper, sure, individual biases exist here like anywhere. But day to day, this is a place where I've taken a nonbinary trans femme wearing a bikini to a local cenote, and no one even looked our way.
 
 You'll see it everywhere once you know to look. Women holding hands and raising families together. Gay men in skirts at the parties we recommend. Local Mayan teenagers riding their scooters in full makeup, completely unbothered. Gender expression here doesn't always look the way it does in the US, but it's there, all throughout town, in ways that feel woven into daily life rather than confined to one scene.
 
