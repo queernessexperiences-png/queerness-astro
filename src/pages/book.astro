@@ -7,7 +7,7 @@ import Layout from '../layouts/Layout.astro';
   <p class="sec-eye">Book a tour</p>
   <h2>When are you<br>arriving?</h2>
   <p class="contact-lead">Tell me your dates and which tour interests you. I'll reply within 24 hours.</p>
-  <form class="form" name="contact" method="POST" netlify>
+  <form class="form" name="contact" method="POST" data-netlify="true" action="/thank-you">
     <input type="hidden" name="form-name" value="contact" />
     <div style="display:flex;gap:12px;">
       <div style="flex:1;"><label class="fl">First name</label><input class="fi" type="text" name="first-name" placeholder="First name"></div>
@@ -27,6 +27,7 @@ import Layout from '../layouts/Layout.astro';
         <label class="tour-check"><input type="checkbox" name="tour" value="Monkey Spotting"> Monkey Spotting</label>
         <label class="tour-check"><input type="checkbox" name="tour" value="Upcoming group trip"> Upcoming group trip</label>
         <label class="tour-check"><input type="checkbox" name="tour" value="Not sure yet"> Not sure yet — help me choose</label>
+        <label class="tour-check"><input type="checkbox" name="tour" value="Other"> Other</label>
       </div>
     </div>
     <div><label class="fl">What's up? Tell me what you're looking for</label><textarea class="fi" name="message" rows="3" placeholder="A little about your trip, your group, or what you're hoping for" style="resize:vertical;font-family:var(--fb);"></textarea></div>
