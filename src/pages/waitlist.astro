@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Join the Waitlist | Queerness Experiences" description={"Join the waitlist for upcoming Queerness Experiences group trips."}>
+
+<section class="contact" id="waitlist">
+  <p class="sec-eye">Coming soon</p>
+  <h2 id="waitlist-h2">Join the<br>waitlist</h2>
+  <p class="contact-lead" id="waitlist-lead">Be the first to know when dates and details are confirmed.</p>
+  <form class="form" name="waitlist" method="POST" data-netlify="true" action="/thank-you">
+    <input type="hidden" name="form-name" value="waitlist" />
+    <input type="hidden" name="trip" id="waitlist-trip-field" value="" />
+    <div style="display:flex;gap:12px;">
+      <div style="flex:1;"><label class="fl">First name</label><input class="fi" type="text" name="first-name" placeholder="First name" required></div>
+      <div style="flex:1;"><label class="fl">Last name</label><input class="fi" type="text" name="last-name" placeholder="Last name" required></div>
+    </div>
+    <div><label class="fl">Email</label><input class="fi" type="email" name="email" placeholder="your@email.com" required></div>
+    <div><label class="fl">Pronouns</label><input class="fi" type="text" name="pronouns"></div>
+    <div><label class="fl">Anything you want me to know?</label><textarea class="fi" name="message" rows="3" placeholder="Optional" style="resize:vertical;font-family:var(--fb);"></textarea></div>
+    <button type="submit" class="fsub">Join the Waitlist</button>
+  </form>
+</section>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const trip = params.get('trip') || 'general';
+  const tripNames = {
+    'luxury-lesbians-retreat': 'Luxury Lesbians Retreat',
+    'camp-queerness': 'Camp Queerness',
+    'general': 'a Queerness Experiences trip',
+  };
+  const displayName = tripNames[trip] || trip;
+  document.getElementById('waitlist-trip-field').value = trip;
+  document.getElementById('waitlist-h2').innerHTML = `Join the waitlist<br>for ${displayName}`;
+  document.getElementById('waitlist-lead').textContent = `Be the first to know when dates and details for ${displayName} are confirmed.`;
+</script>
+
+</Layout>
