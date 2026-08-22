@@ -1,7 +1,19 @@
 ---
 import Layout from './Layout.astro';
-const { title, description, keyword, pubDate, updatedDate, heroImage, heroAlt, faq } = Astro.props;
+const { title, description, keyword, pubDate, updatedDate, heroImage, heroAlt, faq, slug } = Astro.props;
 const displayDate = (updatedDate || pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+// Every other post funnels to the free recommendations. The
+// recommendations post itself funnels to the paid guidebook instead.
+const isRecsPost = slug === 'queer-tulum-recommendations';
+const ctaHref = isRecsPost ? '/guidebook' : '/blog/queer-tulum-recommendations';
+const ctaTopText = isRecsPost ? 'Want it all planned out?' : 'Want the free recommendations?';
+const ctaTopLink = isRecsPost ? 'Get the Full Guidebook →' : 'See the Free Recommendations →';
+const ctaH2 = isRecsPost ? 'Get the full Tulum guidebook' : 'Get my free Tulum recommendations';
+const ctaText = isRecsPost
+  ? "Everything I'd tell a friend visiting Tulum, curated for queer travelers. 3-4 days, fully planned out."
+  : 'My favorite restaurant, coffee shop, and bar, plus the practical tips that save you time and money.';
+const ctaBtnText = isRecsPost ? 'Get the Full Guidebook →' : 'See the Free Recommendations →';
 
 const faqSchema = faq && faq.length > 0 ? {
   '@context': 'https://schema.org',
@@ -21,9 +33,9 @@ const faqSchema = faq && faq.length > 0 ? {
     <p class="post-meta">{updatedDate ? 'Updated' : 'Published'} {displayDate} · by Santi Solís</p>
 
     <!-- Funnel: top mention, so it's visible before anyone scrolls -->
-    <a href="/guidebook" class="post-cta-top">
-      <span class="post-cta-top-eye">Want it all planned out?</span>
-      <span class="post-cta-top-link">Get the Full Guidebook →</span>
+    <a href={ctaHref} class="post-cta-top">
+      <span class="post-cta-top-eye">{ctaTopText}</span>
+      <span class="post-cta-top-link">{ctaTopLink}</span>
     </a>
 
     {heroImage && <img class="post-hero" src={heroImage} alt={heroAlt || title} />}
@@ -32,12 +44,12 @@ const faqSchema = faq && faq.length > 0 ? {
       <slot />
     </div>
 
-    <!-- Funnel: every post ends pointing at the guidebook -->
+    <!-- Funnel: every post ends pointing at the free recommendations (or booking, for that post itself) -->
     <div class="post-cta">
       <p class="post-cta-eye">Planning your trip?</p>
-      <h2 class="post-cta-h2">Get the full Tulum guidebook</h2>
-      <p class="post-cta-text">Everything I'd tell a friend visiting Tulum, curated for queer travelers — 3-4 days, fully planned out.</p>
-      <a href="/guidebook" class="post-cta-btn">Get the Full Guidebook →</a>
+      <h2 class="post-cta-h2">{ctaH2}</h2>
+      <p class="post-cta-text">{ctaText}</p>
+      <a href={ctaHref} class="post-cta-btn">{ctaBtnText}</a>
     </div>
   </article>
 
@@ -53,6 +65,17 @@ const faqSchema = faq && faq.length > 0 ? {
     .post-hero-ph{background:repeating-linear-gradient(135deg,rgba(26,26,24,0.05),rgba(26,26,24,0.05) 12px,rgba(26,26,24,0.09) 12px,rgba(26,26,24,0.09) 24px);display:flex;align-items:center;justify-content:center;font-family:var(--fb);font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(26,26,24,0.4);}
     /* Inline photo placeholder — drop one under any H2 in a post's markdown that needs a photo */
     .post-photo-ph{width:100%;aspect-ratio:4/3;border:3px solid var(--dark);box-shadow:4px 4px 0 var(--magenta);margin:var(--s-sm) 0 var(--s-md);background:repeating-linear-gradient(135deg,rgba(26,26,24,0.05),rgba(26,26,24,0.05) 12px,rgba(26,26,24,0.09) 12px,rgba(26,26,24,0.09) 24px);display:flex;align-items:center;justify-content:center;font-family:var(--fb);font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(26,26,24,0.4);text-align:center;padding:12px;}
+    /* Accordion — for posts with several short entries readers should skim, not read start to finish */
+    .post-acc-item{border:3px solid var(--dark);margin-bottom:var(--s-sm);box-shadow:4px 4px 0 var(--dark);overflow:hidden;}
+    .post-acc-toggle{position:absolute;opacity:0;pointer-events:none;}
+    .post-acc-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;cursor:pointer;background:var(--bone);font-family:var(--ff);font-size:16px;text-transform:uppercase;color:var(--dark);}
+    .post-acc-plus{font-family:var(--fb);font-size:20px;font-weight:700;color:var(--magenta);flex-shrink:0;transition:transform 0.2s;}
+    .post-acc-toggle:checked ~ .post-acc-head .post-acc-plus{transform:rotate(45deg);}
+    .post-acc-body{max-height:0;overflow:hidden;transition:max-height 0.3s ease;}
+    .post-acc-toggle:checked ~ .post-acc-body{max-height:600px;}
+    .post-acc-body-inner{padding:16px;}
+    .post-acc-body-inner p{margin-bottom:10px;font-size:16px;line-height:1.7;}
+    .post-acc-body-inner p:last-child{margin-bottom:0;}
     .post-body{font-size:17px;line-height:1.8;color:var(--dark);}
     .post-body h2{font-family:var(--ff);font-size:26px;text-transform:uppercase;color:var(--dark);line-height:1.15;margin:var(--s-lg) 0 var(--s-sm);letter-spacing:0.02em;}
     .post-body h3{font-family:var(--fb);font-size:19px;font-weight:700;color:var(--dark);margin:var(--s-md) 0 8px;}

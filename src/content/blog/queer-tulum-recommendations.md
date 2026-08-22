@@ -1,12 +1,12 @@
 ---
 title: "Free Queer Tulum Recommendations: Where I Actually Send Friends"
-description: "My free queer Tulum recommendations — the number one pre-Hispanic restaurant, the best specialty coffee, a queer-friendly cultural bar, plus how to get around and exchange money."
+description: "My free queer Tulum recommendations. The number one pre-Hispanic restaurant, the best specialty coffee, a queer-friendly cultural bar, plus how to get around and exchange money."
 keyword: "queer tulum recommendations"
 pubDate: 2026-01-25
 draft: false
 ---
 
-A few of the places I actually send friends to when they visit — the number one restaurant in Tulum for pre-Hispanic Mexican food, my favorite specialty coffee shop, and a café-bar-cultural-center that feels like the real Tulum. Plus the two practical things nobody tells you: how to get around, and how to stop the ATMs from robbing you.
+A few of the places I actually send friends to when they visit: the number one restaurant in Tulum for pre-Hispanic Mexican food, my favorite specialty coffee shop, and a café-bar-cultural-center that feels like the real Tulum. Plus the two practical things nobody tells you: how to get around, and how to stop the ATMs from robbing you.
 
 ## Negro Huitlacoxe
 
@@ -36,7 +36,7 @@ Part café, part rooftop bar, part cultural center. A bohemian maze of rooms and
 
 <div class="post-photo-ph">PHOTO — EIBY APP / TULUM STREET (getting around)</div>
 
-There's no Uber in Tulum, which catches almost everyone off guard. The app locals use instead is **Eiby** — think of it as our version of a ride app. Download it before you need it and you'll get fair prices instead of the tourist markup.
+There's no Uber in Tulum, which catches almost everyone off guard. The app locals use instead is **Eiby**, think of it as our version of a ride app. Download it before you need it and you'll get fair prices instead of the tourist markup.
 
 ## The ATM trick that saves you money
 
