@@ -75,3 +75,19 @@ If you'd rather exchange cash, the place I send people is **[PLACEHOLDER — exc
     <p>[ Your answer — and remember you need your passport. ]</p>
   </div></div>
 </div>
+
+<div class="post-acc-item">
+  <input type="checkbox" id="facc4" class="post-acc-toggle">
+  <label for="facc4" class="post-acc-head"><span>Is Tulum, Mexico safe for queer and trans travelers?</span><span class="post-acc-plus">+</span></label>
+  <div class="post-acc-body"><div class="post-acc-body-inner">
+    <p>Yes. Tulum is one of the most welcoming places in Mexico for queer and trans travelers. Read the full breakdown, including what nobody tells you before you arrive, in <a href="/blog/is-tulum-safe-for-queer-trans-travelers">Is Tulum Safe for Queer & Trans Travelers?</a></p>
+  </div></div>
+</div>
+
+<div class="post-acc-item">
+  <input type="checkbox" id="facc5" class="post-acc-toggle">
+  <label for="facc5" class="post-acc-head"><span>Is Tulum queer friendly?</span><span class="post-acc-plus">+</span></label>
+  <div class="post-acc-body"><div class="post-acc-body-inner">
+    <p>Yes, with real nuance worth understanding before you visit Tulum, Mexico. Here's the honest, local answer: <a href="/blog/is-tulum-queer-trans-friendly">Is Tulum Queer & Trans Friendly?</a></p>
+  </div></div>
+</div>
