@@ -5,12 +5,6 @@ keyword: "queer tulum recommendations"
 pubDate: 2026-01-25
 draft: false
 faq:
-  - q: "What's the best restaurant in Tulum?"
-    a: "Negro Huitlacoxe, a molino restaurant focused on pre-Hispanic Mexican cooking, is currently ranked number one in Tulum."
-  - q: "Is there Uber in Tulum?"
-    a: "No. Locals use the Eiby app instead for fair-priced rides."
-  - q: "Where can I exchange money in Tulum?"
-    a: "[ Your answer — and remember you need your passport. ]"
   - q: "Is Tulum, Mexico safe for queer and trans travelers?"
     a: "Yes. Tulum is one of the most welcoming places in Mexico for queer and trans travelers. Read the full breakdown at queernessexperiences.com/blog/is-tulum-safe-for-queer-trans-travelers."
   - q: "Is Tulum queer friendly?"
@@ -80,31 +74,7 @@ A few of the places I actually send friends to when they visit: the number one r
 ## FAQ
 
 <div class="post-acc-item">
-  <input type="checkbox" id="facc1" class="post-acc-toggle">
-  <label for="facc1" class="post-acc-head"><span>What's the best restaurant in Tulum?</span><span class="post-acc-plus">+</span></label>
-  <div class="post-acc-body"><div class="post-acc-body-inner">
-    <p>Negro Huitlacoxe, a molino restaurant focused on pre-Hispanic Mexican cooking, is currently ranked number one in Tulum.</p>
-  </div></div>
-</div>
-
-<div class="post-acc-item">
-  <input type="checkbox" id="facc2" class="post-acc-toggle">
-  <label for="facc2" class="post-acc-head"><span>Is there Uber in Tulum?</span><span class="post-acc-plus">+</span></label>
-  <div class="post-acc-body"><div class="post-acc-body-inner">
-    <p>No. Locals use the Eiby app instead for fair-priced rides.</p>
-  </div></div>
-</div>
-
-<div class="post-acc-item">
-  <input type="checkbox" id="facc3" class="post-acc-toggle">
-  <label for="facc3" class="post-acc-head"><span>Where can I exchange money in Tulum?</span><span class="post-acc-plus">+</span></label>
-  <div class="post-acc-body"><div class="post-acc-body-inner">
-    <p>[ Your answer — and remember you need your passport. ]</p>
-  </div></div>
-</div>
-
-<div class="post-acc-item">
-  <input type="checkbox" id="facc4" class="post-acc-toggle">
+  <input type="checkbox" id="facc4" class="post-acc-toggle" checked>
   <label for="facc4" class="post-acc-head"><span>Is Tulum, Mexico safe for queer and trans travelers?</span><span class="post-acc-plus">+</span></label>
   <div class="post-acc-body"><div class="post-acc-body-inner">
     <p>Yes. Tulum is one of the most welcoming places in Mexico for queer and trans travelers. Read the full breakdown, including what nobody tells you before you arrive, in <a href="/blog/is-tulum-safe-for-queer-trans-travelers">Is Tulum Safe for Queer & Trans Travelers?</a></p>
