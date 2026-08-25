@@ -76,5 +76,14 @@ import '../styles/global.css';
     <div class="femail">info@queernessexperiences.com</div>
   </footer>
 
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+  <script>
+    const btt = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      btt.classList.toggle('show', window.scrollY > 600);
+    });
+    btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+
 </body>
 </html>
