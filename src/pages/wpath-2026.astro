@@ -418,30 +418,34 @@ import Layout from '../layouts/Layout.astro';
       <div>
         <label class="wp-fl">Tours — check every date you'd be open to. Checking more than one helps us hit the minimum group faster</label>
         <div class="wp-exp-list">
-          <div class="wp-exp-row wp-exp-row-tour">
-            <span class="wp-exp-name">Prehispanic Cooking Class</span>
+          <div class="wp-exp-row-tour">
+            <input type="checkbox" class="wp-exp-toggle" id="exptoggle1">
+            <label class="wp-exp-name" for="exptoggle1">Prehispanic Cooking Class<span class="wp-exp-plus">+</span></label>
             <div class="wp-exp-dates">
               <label class="wp-check wp-check-sm"><input type="checkbox" name="cooking-class-nov9" value="Mon Nov 9, morning"> Mon Nov 9, morning</label>
               <label class="wp-check wp-check-sm wp-check-owngroup"><input type="checkbox" name="cooking-class-owngroup" value="yes"> I have my own group of 6+, flexible on date</label>
             </div>
           </div>
-          <div class="wp-exp-row wp-exp-row-tour">
-            <span class="wp-exp-name">Roma/Condesa Food & Culture Tour</span>
+          <div class="wp-exp-row-tour">
+            <input type="checkbox" class="wp-exp-toggle" id="exptoggle2">
+            <label class="wp-exp-name" for="exptoggle2">Roma/Condesa Food & Culture Tour<span class="wp-exp-plus">+</span></label>
             <div class="wp-exp-dates">
               <label class="wp-check wp-check-sm"><input type="checkbox" name="roma-condesa-nov10" value="Tue Nov 10, morning"> Tue Nov 10, morning</label>
               <label class="wp-check wp-check-sm"><input type="checkbox" name="roma-condesa-nov11" value="Wed Nov 11, evening"> Wed Nov 11, evening</label>
               <label class="wp-check wp-check-sm wp-check-owngroup"><input type="checkbox" name="roma-condesa-owngroup" value="yes"> I have my own group of 4+, flexible on date</label>
             </div>
           </div>
-          <div class="wp-exp-row wp-exp-row-tour">
-            <span class="wp-exp-name">San Ángel Market Day</span>
+          <div class="wp-exp-row-tour">
+            <input type="checkbox" class="wp-exp-toggle" id="exptoggle3">
+            <label class="wp-exp-name" for="exptoggle3">San Ángel Market Day<span class="wp-exp-plus">+</span></label>
             <div class="wp-exp-dates">
               <label class="wp-check wp-check-sm"><input type="checkbox" name="san-angel-nov7" value="Sat Nov 7, morning (only date)"> Sat Nov 7, morning (only date)</label>
               <label class="wp-check wp-check-sm wp-check-owngroup"><input type="checkbox" name="san-angel-owngroup" value="yes"> I have my own group of 4+, flexible on date</label>
             </div>
           </div>
-          <div class="wp-exp-row wp-exp-row-tour">
-            <span class="wp-exp-name">Polanco Mezcal & Snacks</span>
+          <div class="wp-exp-row-tour">
+            <input type="checkbox" class="wp-exp-toggle" id="exptoggle4">
+            <label class="wp-exp-name" for="exptoggle4">Polanco Mezcal & Snacks<span class="wp-exp-plus">+</span></label>
             <div class="wp-exp-dates">
               <label class="wp-check wp-check-sm"><input type="checkbox" name="mezcal-nov6" value="Fri Nov 6, evening"> Fri Nov 6, evening</label>
               <label class="wp-check wp-check-sm"><input type="checkbox" name="mezcal-nov8" value="Sun Nov 8, evening"> Sun Nov 8, evening</label>
@@ -449,8 +453,9 @@ import Layout from '../layouts/Layout.astro';
               <label class="wp-check wp-check-sm wp-check-owngroup"><input type="checkbox" name="mezcal-owngroup" value="yes"> I have my own group of 4+, flexible on date</label>
             </div>
           </div>
-          <div class="wp-exp-row wp-exp-row-tour">
-            <span class="wp-exp-name">Sapphic Shopping & Breakfast City Tour</span>
+          <div class="wp-exp-row-tour">
+            <input type="checkbox" class="wp-exp-toggle" id="exptoggle5">
+            <label class="wp-exp-name" for="exptoggle5">Sapphic Shopping & Breakfast City Tour<span class="wp-exp-plus">+</span></label>
             <div class="wp-exp-dates">
               <label class="wp-check wp-check-sm"><input type="checkbox" name="sapphic-shopping-nov13" value="Fri Nov 13, morning (only date)"> Fri Nov 13, morning (only date)</label>
               <label class="wp-check wp-check-sm wp-check-owngroup"><input type="checkbox" name="sapphic-shopping-owngroup" value="yes"> I have my own group of 4+, flexible on date</label>
@@ -609,14 +614,16 @@ import Layout from '../layouts/Layout.astro';
   .wp-fi{width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);border-radius:2px;padding:12px 14px;font-size:16.5px;color:var(--wwhite);font-family:'DM Sans',sans-serif;outline:none;}
   .wp-fi::placeholder{color:rgba(255,255,255,0.35);}
   .wp-checks{display:flex;flex-direction:column;gap:8px;}
-  .wp-exp-list{display:flex;flex-direction:column;gap:12px;}
-  .wp-exp-row-tour{display:flex;flex-direction:column;gap:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:2px;padding:14px;}
-  .wp-exp-name{font-size:15px;font-weight:600;color:rgba(255,255,255,0.95);}
-  .wp-exp-dates{display:flex;flex-direction:row;flex-wrap:wrap;gap:6px;}
+  .wp-exp-list{display:flex;flex-direction:column;gap:10px;}
+  .wp-exp-row-tour{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:2px;overflow:hidden;}
+  .wp-exp-toggle{position:absolute;opacity:0;pointer-events:none;}
+  .wp-exp-name{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:14px;font-weight:600;color:rgba(255,255,255,0.95);padding:12px 14px;cursor:pointer;}
+  .wp-exp-plus{font-size:18px;color:var(--wbrass);transition:transform 0.2s;font-weight:400;}
+  .wp-exp-toggle:checked ~ .wp-exp-name .wp-exp-plus{transform:rotate(45deg);}
+  .wp-exp-dates{display:flex;flex-direction:row;flex-wrap:wrap;gap:6px;max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 14px;}
+  .wp-exp-toggle:checked ~ .wp-exp-dates{max-height:200px;padding:0 14px 14px;}
   .wp-check-sm{display:inline-flex;padding:6px 10px;font-size:12px;gap:6px;}
   .wp-check-sm input{width:14px;height:14px;}
-  .wp-exp-row-tour{padding:10px 14px;gap:6px;}
-  .wp-exp-name{font-size:14px;}
   .wp-check-owngroup{border-color:rgba(212,176,110,0.4);background:rgba(184,146,74,0.08);}
   .wp-check{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:2px;padding:11px 14px;font-size:15.5px;color:rgba(255,255,255,0.85);cursor:pointer;}
   .wp-check input{width:18px;height:18px;accent-color:var(--wbrass);flex-shrink:0;}
