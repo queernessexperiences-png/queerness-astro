@@ -422,7 +422,7 @@ import Layout from '../layouts/Layout.astro';
             <span class="wp-exp-name">Prehispanic Cooking Class</span>
             <div class="wp-exp-dates">
               <label class="wp-check wp-check-sm"><input type="checkbox" name="cooking-class-nov9" value="Mon Nov 9, morning"> Mon Nov 9, morning</label>
-              <label class="wp-check wp-check-sm wp-check-owngroup"><input type="checkbox" name="cooking-class-owngroup" value="yes"> I have my own group of 4+, flexible on date</label>
+              <label class="wp-check wp-check-sm wp-check-owngroup"><input type="checkbox" name="cooking-class-owngroup" value="yes"> I have my own group of 6+, flexible on date</label>
             </div>
           </div>
           <div class="wp-exp-row wp-exp-row-tour">
@@ -602,7 +602,7 @@ import Layout from '../layouts/Layout.astro';
   .wp-how-step-title{font-size:18px;font-weight:500;color:var(--wwhite);margin-bottom:6px;line-height:1.3;}
   .wp-how-step-sub{font-size:15.5px;color:rgba(255,255,255,0.5);line-height:1.7;font-weight:300;}
 
-  .wp-form{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:4px;padding:24px;display:flex;flex-direction:column;gap:16px;}
+  .wp-form{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:4px;padding:20px;display:flex;flex-direction:column;gap:12px;}
   .wp-form-row{display:flex;gap:12px;flex-wrap:wrap;}
   .wp-form-row > div{flex:1;min-width:140px;}
   .wp-fl{display:block;font-size:12px;font-weight:500;letter-spacing:0.5px;text-transform:uppercase;color:var(--wbrass-light);margin-bottom:6px;}
@@ -612,8 +612,11 @@ import Layout from '../layouts/Layout.astro';
   .wp-exp-list{display:flex;flex-direction:column;gap:12px;}
   .wp-exp-row-tour{display:flex;flex-direction:column;gap:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:2px;padding:14px;}
   .wp-exp-name{font-size:15px;font-weight:600;color:rgba(255,255,255,0.95);}
-  .wp-exp-dates{display:flex;flex-direction:column;gap:6px;}
-  .wp-check-sm{padding:8px 12px;font-size:13.5px;}
+  .wp-exp-dates{display:flex;flex-direction:row;flex-wrap:wrap;gap:6px;}
+  .wp-check-sm{display:inline-flex;padding:6px 10px;font-size:12px;gap:6px;}
+  .wp-check-sm input{width:14px;height:14px;}
+  .wp-exp-row-tour{padding:10px 14px;gap:6px;}
+  .wp-exp-name{font-size:14px;}
   .wp-check-owngroup{border-color:rgba(212,176,110,0.4);background:rgba(184,146,74,0.08);}
   .wp-check{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:2px;padding:11px 14px;font-size:15.5px;color:rgba(255,255,255,0.85);cursor:pointer;}
   .wp-check input{width:18px;height:18px;accent-color:var(--wbrass);flex-shrink:0;}
