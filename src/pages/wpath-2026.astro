@@ -416,50 +416,32 @@ import Layout from '../layouts/Layout.astro';
       <div><label class="wp-fl">WhatsApp (include country code)</label><input class="wp-fi" type="tel" name="whatsapp" required></div>
       <div><label class="wp-fl">Pronouns</label><input class="wp-fi" type="text" name="pronouns" required></div>
       <div>
-        <label class="wp-fl">Tours — pick a date for any you're interested in</label>
+        <label class="wp-fl">Tours — pick a suggested date or type your own. Leave blank if not interested</label>
         <div class="wp-exp-list">
           <div class="wp-exp-row">
             <span class="wp-exp-name-flat">Prehispanic Cooking Class</span>
-            <select class="wp-fi wp-exp-select" name="date-cooking-class">
-              <option value="Not interested" selected>Not interested</option>
-              <option value="Mon Nov 9, morning">Mon Nov 9, morning</option>
-              <option value="I need a different date">I need a different date</option>
-            </select>
+            <input class="wp-fi wp-exp-select" type="text" name="date-cooking-class" list="dl-cooking-class" placeholder="Pick or type a date" autocomplete="off">
+            <datalist id="dl-cooking-class"><option value="Mon Nov 9, morning"></option></datalist>
           </div>
           <div class="wp-exp-row">
             <span class="wp-exp-name-flat">Roma/Condesa Food & Culture Tour</span>
-            <select class="wp-fi wp-exp-select" name="date-roma-condesa">
-              <option value="Not interested" selected>Not interested</option>
-              <option value="Tue Nov 10, morning">Tue Nov 10, morning</option>
-              <option value="Wed Nov 11, evening">Wed Nov 11, evening</option>
-              <option value="I need a different date">I need a different date</option>
-            </select>
+            <input class="wp-fi wp-exp-select" type="text" name="date-roma-condesa" list="dl-roma-condesa" placeholder="Pick or type a date" autocomplete="off">
+            <datalist id="dl-roma-condesa"><option value="Tue Nov 10, morning"></option><option value="Wed Nov 11, evening"></option></datalist>
           </div>
           <div class="wp-exp-row">
             <span class="wp-exp-name-flat">San Ángel Market Day</span>
-            <select class="wp-fi wp-exp-select" name="date-san-angel">
-              <option value="Not interested" selected>Not interested</option>
-              <option value="Sat Nov 7, morning (only date)">Sat Nov 7, morning (only date)</option>
-              <option value="I need a different date">I need a different date</option>
-            </select>
+            <input class="wp-fi wp-exp-select" type="text" name="date-san-angel" list="dl-san-angel" placeholder="Pick or type a date" autocomplete="off">
+            <datalist id="dl-san-angel"><option value="Sat Nov 7, morning (only date)"></option></datalist>
           </div>
           <div class="wp-exp-row">
             <span class="wp-exp-name-flat">Polanco Mezcal & Snacks</span>
-            <select class="wp-fi wp-exp-select" name="date-mezcal">
-              <option value="Not interested" selected>Not interested</option>
-              <option value="Fri Nov 6, evening">Fri Nov 6, evening</option>
-              <option value="Sun Nov 8, evening">Sun Nov 8, evening</option>
-              <option value="Wed Nov 11, evening">Wed Nov 11, evening</option>
-              <option value="I need a different date">I need a different date</option>
-            </select>
+            <input class="wp-fi wp-exp-select" type="text" name="date-mezcal" list="dl-mezcal" placeholder="Pick or type a date" autocomplete="off">
+            <datalist id="dl-mezcal"><option value="Fri Nov 6, evening"></option><option value="Sun Nov 8, evening"></option><option value="Wed Nov 11, evening"></option></datalist>
           </div>
           <div class="wp-exp-row">
             <span class="wp-exp-name-flat">Sapphic Shopping & Breakfast City Tour</span>
-            <select class="wp-fi wp-exp-select" name="date-sapphic-shopping">
-              <option value="Not interested" selected>Not interested</option>
-              <option value="Fri Nov 13, morning (only date)">Fri Nov 13, morning (only date)</option>
-              <option value="I need a different date">I need a different date</option>
-            </select>
+            <input class="wp-fi wp-exp-select" type="text" name="date-sapphic-shopping" list="dl-sapphic-shopping" placeholder="Pick or type a date" autocomplete="off">
+            <datalist id="dl-sapphic-shopping"><option value="Fri Nov 13, morning (only date)"></option></datalist>
           </div>
         </div>
         <p class="wp-exp-hint">Prehispanic Cooking Class needs a group of 6+ to confirm. Every other tour needs 4+.</p>
@@ -474,9 +456,22 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
 
-      <div><label class="wp-fl">If you picked "I need a different date" above, tell us which date would work</label><input class="wp-fi" type="text" name="dates-other" placeholder="e.g. Cooking Class on a different day"></div>
       <div class="wp-form-row">
-        <div><label class="wp-fl">How many people in your group, including you?</label><input class="wp-fi" type="number" name="group-size" min="1" value="1" required></div>
+        <div>
+          <label class="wp-fl">How many people in your group, including you?</label>
+          <select class="wp-fi wp-exp-select" name="group-size" required>
+            <option value="" disabled selected>Choose one</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9+">9+</option>
+          </select>
+        </div>
       </div>
       <div><label class="wp-fl">Group member names (optional)</label><textarea class="wp-fi" name="group-members" rows="2" placeholder="If you know who's joining you, list names here"></textarea></div>
       <div><label class="wp-fl">Anything else we should know?</label><textarea class="wp-fi" name="message" rows="3" required></textarea></div>
@@ -502,54 +497,54 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .wp-banner{position:sticky;top:52px;z-index:90;background:var(--wblue-dark);padding:11px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:2px solid var(--wbrass);}
-  .wp-banner-text{font-size:13px;color:rgba(255,255,255,0.75);letter-spacing:0.3px;}
+  .wp-banner-text{font-size:14.5px;color:rgba(255,255,255,0.75);letter-spacing:0.3px;}
   .wp-banner-text strong{color:var(--wbrass-light);font-weight:500;}
-  .wp-banner-btn{display:inline-block;background:var(--wbrass);color:var(--wmahogany);padding:8px 18px;border-radius:2px;font-size:12px;font-weight:500;letter-spacing:1.5px;text-decoration:none;text-transform:uppercase;white-space:nowrap;flex-shrink:0;}
+  .wp-banner-btn{display:inline-block;background:var(--wbrass);color:var(--wmahogany);padding:8px 18px;border-radius:2px;font-size:13.5px;font-weight:500;letter-spacing:1.5px;text-decoration:none;text-transform:uppercase;white-space:nowrap;flex-shrink:0;}
 
-  .wp-disclaimer{background:var(--wcream-dark);border-bottom:1px solid var(--wborder);padding:10px 20px;text-align:center;font-size:12px;color:var(--wmuted);}
+  .wp-disclaimer{background:var(--wcream-dark);border-bottom:1px solid var(--wborder);padding:10px 20px;text-align:center;font-size:13.5px;color:var(--wmuted);}
 
   .wp-hero{background:var(--wblue);position:relative;overflow:hidden;padding:52px 24px 48px;}
   .wp-hero-sun{position:absolute;right:-40px;top:-40px;width:280px;height:280px;opacity:0.06;pointer-events:none;}
   .wp-hero::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--wcobalt);}
   .wp-hero-inner{max-width:640px;margin:0 auto;position:relative;z-index:1;}
-  .wp-hero-eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--wbrass-light);margin-bottom:6px;}
-  .wp-hero-date{font-size:13px;color:rgba(255,255,255,0.45);letter-spacing:1px;text-transform:uppercase;margin-bottom:28px;}
+  .wp-hero-eyebrow{font-size:12.5px;letter-spacing:3px;text-transform:uppercase;color:var(--wbrass-light);margin-bottom:6px;}
+  .wp-hero-date{font-size:14.5px;color:rgba(255,255,255,0.45);letter-spacing:1px;text-transform:uppercase;margin-bottom:28px;}
   .wp-hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(52px,14vw,88px);font-weight:300;color:var(--wwhite);line-height:0.95;margin-bottom:4px;letter-spacing:-1px;}
   .wp-hero-title-sub{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,8vw,52px);font-weight:300;font-style:italic;color:var(--wbrass-light);line-height:1.1;margin-bottom:28px;}
-  .wp-hero-sub{font-size:16.5px;color:rgba(255,255,255,0.65);font-weight:300;line-height:1.8;max-width:420px;margin-bottom:36px;}
-  .wp-hero-btn{display:block;background:var(--wbrass);color:var(--wmahogany);padding:16px 32px;border-radius:2px;font-size:13px;font-weight:500;letter-spacing:2px;text-decoration:none;text-transform:uppercase;margin-bottom:12px;text-align:center;max-width:320px;}
-  .wp-hero-note{font-size:13px;color:rgba(255,255,255,0.4);font-style:italic;margin-bottom:40px;}
+  .wp-hero-sub{font-size:18px;color:rgba(255,255,255,0.65);font-weight:300;line-height:1.8;max-width:420px;margin-bottom:36px;}
+  .wp-hero-btn{display:block;background:var(--wbrass);color:var(--wmahogany);padding:16px 32px;border-radius:2px;font-size:14.5px;font-weight:500;letter-spacing:2px;text-decoration:none;text-transform:uppercase;margin-bottom:12px;text-align:center;max-width:320px;}
+  .wp-hero-note{font-size:14.5px;color:rgba(255,255,255,0.4);font-style:italic;margin-bottom:40px;}
   .wp-guides{display:flex;flex-direction:row;gap:14px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.1);flex-wrap:wrap;}
   .wp-guide{display:flex;align-items:center;gap:10px;flex:1;min-width:200px;}
   .wp-guide-photo{width:40px;height:40px;border-radius:50%;object-fit:cover;object-position:center top;flex-shrink:0;border:1px solid var(--wbrass);}
-  .wp-guide-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--wbrass);margin-bottom:2px;}
-  .wp-guide-text{font-size:13px;color:rgba(255,255,255,0.5);line-height:1.5;font-weight:300;}
+  .wp-guide-label{font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:var(--wbrass);margin-bottom:2px;}
+  .wp-guide-text{font-size:14.5px;color:rgba(255,255,255,0.5);line-height:1.5;font-weight:300;}
   .wp-guide-text strong{color:rgba(255,255,255,0.85);font-weight:500;}
 
   .wp-tulum-strip{background:var(--wblue-dark);border-top:1px solid rgba(255,255,255,0.08);padding:14px 24px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;text-align:center;}
-  .wp-tulum-strip-text{font-size:14.5px;color:rgba(255,255,255,0.6);}
+  .wp-tulum-strip-text{font-size:16px;color:rgba(255,255,255,0.6);}
   .wp-tulum-strip-text strong{color:rgba(255,255,255,0.85);}
-  .wp-tulum-strip-link{font-size:13px;color:var(--wbrass-light);text-decoration:none;white-space:nowrap;border-bottom:1px solid rgba(184,146,74,0.3);padding-bottom:1px;}
+  .wp-tulum-strip-link{font-size:14.5px;color:var(--wbrass-light);text-decoration:none;white-space:nowrap;border-bottom:1px solid rgba(184,146,74,0.3);padding-bottom:1px;}
 
   .wp-range-intro{background:var(--wcream-dark);border-bottom:1px solid var(--wborder);padding:32px 24px 24px;text-align:center;}
   .wp-range-title{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,11vw,72px);font-weight:300;letter-spacing:-1px;color:var(--wblue);margin-bottom:14px;}
-  .wp-range-intro p:not(.wp-range-title){font-size:14.5px;color:var(--wmuted);font-weight:300;line-height:1.7;max-width:480px;margin:0 auto;}
+  .wp-range-intro p:not(.wp-range-title){font-size:16px;color:var(--wmuted);font-weight:300;line-height:1.7;max-width:480px;margin:0 auto;}
 
   .wp-section-label{background:var(--wcream);border-top:4px solid var(--wblue);border-bottom:1px solid var(--wborder);padding:32px 24px 28px;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;}
   .wp-nightlife-label{border-top-color:var(--wcopper);}
   .wp-section-label-title{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,10vw,72px);font-weight:300;color:var(--wblue);letter-spacing:-2px;line-height:1;}
   .wp-nightlife-title{color:var(--wcopper);}
-  .wp-section-label-count{font-size:13px;color:var(--wmuted);letter-spacing:0.5px;padding-top:6px;}
-  .wp-section-label-cta{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--wbrass);margin-top:8px;font-weight:500;display:none;}
+  .wp-section-label-count{font-size:14.5px;color:var(--wmuted);letter-spacing:0.5px;padding-top:6px;}
+  .wp-section-label-cta{font-size:13.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--wbrass);margin-top:8px;font-weight:500;display:none;}
   .wp-nightlife-cta{color:var(--wcopper-light);}
-  .wp-accordion-arrow{font-size:24px;color:var(--wbrass);transition:transform 0.3s ease;line-height:1;flex-shrink:0;padding-top:6px;}
+  .wp-accordion-arrow{font-size:25.5px;color:var(--wbrass);transition:transform 0.3s ease;line-height:1;flex-shrink:0;padding-top:6px;}
   .wp-nightlife-arrow{color:var(--wcopper);}
   .wp-accordion-cards{overflow:hidden;}
 
-  .wp-card-teaser{font-size:15.5px;color:var(--wmuted);line-height:1.7;margin-bottom:12px;font-weight:300;font-style:italic;}
+  .wp-card-teaser{font-size:17px;color:var(--wmuted);line-height:1.7;margin-bottom:12px;font-weight:300;font-style:italic;}
   .wp-card-toggle-check{position:absolute;opacity:0;pointer-events:none;}
-  .wp-card-toggle-label{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--wbrass);cursor:pointer;margin-bottom:14px;font-weight:500;letter-spacing:0.5px;border-bottom:1px solid rgba(184,146,74,0.3);padding-bottom:2px;}
-  .wp-toggle-icon{font-size:18px;line-height:1;transition:transform 0.25s;font-weight:300;}
+  .wp-card-toggle-label{display:inline-flex;align-items:center;gap:6px;font-size:14.5px;color:var(--wbrass);cursor:pointer;margin-bottom:14px;font-weight:500;letter-spacing:0.5px;border-bottom:1px solid rgba(184,146,74,0.3);padding-bottom:2px;}
+  .wp-toggle-icon{font-size:19.5px;line-height:1;transition:transform 0.25s;font-weight:300;}
   .wp-card-toggle-check:checked ~ .wp-card-toggle-label .wp-toggle-icon{transform:rotate(45deg);}
   .wp-card-toggle-check:checked ~ .wp-card-toggle-label .wp-toggle-txt::after{content:'Less';}
   .wp-card-toggle-label .wp-toggle-txt::after{content:'More details';}
@@ -562,71 +557,71 @@ import Layout from '../layouts/Layout.astro';
   .wp-nightlife-card::before{background:linear-gradient(90deg,var(--wcopper) 0%,var(--wcopper-light) 100%);}
   .wp-card-photo-wrap{position:relative;width:100%;aspect-ratio:1/1;overflow:hidden;background:var(--wblue);}
   .wp-card-photo{width:100%;height:100%;object-fit:cover;display:block;}
-  .wp-card-tag{position:absolute;bottom:12px;left:12px;background:rgba(30,29,24,0.82);color:rgba(255,255,255,0.9);font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:5px 10px;border-radius:1px;}
-  .wp-card-date{position:absolute;bottom:12px;right:12px;background:var(--wbrass);color:var(--wmahogany);font-size:11px;font-weight:500;letter-spacing:1px;padding:5px 10px;border-radius:1px;}
+  .wp-card-tag{position:absolute;bottom:12px;left:12px;background:rgba(30,29,24,0.82);color:rgba(255,255,255,0.9);font-size:11.5px;letter-spacing:2px;text-transform:uppercase;padding:5px 10px;border-radius:1px;}
+  .wp-card-date{position:absolute;bottom:12px;right:12px;background:var(--wbrass);color:var(--wmahogany);font-size:12.5px;font-weight:500;letter-spacing:1px;padding:5px 10px;border-radius:1px;}
   .wp-card-body{padding:20px 20px 24px;}
-  .wp-card-title{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;color:var(--wblue);line-height:1.2;margin-bottom:12px;}
+  .wp-card-title{font-family:'Cormorant Garamond',serif;font-size:27.5px;font-weight:600;color:var(--wblue);line-height:1.2;margin-bottom:12px;}
   .wp-nightlife-card .wp-card-title{color:var(--wmahogany);}
   .wp-card-meta{display:flex;flex-direction:column;gap:4px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--wborder);}
-  .wp-card-meta-item{font-size:14.5px;color:var(--wmuted);line-height:1.4;}
-  .wp-card-desc{font-size:15.5px;color:var(--wink-light);line-height:1.8;margin-bottom:16px;font-weight:300;}
-  .wp-card-includes{font-size:13px;color:var(--wcopper);line-height:1.7;margin-bottom:18px;font-weight:400;}
-  .wp-card-pending{font-size:13px;color:var(--wcopper);font-style:italic;margin-bottom:10px;}
+  .wp-card-meta-item{font-size:16px;color:var(--wmuted);line-height:1.4;}
+  .wp-card-desc{font-size:17px;color:var(--wink-light);line-height:1.8;margin-bottom:16px;font-weight:300;}
+  .wp-card-includes{font-size:14.5px;color:var(--wcopper);line-height:1.7;margin-bottom:18px;font-weight:400;}
+  .wp-card-pending{font-size:14.5px;color:var(--wcopper);font-style:italic;margin-bottom:10px;}
   .wp-card-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;}
-  .wp-card-price{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--wblue);line-height:1.2;}
-  .wp-card-price small{display:block;font-family:'DM Sans',sans-serif;font-size:12px;color:var(--wmuted);font-weight:300;}
-  .wp-card-btn{display:inline-block;background:var(--wblue);color:var(--wwhite);padding:13px 22px;border-radius:2px;font-size:12px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;white-space:nowrap;}
+  .wp-card-price{font-family:'Cormorant Garamond',serif;font-size:23.5px;font-weight:600;color:var(--wblue);line-height:1.2;}
+  .wp-card-price small{display:block;font-family:'DM Sans',sans-serif;font-size:13.5px;color:var(--wmuted);font-weight:300;}
+  .wp-card-btn{display:inline-block;background:var(--wblue);color:var(--wwhite);padding:13px 22px;border-radius:2px;font-size:13.5px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;white-space:nowrap;}
 
   .wp-cta-strip{background:var(--wblue);border-top:3px solid var(--wbrass);padding:36px 24px;text-align:center;}
-  .wp-cta-strip-eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--wbrass);margin-bottom:10px;}
-  .wp-cta-strip-title{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:var(--wwhite);margin-bottom:6px;font-style:italic;}
-  .wp-cta-strip-sub{font-size:15.5px;color:rgba(255,255,255,0.55);margin-bottom:24px;font-weight:300;}
-  .wp-cta-strip-btn{display:inline-block;background:var(--wbrass);color:var(--wmahogany);padding:16px 36px;border-radius:2px;font-size:12px;font-weight:500;letter-spacing:2px;text-transform:uppercase;text-decoration:none;width:100%;max-width:320px;}
+  .wp-cta-strip-eyebrow{font-size:12.5px;letter-spacing:3px;text-transform:uppercase;color:var(--wbrass);margin-bottom:10px;}
+  .wp-cta-strip-title{font-family:'Cormorant Garamond',serif;font-size:33.5px;font-weight:300;color:var(--wwhite);margin-bottom:6px;font-style:italic;}
+  .wp-cta-strip-sub{font-size:17px;color:rgba(255,255,255,0.55);margin-bottom:24px;font-weight:300;}
+  .wp-cta-strip-btn{display:inline-block;background:var(--wbrass);color:var(--wmahogany);padding:16px 36px;border-radius:2px;font-size:13.5px;font-weight:500;letter-spacing:2px;text-transform:uppercase;text-decoration:none;width:100%;max-width:320px;}
 
   .wp-faq{background:var(--wcream-dark);padding:48px 24px;}
-  .wp-faq-eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--wbrass);margin-bottom:8px;}
-  .wp-faq-title{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:400;color:var(--wblue);margin-bottom:32px;}
+  .wp-faq-eyebrow{font-size:12.5px;letter-spacing:3px;text-transform:uppercase;color:var(--wbrass);margin-bottom:8px;}
+  .wp-faq-title{font-family:'Cormorant Garamond',serif;font-size:31.5px;font-weight:400;color:var(--wblue);margin-bottom:32px;}
   .wp-faq-item{border-top:1px solid var(--wborder);}
   .wp-faq-item:last-child{border-bottom:1px solid var(--wborder);}
   .wp-faq-toggle{position:absolute;opacity:0;pointer-events:none;}
-  .wp-faq-question{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;cursor:pointer;font-size:16.5px;font-weight:500;color:var(--wink);line-height:1.4;}
-  .wp-faq-icon{font-size:22px;color:var(--wbrass);flex-shrink:0;transition:transform 0.25s;line-height:1;font-weight:300;}
+  .wp-faq-question{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;cursor:pointer;font-size:18px;font-weight:500;color:var(--wink);line-height:1.4;}
+  .wp-faq-icon{font-size:23.5px;color:var(--wbrass);flex-shrink:0;transition:transform 0.25s;line-height:1;font-weight:300;}
   .wp-faq-toggle:checked ~ .wp-faq-question .wp-faq-icon{transform:rotate(45deg);}
-  .wp-faq-answer{font-size:15.5px;color:var(--wink-light);line-height:1.8;max-height:0;overflow:hidden;transition:max-height 0.35s ease;font-weight:300;}
+  .wp-faq-answer{font-size:17px;color:var(--wink-light);line-height:1.8;max-height:0;overflow:hidden;transition:max-height 0.35s ease;font-weight:300;}
   .wp-faq-toggle:checked ~ .wp-faq-answer{max-height:300px;padding-bottom:20px;}
 
   .wp-how{background:var(--wblue);padding:52px 24px 56px;position:relative;}
   .wp-how::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--wcobalt);}
   .wp-how-inner{max-width:640px;margin:0 auto;}
-  .wp-how-eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--wbrass);margin-bottom:10px;}
+  .wp-how-eyebrow{font-size:12.5px;letter-spacing:3px;text-transform:uppercase;color:var(--wbrass);margin-bottom:10px;}
   .wp-how-title{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,6vw,34px);font-weight:300;font-style:italic;color:var(--wwhite);margin-bottom:40px;line-height:1.2;}
   .wp-how-steps{display:flex;flex-direction:column;gap:0;margin-bottom:40px;}
   .wp-how-step{display:flex;align-items:flex-start;gap:20px;padding:24px 0;border-bottom:1px solid rgba(255,255,255,0.08);}
   .wp-how-step:first-child{border-top:1px solid rgba(255,255,255,0.08);}
-  .wp-how-num{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:300;color:var(--wbrass);line-height:1;flex-shrink:0;width:48px;opacity:0.7;}
+  .wp-how-num{font-family:'Cormorant Garamond',serif;font-size:43.5px;font-weight:300;color:var(--wbrass);line-height:1;flex-shrink:0;width:48px;opacity:0.7;}
   .wp-how-step-content{flex:1;padding-top:4px;}
-  .wp-how-step-title{font-size:18px;font-weight:500;color:var(--wwhite);margin-bottom:6px;line-height:1.3;}
-  .wp-how-step-sub{font-size:15.5px;color:rgba(255,255,255,0.5);line-height:1.7;font-weight:300;}
+  .wp-how-step-title{font-size:19.5px;font-weight:500;color:var(--wwhite);margin-bottom:6px;line-height:1.3;}
+  .wp-how-step-sub{font-size:17px;color:rgba(255,255,255,0.5);line-height:1.7;font-weight:300;}
 
   .wp-form{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:4px;padding:20px;display:flex;flex-direction:column;gap:12px;}
   .wp-form-row{display:flex;gap:12px;flex-wrap:wrap;}
   .wp-form-row > div{flex:1;min-width:140px;}
-  .wp-fl{display:block;font-size:12px;font-weight:500;letter-spacing:0.5px;text-transform:uppercase;color:var(--wbrass-light);margin-bottom:6px;}
-  .wp-fi{width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);border-radius:2px;padding:12px 14px;font-size:16.5px;color:var(--wwhite);font-family:'DM Sans',sans-serif;outline:none;}
+  .wp-fl{display:block;font-size:13.5px;font-weight:500;letter-spacing:0.5px;text-transform:uppercase;color:var(--wbrass-light);margin-bottom:6px;}
+  .wp-fi{width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);border-radius:2px;padding:12px 14px;font-size:18px;color:var(--wwhite);font-family:'DM Sans',sans-serif;outline:none;}
   .wp-fi::placeholder{color:rgba(255,255,255,0.35);}
   .wp-checks{display:flex;flex-direction:column;gap:8px;}
   .wp-exp-list{display:flex;flex-direction:column;gap:8px;}
   .wp-exp-row{display:flex;flex-direction:column;gap:6px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:2px;padding:10px 14px;}
-  .wp-exp-name-flat{font-size:14px;font-weight:600;color:rgba(255,255,255,0.95);}
+  .wp-exp-name-flat{font-size:15.5px;font-weight:600;color:rgba(255,255,255,0.95);}
   .wp-exp-select{width:100%;}
-  .wp-exp-hint{font-size:12px;color:rgba(255,255,255,0.4);font-style:italic;margin-top:6px;}
+  .wp-exp-hint{font-size:13.5px;color:rgba(255,255,255,0.4);font-style:italic;margin-top:6px;}
   @media(min-width:600px){
     .wp-exp-row{flex-direction:row;align-items:center;justify-content:space-between;gap:14px;}
     .wp-exp-select{width:auto;min-width:220px;}
   }
-  .wp-check{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:2px;padding:11px 14px;font-size:15.5px;color:rgba(255,255,255,0.85);cursor:pointer;}
+  .wp-check{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:2px;padding:11px 14px;font-size:17px;color:rgba(255,255,255,0.85);cursor:pointer;}
   .wp-check input{width:18px;height:18px;accent-color:var(--wbrass);flex-shrink:0;}
-  .wp-how-cta-btn{display:block;width:100%;background:var(--wbrass);color:var(--wmahogany);padding:16px 36px;border-radius:2px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;letter-spacing:2px;text-transform:uppercase;text-align:center;margin-top:8px;}
+  .wp-how-cta-btn{display:block;width:100%;background:var(--wbrass);color:var(--wmahogany);padding:16px 36px;border-radius:2px;font-family:'DM Sans',sans-serif;font-size:14.5px;font-weight:500;letter-spacing:2px;text-transform:uppercase;text-align:center;margin-top:8px;}
 
   @media(min-width:720px){
     .wp-hero{padding:72px 48px 64px;}
@@ -638,9 +633,9 @@ import Layout from '../layouts/Layout.astro';
     .wp-card{border-right:1px solid var(--wborder);}
     .wp-card-body{padding:24px 24px 28px;}
     .wp-cta-strip{padding:48px;}
-    .wp-cta-strip-title{font-size:38px;}
+    .wp-cta-strip-title{font-size:39.5px;}
     .wp-faq{padding:56px 48px;}
-    .wp-faq-title{font-size:34px;}
+    .wp-faq-title{font-size:35.5px;}
     .wp-tulum-strip{padding:16px 48px;}
     .wp-disclaimer{padding:10px 48px;}
     .wp-banner{padding:11px 32px;}
@@ -650,7 +645,7 @@ import Layout from '../layouts/Layout.astro';
     .wp-how-step:first-child{border-top:none;padding-left:0;}
     .wp-how-step:last-child{border-right:none;padding-right:0;}
     .wp-how-step:not(:first-child){padding-left:32px;}
-    .wp-how-num{width:auto;font-size:50px;}
+    .wp-how-num{width:auto;font-size:51.5px;}
     .wp-how-cta-btn{width:auto;display:inline-block;}
   }
   @media(min-width:1024px){
