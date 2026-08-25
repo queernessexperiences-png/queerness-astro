@@ -416,85 +416,62 @@ import Layout from '../layouts/Layout.astro';
       <div><label class="wp-fl">WhatsApp (include country code)</label><input class="wp-fi" type="tel" name="whatsapp" required></div>
       <div><label class="wp-fl">Pronouns</label><input class="wp-fi" type="text" name="pronouns" required></div>
       <div>
-        <label class="wp-fl">Which experience(s), and which date? Pick a date for any you're interested in, leave the rest as "Not interested"</label>
+        <label class="wp-fl">Tours — check every date you'd be open to. Checking more than one helps us hit the minimum group faster</label>
         <div class="wp-exp-list">
-          <div class="wp-exp-row">
+          <div class="wp-exp-row wp-exp-row-tour">
             <span class="wp-exp-name">Prehispanic Cooking Class</span>
-            <select class="wp-fi wp-exp-select" name="date-cooking-class">
-              <option value="Not interested" selected>Not interested</option>
-              <option value="Mon Nov 9, morning">Mon Nov 9, morning</option>
-              <option value="Other date">Other date (tell us below)</option>
-            </select>
+            <div class="wp-exp-dates">
+              <label class="wp-check wp-check-sm"><input type="checkbox" name="cooking-class-nov9" value="Mon Nov 9, morning"> Mon Nov 9, morning</label>
+              <label class="wp-check wp-check-sm wp-check-owngroup"><input type="checkbox" name="cooking-class-owngroup" value="yes"> I have my own group of 4+, flexible on date</label>
+            </div>
           </div>
-          <div class="wp-exp-row">
+          <div class="wp-exp-row wp-exp-row-tour">
             <span class="wp-exp-name">Roma/Condesa Food & Culture Tour</span>
-            <select class="wp-fi wp-exp-select" name="date-roma-condesa">
-              <option value="Not interested" selected>Not interested</option>
-              <option value="Tue Nov 10, morning">Tue Nov 10, morning</option>
-              <option value="Wed Nov 11, evening">Wed Nov 11, evening</option>
-              <option value="Other date">Other date (tell us below)</option>
-            </select>
+            <div class="wp-exp-dates">
+              <label class="wp-check wp-check-sm"><input type="checkbox" name="roma-condesa-nov10" value="Tue Nov 10, morning"> Tue Nov 10, morning</label>
+              <label class="wp-check wp-check-sm"><input type="checkbox" name="roma-condesa-nov11" value="Wed Nov 11, evening"> Wed Nov 11, evening</label>
+              <label class="wp-check wp-check-sm wp-check-owngroup"><input type="checkbox" name="roma-condesa-owngroup" value="yes"> I have my own group of 4+, flexible on date</label>
+            </div>
           </div>
-          <div class="wp-exp-row">
+          <div class="wp-exp-row wp-exp-row-tour">
             <span class="wp-exp-name">San Ángel Market Day</span>
-            <select class="wp-fi wp-exp-select" name="date-san-angel">
-              <option value="Not interested" selected>Not interested</option>
-              <option value="Sat Nov 7, morning">Sat Nov 7, morning (only date)</option>
-              <option value="Other date">Other date (tell us below)</option>
-            </select>
+            <div class="wp-exp-dates">
+              <label class="wp-check wp-check-sm"><input type="checkbox" name="san-angel-nov7" value="Sat Nov 7, morning (only date)"> Sat Nov 7, morning (only date)</label>
+              <label class="wp-check wp-check-sm wp-check-owngroup"><input type="checkbox" name="san-angel-owngroup" value="yes"> I have my own group of 4+, flexible on date</label>
+            </div>
           </div>
-          <div class="wp-exp-row">
+          <div class="wp-exp-row wp-exp-row-tour">
             <span class="wp-exp-name">Polanco Mezcal & Snacks</span>
-            <select class="wp-fi wp-exp-select" name="date-mezcal">
-              <option value="Not interested" selected>Not interested</option>
-              <option value="Fri Nov 6, evening">Fri Nov 6, evening</option>
-              <option value="Sun Nov 8, evening">Sun Nov 8, evening</option>
-              <option value="Wed Nov 11, evening">Wed Nov 11, evening</option>
-              <option value="Other date">Other date (tell us below)</option>
-            </select>
+            <div class="wp-exp-dates">
+              <label class="wp-check wp-check-sm"><input type="checkbox" name="mezcal-nov6" value="Fri Nov 6, evening"> Fri Nov 6, evening</label>
+              <label class="wp-check wp-check-sm"><input type="checkbox" name="mezcal-nov8" value="Sun Nov 8, evening"> Sun Nov 8, evening</label>
+              <label class="wp-check wp-check-sm"><input type="checkbox" name="mezcal-nov11" value="Wed Nov 11, evening"> Wed Nov 11, evening</label>
+              <label class="wp-check wp-check-sm wp-check-owngroup"><input type="checkbox" name="mezcal-owngroup" value="yes"> I have my own group of 4+, flexible on date</label>
+            </div>
           </div>
-          <div class="wp-exp-row">
+          <div class="wp-exp-row wp-exp-row-tour">
             <span class="wp-exp-name">Sapphic Shopping & Breakfast City Tour</span>
-            <select class="wp-fi wp-exp-select" name="date-sapphic-shopping">
-              <option value="Not interested" selected>Not interested</option>
-              <option value="Fri Nov 13, morning">Fri Nov 13, morning (only date)</option>
-              <option value="Other date">Other date (tell us below)</option>
-            </select>
-          </div>
-          <div class="wp-exp-row">
-            <span class="wp-exp-name">Drag Spectacular at Somos Voces</span>
-            <select class="wp-fi wp-exp-select" name="date-drag-show">
-              <option value="Not interested" selected>Not interested</option>
-              <option value="Mon Nov 9, evening">Mon Nov 9, evening (only date)</option>
-              <option value="Other date">Other date (tell us below)</option>
-            </select>
-          </div>
-          <div class="wp-exp-row">
-            <span class="wp-exp-name">Rooftop Party at Revuelta</span>
-            <select class="wp-fi wp-exp-select" name="date-revuelta">
-              <option value="Not interested" selected>Not interested</option>
-              <option value="Tue Nov 10, evening">Tue Nov 10, evening (only date)</option>
-              <option value="Other date">Other date (tell us below)</option>
-            </select>
-          </div>
-          <div class="wp-exp-row">
-            <span class="wp-exp-name">Lucha Libre + Tacos</span>
-            <select class="wp-fi wp-exp-select" name="date-lucha-libre">
-              <option value="Not interested" selected>Not interested</option>
-              <option value="Wed Nov 11, evening">Wed Nov 11, evening (only date)</option>
-              <option value="Other date">Other date (tell us below)</option>
-            </select>
+            <div class="wp-exp-dates">
+              <label class="wp-check wp-check-sm"><input type="checkbox" name="sapphic-shopping-nov13" value="Fri Nov 13, morning (only date)"> Fri Nov 13, morning (only date)</label>
+              <label class="wp-check wp-check-sm wp-check-owngroup"><input type="checkbox" name="sapphic-shopping-owngroup" value="yes"> I have my own group of 4+, flexible on date</label>
+            </div>
           </div>
         </div>
       </div>
-      <div><label class="wp-fl">If you picked "Other date" for anything, or a specific date doesn't work, tell us here</label><input class="wp-fi" type="text" name="dates-other" placeholder="e.g. I'd love the cooking class but need a different day"></div>
+
+      <div>
+        <label class="wp-fl">Nightlife — check any you'd like to join. No group minimum for these</label>
+        <div class="wp-checks">
+          <label class="wp-check"><input type="checkbox" name="nightlife-drag-show" value="yes"> Drag Spectacular at Somos Voces, Mon Nov 9</label>
+          <label class="wp-check"><input type="checkbox" name="nightlife-revuelta" value="yes"> Rooftop Party at Revuelta, Tue Nov 10</label>
+          <label class="wp-check"><input type="checkbox" name="nightlife-lucha-libre" value="yes"> Lucha Libre + Tacos, Wed Nov 11</label>
+        </div>
+      </div>
+
+      <div><label class="wp-fl">None of these dates work, or want something custom? Tell us here</label><input class="wp-fi" type="text" name="dates-other" placeholder="e.g. I'd love the cooking class but need a different day"></div>
       <div class="wp-form-row">
         <div><label class="wp-fl">How many people in your group, including you?</label><input class="wp-fi" type="number" name="group-size" min="1" value="1" required></div>
       </div>
-      <label class="wp-check" style="align-items:flex-start;">
-        <input type="checkbox" name="custom-tour-interest" value="yes" style="margin-top:2px;">
-        <span>I have a group of 4 or more and would like to organize a private/custom tour instead of joining a scheduled date.</span>
-      </label>
       <div><label class="wp-fl">Group member names (optional)</label><textarea class="wp-fi" name="group-members" rows="2" placeholder="If you know who's joining you, list names here"></textarea></div>
       <div><label class="wp-fl">Anything else we should know?</label><textarea class="wp-fi" name="message" rows="3" required></textarea></div>
       <button type="submit" class="wp-how-cta-btn" style="border:none;cursor:pointer;">Pre-register — no cost</button>
@@ -632,14 +609,12 @@ import Layout from '../layouts/Layout.astro';
   .wp-fi{width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);border-radius:2px;padding:12px 14px;font-size:16.5px;color:var(--wwhite);font-family:'DM Sans',sans-serif;outline:none;}
   .wp-fi::placeholder{color:rgba(255,255,255,0.35);}
   .wp-checks{display:flex;flex-direction:column;gap:8px;}
-  .wp-exp-list{display:flex;flex-direction:column;gap:10px;}
-  .wp-exp-row{display:flex;flex-direction:column;gap:6px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:2px;padding:12px 14px;}
-  .wp-exp-name{font-size:14px;font-weight:500;color:rgba(255,255,255,0.9);}
-  .wp-exp-select{width:100%;}
-  @media(min-width:600px){
-    .wp-exp-row{flex-direction:row;align-items:center;justify-content:space-between;gap:14px;}
-    .wp-exp-select{width:auto;min-width:220px;}
-  }
+  .wp-exp-list{display:flex;flex-direction:column;gap:12px;}
+  .wp-exp-row-tour{display:flex;flex-direction:column;gap:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:2px;padding:14px;}
+  .wp-exp-name{font-size:15px;font-weight:600;color:rgba(255,255,255,0.95);}
+  .wp-exp-dates{display:flex;flex-direction:column;gap:6px;}
+  .wp-check-sm{padding:8px 12px;font-size:13.5px;}
+  .wp-check-owngroup{border-color:rgba(212,176,110,0.4);background:rgba(184,146,74,0.08);}
   .wp-check{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:2px;padding:11px 14px;font-size:15.5px;color:rgba(255,255,255,0.85);cursor:pointer;}
   .wp-check input{width:18px;height:18px;accent-color:var(--wbrass);flex-shrink:0;}
   .wp-how-cta-btn{display:block;width:100%;background:var(--wbrass);color:var(--wmahogany);padding:16px 36px;border-radius:2px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;letter-spacing:2px;text-transform:uppercase;text-align:center;margin-top:8px;}
