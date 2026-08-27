@@ -179,8 +179,8 @@ import Layout from '../layouts/Layout.astro';
   <div class="wp-card">
     <div class="wp-card-photo-wrap">
       <img class="wp-card-photo" loading="lazy" src="https://static.wixstatic.com/media/8390e6_d99d0ab09c49410abb2935a7b27070b8~mv2.jpg" alt="San Angel market day Mexico City" style="object-position: 15% center;">
-      <div class="wp-card-tag">Culture · Sat only</div>
-      <div class="wp-card-date">Nov 7 only</div>
+      <div class="wp-card-tag">Culture</div>
+      <div class="wp-card-date">Nov 7</div>
     </div>
     <div class="wp-card-body">
       <div class="wp-card-title">San Ángel Market Day</div>
@@ -604,8 +604,8 @@ import Layout from '../layouts/Layout.astro';
   .wp-nightlife-card::before{background:linear-gradient(90deg,var(--wcopper) 0%,var(--wcopper-light) 100%);}
   .wp-card-photo-wrap{position:relative;width:100%;aspect-ratio:1/1;overflow:hidden;background:var(--wblue);}
   .wp-card-photo{width:100%;height:100%;object-fit:cover;display:block;}
-  .wp-card-tag{position:absolute;bottom:12px;left:12px;background:rgba(30,29,24,0.82);color:rgba(255,255,255,0.9);font-size:11.5px;letter-spacing:2px;text-transform:uppercase;padding:5px 10px;border-radius:1px;}
-  .wp-card-date{position:absolute;bottom:12px;right:12px;background:var(--wbrass);color:var(--wmahogany);font-size:12.5px;font-weight:500;letter-spacing:1px;padding:5px 10px;border-radius:1px;}
+  .wp-card-tag{position:absolute;bottom:12px;left:12px;max-width:56%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:rgba(30,29,24,0.82);color:rgba(255,255,255,0.9);font-size:10px;letter-spacing:1px;text-transform:uppercase;padding:5px 9px;border-radius:1px;}
+  .wp-card-date{position:absolute;bottom:12px;right:12px;max-width:34%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:var(--wbrass);color:var(--wmahogany);font-size:11.5px;font-weight:500;letter-spacing:0.5px;padding:5px 9px;border-radius:1px;}
   .wp-card-body{padding:20px 20px 24px;}
   .wp-card-title{font-family:'Cormorant Garamond',serif;font-size:27.5px;font-weight:600;color:var(--wblue);line-height:1.2;margin-bottom:12px;}
   .wp-nightlife-card .wp-card-title{color:var(--wmahogany);}
