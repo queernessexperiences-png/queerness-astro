@@ -87,10 +87,10 @@ import Layout from '../layouts/Layout.astro';
 
     <div class="wp-guides">
       <div class="wp-guide">
-        <img class="wp-guide-photo" src="https://static.wixstatic.com/media/8390e6_da713041a20249578f97f05814aa3d88~mv2.jpg" alt="Santi Solís queer guide Mexico City">
+        <img class="wp-guide-photo" src="https://static.wixstatic.com/media/8390e6_da713041a20249578f97f05814aa3d88~mv2.jpg" alt="Santi Solis queer guide Mexico City">
         <div>
           <div class="wp-guide-label">Creators of these experiences</div>
-          <div class="wp-guide-text"><strong>Santi Solís</strong> (they/them), former UCLA wildlife biologist, founder of Queerness Experiences, IGLTA speaker, recently featured in a FOLX campaign.</div>
+          <div class="wp-guide-text"><strong>Santi Solis</strong> (they/them), former UCLA wildlife biologist, founder of Queerness Experiences, IGLTA speaker, recently featured in a FOLX campaign.</div>
         </div>
       </div>
       <div class="wp-guide">
@@ -459,39 +459,66 @@ import Layout from '../layouts/Layout.astro';
         <div><label class="wp-fl">First name</label><input class="wp-fi" type="text" name="first-name" required></div>
         <div><label class="wp-fl">Last name</label><input class="wp-fi" type="text" name="last-name" required></div>
       </div>
+      <div><label class="wp-fl">Pronouns</label><input class="wp-fi" type="text" name="pronouns"></div>
       <div><label class="wp-fl">Email</label><input class="wp-fi" type="email" name="email" required></div>
       <div><label class="wp-fl">WhatsApp (include country code)</label><input class="wp-fi" type="tel" name="whatsapp" required></div>
-      <div><label class="wp-fl">Pronouns</label><input class="wp-fi" type="text" name="pronouns"></div>
       <div>
-        <label class="wp-fl">Tours — pick a suggested date or type your own. Leave blank if not interested</label>
+        <label class="wp-fl">Tours — pick a date. Leave blank if not interested</label>
         <div class="wp-exp-list">
           <div class="wp-exp-row">
             <span class="wp-exp-name-flat">Prehispanic Cooking Class</span>
-            <input class="wp-fi wp-exp-select" type="text" name="date-cooking-class" list="dl-cooking-class" placeholder="Pick or type a date" autocomplete="off">
-            <datalist id="dl-cooking-class"><option value="Mon Nov 9, morning"></option></datalist>
+            <select class="wp-fi wp-exp-select" name="date-cooking-class">
+              <option value="">Not interested</option>
+              <option value="Mon Nov 9, morning">Mon Nov 9, morning</option>
+              <option value="other">Other date (tell us below)</option>
+            </select>
           </div>
+          <div class="wp-exp-other" data-other-for="date-cooking-class" hidden><input class="wp-fi" type="text" name="date-cooking-class-other" placeholder="What date would work for you?"></div>
+
           <div class="wp-exp-row">
             <span class="wp-exp-name-flat">Roma/Condesa Food & Culture Tour</span>
-            <input class="wp-fi wp-exp-select" type="text" name="date-roma-condesa" list="dl-roma-condesa" placeholder="Pick or type a date" autocomplete="off">
-            <datalist id="dl-roma-condesa"><option value="Tue Nov 10, morning"></option><option value="Wed Nov 11, evening"></option></datalist>
+            <select class="wp-fi wp-exp-select" name="date-roma-condesa">
+              <option value="">Not interested</option>
+              <option value="Tue Nov 10, morning">Tue Nov 10, morning</option>
+              <option value="Wed Nov 11, evening">Wed Nov 11, evening</option>
+              <option value="other">Other date (tell us below)</option>
+            </select>
           </div>
+          <div class="wp-exp-other" data-other-for="date-roma-condesa" hidden><input class="wp-fi" type="text" name="date-roma-condesa-other" placeholder="What date would work for you?"></div>
+
           <div class="wp-exp-row">
             <span class="wp-exp-name-flat">San Ángel Market Day</span>
-            <input class="wp-fi wp-exp-select" type="text" name="date-san-angel" list="dl-san-angel" placeholder="Pick or type a date" autocomplete="off">
-            <datalist id="dl-san-angel"><option value="Sat Nov 7, morning (only date)"></option></datalist>
+            <select class="wp-fi wp-exp-select" name="date-san-angel">
+              <option value="">Not interested</option>
+              <option value="Sat Nov 7, morning">Sat Nov 7, morning (Saturdays only)</option>
+              <option value="other">Other date (tell us below)</option>
+            </select>
           </div>
+          <div class="wp-exp-other" data-other-for="date-san-angel" hidden><input class="wp-fi" type="text" name="date-san-angel-other" placeholder="What date would work for you?"></div>
+
           <div class="wp-exp-row">
             <span class="wp-exp-name-flat">Polanco Mezcal & Snacks</span>
-            <input class="wp-fi wp-exp-select" type="text" name="date-mezcal" list="dl-mezcal" placeholder="Pick or type a date" autocomplete="off">
-            <datalist id="dl-mezcal"><option value="Fri Nov 6, evening"></option><option value="Sun Nov 8, evening"></option><option value="Wed Nov 11, evening"></option></datalist>
+            <select class="wp-fi wp-exp-select" name="date-mezcal">
+              <option value="">Not interested</option>
+              <option value="Fri Nov 6, evening">Fri Nov 6, evening</option>
+              <option value="Sun Nov 8, evening">Sun Nov 8, evening</option>
+              <option value="Wed Nov 11, evening">Wed Nov 11, evening</option>
+              <option value="other">Other date (tell us below)</option>
+            </select>
           </div>
+          <div class="wp-exp-other" data-other-for="date-mezcal" hidden><input class="wp-fi" type="text" name="date-mezcal-other" placeholder="What date would work for you?"></div>
+
           <div class="wp-exp-row">
             <span class="wp-exp-name-flat">Sapphic Shopping & Breakfast City Tour</span>
-            <input class="wp-fi wp-exp-select" type="text" name="date-sapphic-shopping" list="dl-sapphic-shopping" placeholder="Pick or type a date" autocomplete="off">
-            <datalist id="dl-sapphic-shopping"><option value="Fri Nov 13, morning (only date)"></option></datalist>
+            <select class="wp-fi wp-exp-select" name="date-sapphic-shopping">
+              <option value="">Not interested</option>
+              <option value="Fri Nov 13, morning">Fri Nov 13, morning</option>
+              <option value="other">Other date (tell us below)</option>
+            </select>
           </div>
+          <div class="wp-exp-other" data-other-for="date-sapphic-shopping" hidden><input class="wp-fi" type="text" name="date-sapphic-shopping-other" placeholder="What date would work for you?"></div>
         </div>
-        <p class="wp-exp-hint">Prehispanic Cooking Class needs a group of 6+ to confirm. Every other tour needs 4+.</p>
+        <p class="wp-exp-hint">These are the dates I'm already running, not just suggestions, though I'm open to adding more if there's enough interest. Prehispanic Cooking Class needs a group of 6+ to confirm. Every other tour needs 4+.</p>
       </div>
 
       <div>
@@ -521,9 +548,17 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
       <div><label class="wp-fl">Group member names (optional)</label><textarea class="wp-fi" name="group-members" rows="2" placeholder="If you know who's joining you, list names here"></textarea></div>
-      <div><label class="wp-fl">Anything else we should know?</label><textarea class="wp-fi" name="message" rows="3" required></textarea></div>
+      <div><label class="wp-fl">Anything else we should know?</label><textarea class="wp-fi" name="message" rows="3"></textarea></div>
       <button type="submit" class="wp-how-cta-btn" style="border:none;cursor:pointer;">Pre-register — no cost</button>
     </form>
+    <script>
+      document.querySelectorAll('.wp-exp-select[name^="date-"]').forEach(function(sel){
+        sel.addEventListener('change', function(){
+          var other = document.querySelector('[data-other-for="' + sel.name + '"]');
+          if (other) other.hidden = sel.value !== 'other';
+        });
+      });
+    </script>
   </div>
 </div>
 
@@ -662,6 +697,8 @@ import Layout from '../layouts/Layout.astro';
   .wp-exp-name-flat{font-size:15.5px;font-weight:600;color:rgba(255,255,255,0.95);}
   .wp-exp-select{width:100%;}
   .wp-exp-hint{font-size:13.5px;color:rgba(255,255,255,0.4);font-style:italic;margin-top:6px;}
+  .wp-exp-other{margin-top:-4px;}
+  .wp-exp-other input{width:100%;}
   @media(min-width:600px){
     .wp-exp-row{flex-direction:row;align-items:center;justify-content:space-between;gap:14px;}
     .wp-exp-select{width:auto;min-width:220px;}
