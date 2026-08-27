@@ -1,7 +1,7 @@
 ---
-title: "Free Queer Tulum Recommendations: Where I Actually Send Friends"
-description: "My free queer Tulum recommendations. The number one pre-Hispanic restaurant, the best specialty coffee, a queer-friendly cultural bar, plus how to get around and exchange money."
-keyword: "queer tulum recommendations"
+title: "LGBT Tulum: Free Recommendations From a Queer Local"
+description: "Free LGBT Tulum recommendations from a queer local. The number one pre-Hispanic restaurant, the best specialty coffee, a queer-friendly cultural bar, plus how to get around and exchange money."
+keyword: "lgbt tulum"
 pubDate: 2026-01-25
 draft: false
 faq:
