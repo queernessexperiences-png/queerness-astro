@@ -1,18 +1,30 @@
 # 301 REDIRECTS — old Wix URLs to new Astro URLs
+# Pulled directly from the live Wix sitemap (pages-sitemap.xml + blog-posts-sitemap.xml)
 # Format: /old-wix-path  /new-astro-path  301
-#
-# CRITICAL: Fill these in with your ACTUAL current Wix URLs before launch.
-# Every page currently indexed by Google needs a redirect so you keep your ranking.
-# Find your current URLs in Google Search Console (Coverage report) or by searching
-# site:queernessexperiences.com on Google.
-#
-# EXAMPLES (replace with your real Wix paths):
-# /tours-1              /tours              301
-# /queer-tulum-tours    /tours              301
-# /blog-1               /blog               301
-# /group-trips-1        /group-trips        301
-# /recommendations      /free-recommendations   301
-#
-# Your homepage stays at / so it needs no redirect — this protects your #1 ranking.
-# Add one line per old URL below:
+
+# PAGES
+/wpath-2026-mexico-city         /wpath-2026                             301
+/about                          /about                                  301
+/book-online                    /book                                   301
+/contact-us                     /book                                   301
+/queer-tulum-tours              /tours                                  301
+/personalized-tours             /tours                                  301
+/copy-of-personalized-tours     /tours                                  301
+/lgbt-tulum-guide                /blog/queer-tulum-recommendations       301
+/queer-tulum-recomendations      /blog/queer-tulum-recommendations       301
+/reviews                        /                                       301
+/faqs                           /                                       301
+/coming-soon-01                 /thank-you                              301
+
+# NEEDS YOUR CALL — best guess for now, confirm before launch:
+/queer-mexico-city-tours        /group-trips                            301
+/event-list                     /group-trips                            301
+
+# BLOG POSTS
+# Your best-performing URL (currently the "safe & friendly" content) — redirecting
+# it to the free recs post per your call to make it the recommendations URL again:
+/post/lgbt-tulum-travel-guide   /blog/queer-tulum-recommendations       301
+/post/is-tulum-lgbtq-friendly   /blog/is-tulum-queer-trans-friendly      301
+# No equivalent content on the new site yet — sending to the homepage for now:
+/post/volunteering-in-tulum     /                                       301
 
