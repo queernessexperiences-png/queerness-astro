@@ -3,15 +3,21 @@ import Layout from '../layouts/Layout.astro';
 ---
 <Layout title="About Santi Solís | Queerness Experiences" description={"Meet Santi Solís (they/them), a queer, Mexican former UCLA wildlife biologist who's called Tulum home since 2017 and founded Queerness Experiences."}>
 
-<section class="guide" id="about" style="border-top:none;position:relative;overflow:hidden;">
+<section class="guide about-hero" id="about" style="border-top:none;position:relative;overflow:hidden;">
   <div class="shape-y"></div>
+  <div class="shape-t"></div>
   <div class="guide-inner" style="position:relative;z-index:2;">
-    <p class="sec-eye" style="color:var(--yellow);">About</p>
+    <p class="sec-eye" style="color:var(--yellow);position:relative;z-index:2;">About</p>
     <h2>I'm Santi.<br>Nice to meet you.</h2>
     <p class="guide-lead">Queer, Mexican, and a Tulum local since 2017. I create travel experiences for queer and trans people, rooted in the places and people that actually make this town special.</p>
     <div class="guide-photo">PHOTO — SANTI PORTRAIT</div>
   </div>
 </section>
+
+<style>
+  .about-hero h2{-webkit-text-stroke:1.5px rgba(0,0,0,0.3);paint-order:stroke fill;max-width:640px;position:relative;z-index:2;}
+  .about-hero .guide-lead,.about-hero .guide-photo{position:relative;z-index:2;}
+</style>
 
 <section class="creds" aria-label="Credentials" style="background:var(--bone);padding:var(--s-lg) var(--s-sm);">
   <div class="cred"><div class="cnum">01</div><div><div class="ct">UCLA Wildlife Biologist</div><div class="cd">Former field biologist. The science behind every nature-based tour.</div></div></div>
@@ -21,7 +27,7 @@ import Layout from '../layouts/Layout.astro';
 </section>
 
 <section style="background:var(--white);padding:var(--s-md) var(--s-sm);text-align:center;">
-  <p style="max-width:520px;margin:0 auto;font-size:15px;line-height:1.7;color:var(--muted);">I also work with hotels and destinations on LGBT inclusion. <a href="/work-with-me" style="color:var(--magenta);font-weight:700;">See how we could work together →</a></p>
+  <p style="max-width:520px;margin:0 auto;font-size:15px;line-height:1.7;color:var(--muted);">I also work with hotels and destinations on LGBTQ+ inclusion. <a href="/work-with-me" style="color:var(--magenta);font-weight:700;">See how we could work together →</a></p>
 </section>
 
 <section style="background:var(--white);padding:var(--s-lg) var(--s-sm);max-width:680px;margin:0 auto;">
