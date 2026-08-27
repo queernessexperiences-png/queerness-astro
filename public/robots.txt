@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /qte-guidebook-83fk2p9x
-Disallow: /downloads/
 
 Sitemap: https://queernessexperiences.com/sitemap-index.xml
