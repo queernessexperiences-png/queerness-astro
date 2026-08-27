@@ -3,6 +3,53 @@ import Layout from '../layouts/Layout.astro';
 ---
 <Layout title="Queer & Trans Experiences in Mexico City — WPATH 2026 | Queerness Experiences" description={"Eight curated queer and trans experiences in Mexico City for WPATH 2026 attendees. Tours, food, mezcal, drag, and lucha libre, led by queer Mexican locals."}>
 
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are these experiences welcoming for trans attendees?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Every vendor and venue we work with is vetted for queer and trans inclusion. These experiences are built by and for our community, trans attendees are not just welcome, they're who we had in mind when designing every experience." }
+    },
+    {
+      "@type": "Question",
+      "name": "When do I pay?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nothing is due at pre-registration. Once minimum group size is reached, we'll send you a booking link to pay and officially secure your spot. No surprises." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are these tours only for WPATH attendees?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The daytime tours are exclusively for WPATH 2026 attendees. The nightlife events are WPATH-focused but open to others, they're public events and we'll be attending as a group." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's included in the price?",
+      "acceptedAnswer": { "@type": "Answer", "text": "All tours include food or tastings, a non-alcoholic drink, and transportation between stops once the tour begins. Getting to the meeting point is your responsibility, we'll send exact location and logistics once your spot is confirmed. The Mezcal tasting includes the mezcal plus snacks. The Lucha Libre price includes arena entrance, tacos, and a non-alcoholic drink. Nightlife events are guest list, register your interest and we'll follow up with full details once confirmed." }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my conference schedule changes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We understand conference schedules can shift. If your schedule changes, we will do our best to move you to another available date, subject to availability. Reach out as soon as you know and we will work something out." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the cancellation policy?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Full refund if cancelled more than 2 weeks in advance. 50% refund between 1 and 2 weeks before the tour. Non-refundable under 1 week. If minimum group size is not reached, you receive a full refund regardless of timing." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I follow you on Instagram?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, follow us at @queerness_experiences_tulum for behind-the-scenes content, tour updates, and queer travel inspiration from Mexico." }
+    },
+    {
+      "@type": "Question",
+      "name": "Will I be misgendered in Spanish?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Spanish is a heavily gendered language, so it's possible, especially outside our team. When it happens, it's rarely coming from rejection, it's a language that hasn't caught up with gender-neutral phrasing the way English increasingly has. Our guides are trained to use your pronouns." }
+    }
+  ]
+})} />
+
 <!-- BANNER -->
 <div class="wp-banner">
   <div class="wp-banner-text">8 experiences · <strong>WPATH 2026 · Mexico City</strong></div>
