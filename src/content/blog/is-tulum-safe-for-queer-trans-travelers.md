@@ -1,7 +1,7 @@
 ---
-title: "Is Tulum Safe for Queer & Trans Travelers?"
-description: "An honest, local answer to whether Tulum is safe for queer and trans travelers. What to expect, where to go, and what nobody tells you before you arrive."
-keyword: "is tulum safe for queer travelers"
+title: "Is Tulum Safe for LGBT, Queer & Trans Travelers?"
+description: "An honest, local answer to whether Tulum is safe for LGBT, queer, and trans travelers. What to expect, where to go, and what nobody tells you before you arrive."
+keyword: "is tulum safe for lgbt travelers"
 pubDate: 2026-01-15
 draft: false
 faq:

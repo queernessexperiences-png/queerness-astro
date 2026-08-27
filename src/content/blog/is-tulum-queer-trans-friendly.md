@@ -1,7 +1,7 @@
 ---
-title: "Is Tulum Queer & Trans Friendly? A Local's Honest Answer"
-description: "A queer, nonbinary, Mexican local who's called Tulum home for 10 years gives you the real answer: safety, language, recommendations, and what it's actually like."
-keyword: "is tulum queer friendly"
+title: "Is Tulum LGBT Friendly? A Queer & Trans Local's Honest Answer"
+description: "Is Tulum LGBT friendly? A queer, nonbinary, Mexican local who's called Tulum home for 10 years gives you the real answer: safety, language, recommendations, and what it's actually like."
+keyword: "is tulum lgbt friendly"
 pubDate: 2026-01-20
 updatedDate: 2026-05-01
 draft: false
