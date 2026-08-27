@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Work With Me | LGBTQ+ Inclusion Consulting | Queerness Experiences" description={"LGBTQ+ inclusion consulting and speaking with Santi Solís, a queer, Mexican, Tulum-based founder helping hotels and destinations become places LGBTQ+ travelers actually trust."}>
+
+<section class="guide" id="work-with-me" style="border-top:none;">
+  <div class="guide-inner">
+    <p class="sec-eye" style="color:var(--yellow);">Work With Me</p>
+    <h2>LGBTQ+ inclusion, from<br><span class="accent">someone who lives it.</span></h2>
+    <p class="guide-lead">I help hotels, tour operators, and destinations become places LGBTQ+ and queer travelers actually trust, not through a generic training deck, but through the perspective of someone who is Mexican, queer, and based here in Tulum.</p>
+  </div>
+</section>
+
+<section class="offer">
+  <div class="offer-inner">
+    <p class="sec-eye" style="color:var(--yellow);">The offering</p>
+    <h2>LGBTQ+ Inclusion<br><span class="accent">Consulting</span></h2>
+    <p class="offer-lead">A collaborative walkthrough of your property or operation, covering how welcoming your booking process, staff training, signage, and guest experience actually are for LGBTQ+ travelers, with specific, practical recommendations you can act on.</p>
+    <p class="offer-lead">I also speak on queer and trans travel and inclusive hospitality, most recently on a panel at IGLTA's conference.</p>
+    <div class="offer-note">Pricing and scope depend on your property. Reach out below and let's talk.</div>
+  </div>
+</section>
+
+<section class="creds" aria-label="Credentials" style="background:var(--bone);padding:var(--s-lg) var(--s-sm);">
+  <div class="cred"><div class="cnum">01</div><div><div class="ct">Mexican, Tulum-Based</div><div class="cd">Not an outside consultant. I live in the community I'd be advising you on.</div></div></div>
+  <div class="cred"><div class="cnum">02</div><div><div class="ct">UCLA Wildlife Biologist</div><div class="cd">Former field biologist, a science background most travel consultants don't have.</div></div></div>
+  <div class="cred"><div class="cnum">03</div><div><div class="ct">IGLTA Conference Panelist</div><div class="cd">Spoke on a panel about creating queer experiences at IGLTA's conference.</div></div></div>
+</section>
+
+<section class="contact" id="contact">
+  <p class="sec-eye">Let's talk</p>
+  <h2>Tell me about<br>your property.</h2>
+  <p class="contact-lead">A few lines about your hotel, tour company, or destination, and what you're hoping to work on. I'll reply personally.</p>
+  <form class="form" name="work-with-me" method="POST" data-netlify="true" action="/thank-you">
+    <input type="hidden" name="form-name" value="work-with-me" />
+    <div style="display:flex;gap:12px;">
+      <div style="flex:1;"><label class="fl">First name</label><input class="fi" type="text" name="first-name" placeholder="First name" required></div>
+      <div style="flex:1;"><label class="fl">Last name</label><input class="fi" type="text" name="last-name" placeholder="Last name" required></div>
+    </div>
+    <div><label class="fl">Email</label><input class="fi" type="email" name="email" placeholder="your@email.com" required></div>
+    <div><label class="fl">Company or property name</label><input class="fi" type="text" name="company" placeholder="Hotel, tour company, or organization" required></div>
+    <div><label class="fl">What are you hoping to work on?</label><textarea class="fi" name="message" rows="4" placeholder="Inclusion consulting, speaking, or something else" style="resize:vertical;font-family:var(--fb);" required></textarea></div>
+    <button type="submit" class="fsub">Send</button>
+  </form>
+</section>
+
+</Layout>
+
+<style>
+  .offer{padding:var(--s-lg) var(--s-sm);max-width:680px;margin:0 auto;}
+  .offer-inner h2{font-family:var(--ff);font-size:34px;text-transform:uppercase;line-height:1;margin-bottom:var(--s-sm);color:var(--dark);}
+  .offer-inner .accent{color:var(--magenta);}
+  .offer-lead{font-size:17px;line-height:1.8;color:var(--dark);margin-bottom:var(--s-sm);}
+  .offer-note{font-size:14px;color:var(--muted);margin-top:var(--s-sm);font-style:italic;}
+</style>
