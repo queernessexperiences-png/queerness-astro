@@ -66,6 +66,7 @@ const faqSchema = faq && faq.length > 0 ? {
     .post-hero-ph{background:repeating-linear-gradient(135deg,rgba(26,26,24,0.05),rgba(26,26,24,0.05) 12px,rgba(26,26,24,0.09) 12px,rgba(26,26,24,0.09) 24px);display:flex;align-items:center;justify-content:center;font-family:var(--fb);font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(26,26,24,0.4);}
     /* Inline photo placeholder — drop one under any H2 in a post's markdown that needs a photo */
     .post-photo-ph{width:100%;aspect-ratio:4/3;border:3px solid var(--dark);box-shadow:4px 4px 0 var(--magenta);margin:var(--s-sm) 0 var(--s-md);background:repeating-linear-gradient(135deg,rgba(26,26,24,0.05),rgba(26,26,24,0.05) 12px,rgba(26,26,24,0.09) 12px,rgba(26,26,24,0.09) 24px);display:flex;align-items:center;justify-content:center;font-family:var(--fb);font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(26,26,24,0.4);text-align:center;padding:12px;}
+    .post-photo{width:100%;aspect-ratio:4/3;object-fit:cover;border:3px solid var(--dark);box-shadow:4px 4px 0 var(--magenta);margin:var(--s-sm) 0 var(--s-md);}
     /* Accordion — for posts with several short entries readers should skim, not read start to finish */
     .post-acc-item{border:3px solid var(--dark);margin-bottom:var(--s-sm);box-shadow:4px 4px 0 var(--dark);overflow:hidden;}
     .post-acc-toggle{position:absolute;opacity:0;pointer-events:none;}
