@@ -107,12 +107,20 @@ h1 .l4{font-size:50px;line-height:1;margin-top:2px;}
 .tours h2{font-family:var(--ff);font-size:36px;line-height:1.14;color:var(--dark);text-transform:uppercase;margin:0 0 var(--s-sm);}
 .tours-lead{font-size:18px;color:var(--muted);line-height:1.7;margin-bottom:var(--s-md);max-width:520px;}
 .flagship{background:var(--bone);border:3px solid var(--dark);box-shadow:5px 5px 0 var(--blue);margin-bottom:var(--s-md);}
-.flagship .ph{aspect-ratio:16/10;border:none;border-bottom:3px solid var(--dark);}
+.flagship .ph{aspect-ratio:4/3;border:none;border-bottom:3px solid var(--dark);}
 .flagship .flag-photo{object-fit:cover;width:100%;}
+.flagship .ph.flag-photo-tall{aspect-ratio:4/5;}
+.break-photo{width:100%;aspect-ratio:21/9;}
 .flag-tag{display:inline-block;background:var(--magenta);color:var(--white);font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-bottom:3px solid var(--dark);border-right:3px solid var(--dark);}
 .flag-body{padding:20px;}
 .flag-name{font-family:var(--ff);font-size:28px;color:var(--dark);text-transform:uppercase;line-height:1;margin-bottom:12px;}
-.flag-desc{font-size:15.5px;color:var(--muted);line-height:1.7;margin-bottom:var(--s-sm);}
+.flag-desc{font-size:15.5px;color:var(--muted);line-height:1.7;margin-bottom:8px;}
+.flag-toggle-check{position:absolute;opacity:0;pointer-events:none;}
+.flag-toggle-label{display:inline-block;font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--magenta);cursor:pointer;margin-bottom:var(--s-sm);}
+.flag-more{max-height:0;overflow:hidden;transition:max-height 0.3s ease;}
+.flag-toggle-check:checked ~ .flag-more{max-height:300px;margin-bottom:var(--s-sm);}
+.flag-more p{font-size:14.5px;color:var(--muted);line-height:1.65;}
+.flag-toggle-check:checked ~ .flag-toggle-label{display:none;}
 .flag-foot{display:flex;align-items:center;justify-content:space-between;border-top:2px solid var(--border);padding-top:14px;}
 .flag-price{font-size:13px;font-weight:700;color:var(--dark);}
 .flag-link{font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--magenta);border-bottom:2px solid var(--magenta);}

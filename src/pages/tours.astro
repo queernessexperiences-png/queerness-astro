@@ -130,7 +130,7 @@ import Layout from '../layouts/Layout.astro';
   <div class="tour">
     <input type="checkbox" id="tour5">
     <label class="tour-head" for="tour5">
-      <div class="tour-photo">PHOTO — MONKEY SPOTTING + LAGOON JUNGLE ADVENTURE (spider monkeys, zip line, lagoon)</div>
+      <img class="tour-photo" src="/images/punta-laguna-canoes.jpg" alt="Canoes at Punta Laguna, part of the Monkey Spotting jungle lagoon adventure">
       <div class="tour-tag">Most adventurous</div>
       <div class="tour-bar">
         <span class="tour-name">Monkey Spotting + Lagoon Jungle Adventure</span>
@@ -221,7 +221,7 @@ a{color:inherit;text-decoration:none;}
 .tour{border:3px solid var(--dark);margin-bottom:var(--s-sm);box-shadow:5px 5px 0 var(--dark);overflow:hidden;background:var(--bone);}
 .tour input{position:absolute;opacity:0;pointer-events:none;}
 .tour-head{cursor:pointer;position:relative;display:block;}
-.tour-photo{width:100%;aspect-ratio:3/2;background:repeating-linear-gradient(135deg,rgba(26,26,24,0.05),rgba(26,26,24,0.05) 12px,rgba(26,26,24,0.09) 12px,rgba(26,26,24,0.09) 24px);display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(26,26,24,0.4);text-align:center;padding:12px;border-bottom:3px solid var(--dark);}
+.tour-photo{width:100%;aspect-ratio:3/2;object-fit:cover;background:repeating-linear-gradient(135deg,rgba(26,26,24,0.05),rgba(26,26,24,0.05) 12px,rgba(26,26,24,0.09) 12px,rgba(26,26,24,0.09) 24px);display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(26,26,24,0.4);text-align:center;padding:12px;border-bottom:3px solid var(--dark);}
 .tour-bar{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;background:var(--white);}
 .tour-name{font-family:var(--ff);font-size:22px;color:var(--dark);text-transform:uppercase;line-height:1;}
 .tour-toggle{font-family:var(--fb);font-size:22px;font-weight:700;color:var(--magenta);line-height:1;transition:transform 0.2s;}

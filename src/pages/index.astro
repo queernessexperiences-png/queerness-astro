@@ -25,6 +25,9 @@ import Layout from '../layouts/Layout.astro';
   </div>
 </header>
 
+<!-- BREAK PHOTO — between hero and queer-friendly bar -->
+<div class="ph break-photo">PHOTO — TULUM STREET / COMMUNITY MOMENT</div>
+
 <!-- QUEER-FRIENDLY BAR — under hero -->
 <section style="background:var(--yellow);border-bottom:6px solid var(--blue);padding:20px var(--s-sm);">
   <p style="font-size:15px;color:var(--dark);line-height:1.6;font-weight:500;max-width:640px;margin:0 auto;text-align:center;">Tulum being queer and trans friendly surprises people. It's not a queer-centric town, but you'll see queer and gender-diverse people any time you walk out on the street. We're a regular part of the community and of daily life here.</p>
@@ -97,7 +100,10 @@ import Layout from '../layouts/Layout.astro';
         <div class="flag-tag">Most booked</div>
         <div class="flag-body">
           <div class="flag-name">Secret Cenote</div>
-          <p class="flag-desc">A cenote the ancient Maya built that almost nobody knows exists. You enter through a well, into water that's been here for thousands of years. Run by a local Maya family who genuinely loves this place.</p>
+          <p class="flag-desc">A cenote the ancient Maya built that almost nobody knows exists.</p>
+          <input type="checkbox" id="flagmore1" class="flag-toggle-check">
+          <label for="flagmore1" class="flag-toggle-label">+ More details</label>
+          <div class="flag-more"><p>You enter through a well, into water that's been here for thousands of years. Run by a local Maya family who genuinely loves this place.</p></div>
           <div class="flag-foot">
             <span class="flag-price">FROM 2,200 MXN / PERSON</span>
             <a href="/book" class="flag-link">BOOK →</a>
@@ -105,11 +111,14 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
       <div class="flagship">
-        <img class="ph flag-photo" src="/images/muyil-river-float-group.jpg" alt="Group floating in the mangroves on the Muyil River Float tour">
+        <img class="ph flag-photo flag-photo-tall" src="/images/muyil-river-float-group.jpg" alt="Group floating in the mangroves on the Muyil River Float tour">
         <div class="flag-tag">A local favorite</div>
         <div class="flag-body">
           <div class="flag-name">Muyil River Float</div>
-          <p class="flag-desc">Float through canals the ancient Maya carved through the jungle. Lagoons, mangroves, open sky. The most relaxing day in Tulum, and the one people keep talking about when they get home.</p>
+          <p class="flag-desc">Float through canals the ancient Maya carved through the jungle.</p>
+          <input type="checkbox" id="flagmore2" class="flag-toggle-check">
+          <label for="flagmore2" class="flag-toggle-label">+ More details</label>
+          <div class="flag-more"><p>Lagoons, mangroves, open sky. The most relaxing day in Tulum, and the one people keep talking about when they get home.</p></div>
           <div class="flag-foot">
             <span class="flag-price">FROM 3,400 MXN / PERSON</span>
             <a href="/book" class="flag-link">BOOK →</a>
@@ -123,7 +132,10 @@ import Layout from '../layouts/Layout.astro';
         <div class="ph">PHOTO — STORIES BEHIND THE STOREFRONT</div>
         <div class="flag-body">
           <div class="flag-name">Stories Behind the Storefront</div>
-          <p class="flag-desc">Find out what it's like to live in Tulum. Local shops, murals, and the real Tulum behind the tourist version, the town behind the town.</p>
+          <p class="flag-desc">Find out what it's like to live in Tulum.</p>
+          <input type="checkbox" id="flagmore3" class="flag-toggle-check">
+          <label for="flagmore3" class="flag-toggle-label">+ More details</label>
+          <div class="flag-more"><p>Local shops, murals, and the real Tulum behind the tourist version, the town behind the town.</p></div>
           <div class="flag-foot">
             <span class="flag-price">FROM 2,400 MXN / PERSON</span>
             <a href="/book" class="flag-link">BOOK →</a>
@@ -134,7 +146,10 @@ import Layout from '../layouts/Layout.astro';
         <div class="ph">PHOTO — STREET FOOD</div>
         <div class="flag-body">
           <div class="flag-name">Street Food</div>
-          <p class="flag-desc">Tacos, tostilocos, and elotes at the food trucks locals actually eat at. The guidebooks haven't found these spots yet. Food and drinks included.</p>
+          <p class="flag-desc">Tacos, tostilocos, and elotes at the food trucks locals actually eat at.</p>
+          <input type="checkbox" id="flagmore4" class="flag-toggle-check">
+          <label for="flagmore4" class="flag-toggle-label">+ More details</label>
+          <div class="flag-more"><p>The guidebooks haven't found these spots yet. Food and drinks included.</p></div>
           <div class="flag-foot">
             <span class="flag-price">FROM 2,000 MXN / PERSON</span>
             <a href="/book" class="flag-link">BOOK →</a>
@@ -142,10 +157,13 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
       <div class="flagship">
-        <div class="ph">PHOTO — MONKEY SPOTTING</div>
+        <img class="ph flag-photo" src="/images/punta-laguna-canoes.jpg" alt="Canoes at Punta Laguna, part of the Monkey Spotting jungle lagoon adventure">
         <div class="flag-body">
           <div class="flag-name">Monkey Spotting + Lagoon Jungle Adventure</div>
-          <p class="flag-desc">Wild spider monkeys, zip lining, canoeing, and a swim in a pristine lagoon. Led by a UCLA wildlife biologist, so you actually understand what you're looking at.</p>
+          <p class="flag-desc">Wild spider monkeys, zip lining, canoeing, and a swim in a pristine lagoon.</p>
+          <input type="checkbox" id="flagmore5" class="flag-toggle-check">
+          <label for="flagmore5" class="flag-toggle-label">+ More details</label>
+          <div class="flag-more"><p>Led by a UCLA wildlife biologist, so you actually understand what you're looking at.</p></div>
           <div class="flag-foot">
             <span class="flag-price">FROM 4,000 MXN / PERSON</span>
             <a href="/book" class="flag-link">BOOK →</a>
