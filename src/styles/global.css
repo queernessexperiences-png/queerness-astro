@@ -120,7 +120,9 @@ h1 .l4{font-size:50px;line-height:1;margin-top:2px;}
 .flag-more{max-height:0;overflow:hidden;transition:max-height 0.3s ease;}
 .flag-toggle-check:checked ~ .flag-more{max-height:300px;margin-bottom:var(--s-sm);}
 .flag-more p{font-size:14.5px;color:var(--muted);line-height:1.65;}
-.flag-toggle-check:checked ~ .flag-toggle-label{display:none;}
+.flag-toggle-label .less{display:none;}
+.flag-toggle-check:checked ~ .flag-toggle-label .more{display:none;}
+.flag-toggle-check:checked ~ .flag-toggle-label .less{display:inline;}
 .flag-foot{display:flex;align-items:center;justify-content:space-between;border-top:2px solid var(--border);padding-top:14px;}
 .flag-price{font-size:13px;font-weight:700;color:var(--dark);}
 .flag-link{font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--magenta);border-bottom:2px solid var(--magenta);}
