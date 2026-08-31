@@ -92,7 +92,7 @@ h1 .l4{font-size:50px;line-height:1;margin-top:2px;}
 .guide h2{font-family:var(--ff);font-size:36px;line-height:1.14;color:var(--white);text-transform:uppercase;margin:0 0 var(--s-sm);}
 .guide h2 .accent{color:var(--yellow);}
 .guide-lead{font-size:18px;color:rgba(255,255,255,0.92);line-height:1.7;margin-bottom:var(--s-md);max-width:520px;}
-.guide-photo{width:100%;aspect-ratio:16/9;background:repeating-linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0.1) 12px,rgba(255,255,255,0.16) 12px,rgba(255,255,255,0.16) 24px);border:3px solid var(--white);display:flex;align-items:center;justify-content:center;font-family:var(--fb);font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(255,255,255,0.7);text-align:center;padding:12px;margin-bottom:var(--s-md);}
+.guide-photo{width:100%;aspect-ratio:16/9;object-fit:cover;background:repeating-linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0.1) 12px,rgba(255,255,255,0.16) 12px,rgba(255,255,255,0.16) 24px);border:3px solid var(--white);display:flex;align-items:center;justify-content:center;font-family:var(--fb);font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(255,255,255,0.7);text-align:center;padding:12px;margin-bottom:var(--s-md);}
 .guide-box{background:var(--white);border:3px solid var(--dark);box-shadow:6px 6px 0 var(--dark);padding:24px;}
 .gprice{font-family:var(--ff);font-size:44px;color:var(--yellow);line-height:1;}
 .gplabel{font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-top:6px;margin-bottom:var(--s-md);}

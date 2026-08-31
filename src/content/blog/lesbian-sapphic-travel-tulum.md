@@ -3,7 +3,7 @@ title: "Lesbian & Sapphic Travel in Tulum: The Honest Local Guide"
 description: "A local, queer guide to lesbian and sapphic travel in Tulum, Mexico — where to go, what to expect, and the Luxury Lesbians Retreat for sapphic travelers 30+."
 keyword: "lesbian sapphic tulum travel"
 pubDate: 2026-08-30
-draft: false
+draft: true
 faq:
   - q: "Is Tulum good for lesbian and sapphic travelers?"
     a: "Yes. [ Add your honest, first-hand answer — why Tulum specifically works for lesbian and sapphic travelers. ]"
