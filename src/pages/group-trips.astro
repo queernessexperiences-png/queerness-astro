@@ -7,7 +7,7 @@ import Layout from '../layouts/Layout.astro';
   <div class="shape-y"></div>
   <p class="head-eye">★ Queer group trips · Latin America</p>
   <h1>Trips that actually<br>make it out of<br>the group chat.</h1>
-  <p>For anyone who wants to support local businesses and local projects along the way: queer and trans focused group trips. I'm bicultural, not just bilingual, raised between Mexico and the U.S., with family roots in Mexico City going back generations. That's what lets me bridge both worlds for solo travelers ready to make real connections. Tulum now, Mexico City coming soon.</p>
+  <p>For anyone who wants to support local businesses and local projects along the way: sapphic, queer, and trans focused group trips. I'm bicultural, not just bilingual, raised between Mexico and the U.S., with family roots in Mexico City going back generations. That's what lets me bridge both worlds for solo travelers ready to make real connections. Tulum now, Mexico City coming soon.</p>
 </header>
 
 <section class="trips">
@@ -15,7 +15,7 @@ import Layout from '../layouts/Layout.astro';
   <!-- QUEER CONNECT — CONFIRMED -->
   <div class="trip">
     <div class="trip-photo">
-      PHOTO — QUEER CONNECT TULUM TRIP
+      <img class="trip-photo-img" src="/images/group-trips-photo.jpg" alt="A group smiling together on a dock during a Queerness Experiences group trip in Tulum">
       <span class="trip-status status-confirmed">Booking now · January</span>
     </div>
     <div class="trip-body">
@@ -135,6 +135,7 @@ a{color:inherit;text-decoration:none;}
 .trips{padding:var(--s-md) var(--s-sm) var(--s-lg);}
 .trip{border:3px solid var(--dark);margin-bottom:var(--s-md);box-shadow:6px 6px 0 var(--dark);overflow:hidden;background:var(--white);}
 .trip-photo{width:100%;aspect-ratio:4/3;background:repeating-linear-gradient(135deg,rgba(26,26,24,0.05),rgba(26,26,24,0.05) 12px,rgba(26,26,24,0.09) 12px,rgba(26,26,24,0.09) 24px);display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(26,26,24,0.4);text-align:center;padding:12px;border-bottom:3px solid var(--dark);position:relative;}
+.trip-photo-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
 .trip-status{position:absolute;top:0;left:0;font-family:var(--fb);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:5px 10px;border-right:3px solid var(--dark);border-bottom:3px solid var(--dark);}
 .status-confirmed{background:var(--magenta);color:var(--white);}
 .status-soon{background:var(--yellow);color:var(--dark);}
