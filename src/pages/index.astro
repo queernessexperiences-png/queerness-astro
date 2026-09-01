@@ -1,7 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'TravelAgency',
+  name: 'Queerness Experiences',
+  description: 'Queer Tulum tours and group trips, Mexican-owned and operated. LGBTQ+ travel experiences for lesbian, sapphic, gay, bi, trans, and queer travelers.',
+  url: 'https://queernessexperiences.com',
+  image: 'https://static.wixstatic.com/media/44aee0_29ba316a87a442cf81b472eb524bb73e~mv2.png',
+  founder: { '@type': 'Person', name: 'Santi Solis' },
+  areaServed: { '@type': 'City', name: 'Tulum' },
+  address: { '@type': 'PostalAddress', addressLocality: 'Tulum', addressRegion: 'Quintana Roo', addressCountry: 'MX' },
+};
 ---
-<Layout title="Mexican-Owned LGBTQIA+ Travel Experiences in Tulum | Queerness Experiences" description={"Mexican-owned and operated LGBTQ+ travel experiences in Tulum. Tours and group trips for lesbian, gay, bi, trans, and queer travelers, queer families, and queer destination weddings. Led by Santi Solis, UCLA wildlife biologist and local queer guide."}>
+<Layout title="Queer Tulum Tours & Group Trips | Queerness Experiences" description={"Queer Tulum tours and group trips, Mexican-owned and operated. LGBTQ+ travel experiences for lesbian, sapphic, gay, bi, trans, and queer travelers, queer families, and queer destination weddings. Led by Santi Solis, UCLA wildlife biologist and local queer guide."}>
+<script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
 
 <!-- HERO — dominant H1, then photo, then body, then CTAs -->
 <header class="hero">
@@ -49,9 +62,9 @@ import Layout from '../layouts/Layout.astro';
 <!-- PHOTO BAND — real queer joy in Tulum -->
 <section style="background:var(--bone);border-bottom:3px solid var(--dark);padding:0;">
   <div class="photo-band">
-    <div class="pb-img">PHOTO — QUEER JOY (real moment, tour, laughter)</div>
-    <div class="pb-img">PHOTO — TULUM NATURE (cenote / jungle)</div>
-    <div class="pb-img">PHOTO — FOOD / CULTURE</div>
+    <img class="pb-img" src="/images/group-trips-photo.jpg" alt="A group laughing together on a Queerness Experiences tour in Tulum">
+    <img class="pb-img" src="/images/secret-cenote-cave.jpg" alt="Entering a cenote through the jungle in Tulum">
+    <img class="pb-img" src="/images/negro-huitlacoche-food.jpg" alt="Traditional Mexican food from a Tulum restaurant">
   </div>
 </section>
 
