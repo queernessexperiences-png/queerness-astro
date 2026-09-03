@@ -17,11 +17,13 @@ import Layout from '../layouts/Layout.astro';
     <input type="checkbox" id="tour1" checked>
     <label class="tour-head" for="tour1">
       <img class="tour-photo" src="/images/secret-cenote-cave.jpg" alt="Entering the Secret Cenote through the cave in Tulum">
-      <div class="tour-bar">
-        <span class="tour-name">Secret Cenote</span>
-        <span class="tour-toggle">+</span>
+      <div class="tour-info">
+        <div class="tour-bar">
+          <span class="tour-name">Secret Cenote</span>
+          <span class="tour-toggle">+</span>
+        </div>
+        <p class="tour-oneline">A cenote not even locals know about. The entrance is an ancient well created by the Maya.</p>
       </div>
-      <p class="tour-oneline">A cenote not even locals know about. The entrance is an ancient well created by the Maya.</p>
     </label>
     <div class="tour-body">
       <div class="tour-body-inner">
@@ -46,11 +48,13 @@ import Layout from '../layouts/Layout.astro';
     <label class="tour-head" for="tour2">
       <img class="tour-photo" src="/images/muyil-river-float-group.jpg" alt="Group floating the Muyil River through mangroves and canals">
       <div class="tour-tag">Most booked</div>
-      <div class="tour-bar">
-        <span class="tour-name">Muyil River Float</span>
-        <span class="tour-toggle">+</span>
+      <div class="tour-info">
+        <div class="tour-bar">
+          <span class="tour-name">Muyil River Float</span>
+          <span class="tour-toggle">+</span>
+        </div>
+        <p class="tour-oneline">Relaxation tour. Float through canals built by the ancient Maya.</p>
       </div>
-      <p class="tour-oneline">Relaxation tour. Float through canals built by the ancient Maya.</p>
     </label>
     <div class="tour-body">
       <div class="tour-body-inner">
@@ -74,11 +78,13 @@ import Layout from '../layouts/Layout.astro';
     <label class="tour-head" for="tour3">
       <div class="tour-photo">PHOTO — STORIES BEHIND THE STOREFRONT (local shops, food, makers)</div>
       <div class="tour-tag">Culture &amp; food</div>
-      <div class="tour-bar">
-        <span class="tour-name">Town Chisme</span>
-        <span class="tour-toggle">+</span>
+      <div class="tour-info">
+        <div class="tour-bar">
+          <span class="tour-name">Town Chisme</span>
+          <span class="tour-toggle">+</span>
+        </div>
+        <p class="tour-oneline">Local shops, murals, and the real Tulum behind the tourist version.</p>
       </div>
-      <p class="tour-oneline">Local shops, murals, and the real Tulum behind the tourist version.</p>
     </label>
     <div class="tour-body">
       <div class="tour-body-inner">
@@ -103,11 +109,13 @@ import Layout from '../layouts/Layout.astro';
     <label class="tour-head" for="tour4">
       <div class="tour-photo">PHOTO — STREET FOOD (tacos, food trucks, elotes)</div>
       <div class="tour-tag">Food · Drinks included</div>
-      <div class="tour-bar">
-        <span class="tour-name">Street Food Tour</span>
-        <span class="tour-toggle">+</span>
+      <div class="tour-info">
+        <div class="tour-bar">
+          <span class="tour-name">Street Food Tour</span>
+          <span class="tour-toggle">+</span>
+        </div>
+        <p class="tour-oneline">Walking food tours to the best food trucks in Tulum.</p>
       </div>
-      <p class="tour-oneline">Walking food tours to the best food trucks in Tulum.</p>
     </label>
     <div class="tour-body">
       <div class="tour-body-inner">
@@ -131,11 +139,13 @@ import Layout from '../layouts/Layout.astro';
     <label class="tour-head" for="tour5">
       <img class="tour-photo" src="/images/punta-laguna-canoes.jpg" alt="Canoes at Punta Laguna, part of the Monkey Spotting jungle lagoon adventure">
       <div class="tour-tag">Most adventurous</div>
-      <div class="tour-bar">
-        <span class="tour-name">Monkey Spotting + Lagoon Jungle Adventure</span>
-        <span class="tour-toggle">+</span>
+      <div class="tour-info">
+        <div class="tour-bar">
+          <span class="tour-name">Monkey Spotting + Lagoon Jungle Adventure</span>
+          <span class="tour-toggle">+</span>
+        </div>
+        <p class="tour-oneline">Our most adventurous tour. Spend the day in the jungle looking for wild monkeys.</p>
       </div>
-      <p class="tour-oneline">Our most adventurous tour. Spend the day in the jungle looking for wild monkeys.</p>
     </label>
     <div class="tour-body">
       <div class="tour-body-inner">
@@ -266,6 +276,7 @@ a{color:inherit;text-decoration:none;}
 .tour-head{cursor:pointer;position:relative;display:block;}
 .tour-photo{width:100%;aspect-ratio:3/2;object-fit:cover;background:repeating-linear-gradient(135deg,rgba(26,26,24,0.05),rgba(26,26,24,0.05) 12px,rgba(26,26,24,0.09) 12px,rgba(26,26,24,0.09) 24px);display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(26,26,24,0.4);text-align:center;padding:12px;border-bottom:3px solid var(--dark);}
 .tour-bar{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;background:var(--white);}
+.tour-oneline{margin:0;padding:0 16px 14px;font-size:14px;color:var(--muted);line-height:1.5;}
 .tour-name{font-family:var(--ff);font-size:22px;color:var(--dark);text-transform:uppercase;line-height:1;}
 .tour-toggle{font-family:var(--fb);font-size:22px;font-weight:700;color:var(--magenta);line-height:1;transition:transform 0.2s;}
 .tour input:checked ~ .tour-head .tour-toggle{transform:rotate(45deg);}
@@ -318,7 +329,12 @@ footer{background:var(--dark);padding:var(--s-md) var(--s-sm);border-top:3px sol
   nav{padding:0 40px;}
   .head{padding:var(--s-lg) 40px;}
   .head h1{font-size:64px;}
-  .tours{padding:var(--s-md) 40px var(--s-lg);max-width:760px;margin:0 auto;}
+  .tours{padding:var(--s-md) 40px var(--s-lg);max-width:900px;margin:0 auto;}
+  .tour-head{display:flex;align-items:stretch;}
+  .tour-photo{width:280px;flex-shrink:0;height:auto;aspect-ratio:4/3;border-bottom:none;border-right:3px solid var(--dark);}
+  .tour-info{flex:1;display:flex;flex-direction:column;justify-content:center;min-width:0;}
+  .tour-oneline{padding:0 20px 16px;}
+  .tour-bar{padding:14px 20px 0;}
   .cta{padding:var(--s-lg) 40px;}
   footer{flex-direction:row;align-items:center;justify-content:space-between;padding:var(--s-md) 40px;}
 }
