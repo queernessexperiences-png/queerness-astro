@@ -1,16 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="Queer & Trans Tours in Tulum | Queerness Experiences" description={"Small-group tours in Tulum for queer travelers and families. Secret cenote, Muyil river float, jungle and monkeys, street food, and the stories behind the storefront."}>
+<Layout title="LGBTQ+ Tours in Tulum | Queerness Experiences" description={"LGBTQ+ tours in Tulum, Mexico. Small-group LGBT experiences for queer travelers and families: secret cenote, Muyil river float, jungle and monkeys, street food, and the stories behind the storefront."}>
 
 <header class="head">
   <div class="shape-y"></div>
   <p class="head-eye">★ Small-group tours</p>
-  <h1>The Tours</h1>
+  <h1>LGBTQ+ Tours in Tulum</h1>
   <p>Every tour is small and personal, often just your group. Tap any tour to see what the day looks like.</p>
 </header>
 
 <section class="tours">
+  <div class="tour-grid">
 
   <!-- SECRET CENOTE -->
   <div class="tour">
@@ -161,6 +162,8 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
     </div>
+  </div>
+
   </div>
 
   <div class="tours-note">
@@ -329,12 +332,10 @@ footer{background:var(--dark);padding:var(--s-md) var(--s-sm);border-top:3px sol
   nav{padding:0 40px;}
   .head{padding:var(--s-lg) 40px;}
   .head h1{font-size:64px;}
-  .tours{padding:var(--s-md) 40px var(--s-lg);max-width:900px;margin:0 auto;}
-  .tour-head{display:flex;align-items:stretch;}
-  .tour-photo{width:280px;flex-shrink:0;height:auto;aspect-ratio:4/3;border-bottom:none;border-right:3px solid var(--dark);}
-  .tour-info{flex:1;display:flex;flex-direction:column;justify-content:center;min-width:0;}
-  .tour-oneline{padding:0 20px 16px;}
-  .tour-bar{padding:14px 20px 0;}
+  .tours{padding:var(--s-md) 40px var(--s-lg);max-width:1000px;margin:0 auto;}
+  .tour-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
+  .tour{margin-bottom:0;}
+  .tour-photo{aspect-ratio:1/1;}
   .cta{padding:var(--s-lg) 40px;}
   footer{flex-direction:row;align-items:center;justify-content:space-between;padding:var(--s-md) 40px;}
 }
