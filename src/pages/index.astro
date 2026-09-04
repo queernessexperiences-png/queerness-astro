@@ -20,28 +20,26 @@ const orgSchema = {
 <header class="hero">
   <div class="shape-y"></div>
   <div class="shape-t"></div>
-  <p class="hero-eye">★ Mexican-Owned &amp; Operated · LGBTQIA+ Travel Experiences in Latin America</p>
-  <h1>
-    <span class="l l1">Tours &amp; group trips</span>
-    <span class="l l2">for sapphic, queer</span>
-    <span class="l l3">&amp; trans people</span>
-    <span class="l l4">in Tulum.</span>
-  </h1>
-  <div class="hero-grid">
-    <img src="/images/group-trips-photo.jpg" alt="A group smiling together on a Queerness Experiences trip in Tulum">
-    <img src="/images/hero-grid-cenote-friends.jpg" alt="Friends laughing together at a cenote in Tulum">
-    <img src="/images/secret-cenote-cave.jpg" alt="A couple at the entrance of the Secret Cenote in Tulum">
-    <img src="/images/IMG_0477.jpeg" alt="A couple laughing together on a jungle trail in Tulum">
-  </div>
-  <p class="hero-body">For travelers who prioritize small, local businesses, want to learn about culture respectfully, and are excited to be shown a side of Mexico they never had access to before.</p>
-  <div class="cta-stack">
-    <a href="#tours" class="btn-p">See the Tours →</a>
-    <a href="/group-trips" class="btn-s">Upcoming Group Trips →</a>
+  <div class="hero-text">
+    <p class="hero-eye">★ Mexican-Owned &amp; Operated · LGBTQIA+ Travel Experiences in Latin America</p>
+    <h1>
+      <span class="l l1">Tours &amp; group trips</span>
+      <span class="l l2">for queer &amp; trans</span>
+      <span class="l l3">people <span class="l4">in Tulum.</span></span>
+    </h1>
+    <div class="hero-grid">
+      <img src="/images/tour-photo-street-food-churro.jpg" alt="Friends holding churros together on a Tulum street food tour">
+      <img src="/images/hero-grid-cenote-friends.jpg" alt="Friends laughing together at a cenote in Tulum">
+      <img src="/images/secret-cenote-cave.jpg" alt="A couple at the entrance of the Secret Cenote in Tulum">
+      <img src="/images/IMG_0477.jpeg" alt="A couple laughing together on a jungle trail in Tulum">
+    </div>
+    <p class="hero-body">For sapphic, queer, and trans travelers who prioritize small, local businesses, want to learn about culture respectfully, and are excited to be shown a side of Mexico they never had access to before.</p>
+    <div class="cta-stack">
+      <a href="#tours" class="btn-p">See the Tours →</a>
+      <a href="/group-trips" class="btn-s">Upcoming Group Trips →</a>
+    </div>
   </div>
 </header>
-
-<!-- BREAK PHOTO — between hero and queer-friendly bar -->
-<div class="ph break-photo">PHOTO — TULUM STREET / COMMUNITY MOMENT</div>
 
 <!-- QUEER-FRIENDLY BAR — under hero -->
 <section style="background:var(--yellow);border-bottom:6px solid var(--blue);padding:20px var(--s-sm);">
@@ -72,10 +70,14 @@ const orgSchema = {
 
 <!-- BRIDGE + CREDENTIALS -->
 <section class="bridge">
-  <img class="bridge-photo" src="/images/santi-hero-tulum.jpg" alt="Santi laughing in the water near Tulum, wearing a life vest">
-  <p>Born in Mexico. Raised in the U.S. Came home to build a life in Tulum.</p>
-  <p class="folx">Recently cast as a model for a campaign by FOLX, the queer and trans telehealth company.</p>
-  <p class="small">A bit about me</p>
+  <div class="bridge-inner">
+    <img class="bridge-photo" src="/images/santi-hero-tulum.jpg" alt="Santi laughing in the water near Tulum, wearing a life vest">
+    <div class="bridge-text">
+      <p>Born in Mexico. Raised in the U.S. Came home to build a life in Tulum.</p>
+      <p class="folx">Recently cast as a model for a campaign by FOLX, the queer and trans telehealth company.</p>
+      <p class="small">A bit about me</p>
+    </div>
+  </div>
 </section>
 <section class="creds" aria-label="Credentials">
   <div class="cred"><div class="cnum">01</div><div><div class="ct">UCLA Wildlife Biologist</div><div class="cd">Let's get nerdy about the plants and animals along the way.</div></div></div>
@@ -87,10 +89,11 @@ const orgSchema = {
 <!-- GUIDE — above tours -->
 <section class="guide" id="guide">
   <div class="guide-inner">
-    <p class="sec-eye" style="color:var(--yellow);">Free Tulum recommendations</p>
-    <h2>Stop planning.<br><span class="accent">Start enjoying.</span></h2>
-    <p class="guide-lead">My real recommendations for when you visit, free.</p>
-    <div class="guide-photo">PHOTO — TULUM FOOD / COFFEE / STREET SCENE (warm, real, makes them want to be here)</div>
+    <div class="guide-intro">
+      <p class="sec-eye" style="color:var(--yellow);">Free Tulum recommendations</p>
+      <h2>Stop planning.<br><span class="accent">Start enjoying.</span></h2>
+      <p class="guide-lead">My real recommendations for when you visit, free.</p>
+    </div>
     <div class="guide-box">
       <ul class="ginc">
         <li>My favorite coffee shop, restaurant, and a queer-friendly bar</li>
@@ -111,8 +114,7 @@ const orgSchema = {
     <p class="tours-lead">Tours run small. Bigger group, retreat, or event? That becomes a private tour, sized and priced for your group.</p>
 
     <div class="food-feature">
-      <img class="food-feature-photo" src="/images/food-feature-mango.jpg" alt="Santi holding fresh mangoes at a local Tulum fruit market">
-      <p class="food-feature-caption">Eating deliciously is a priority, not an afterthought. Local bakeries, an amazing chef, seasonal local fruit, never a resort buffet.</p>
+      <p class="food-feature-caption">Eating deliciously is a priority, not an afterthought. Local bakeries, an amazing chef, seasonal local fruit.</p>
       <p class="food-feature-credit">Meals by <a href="https://pausaydanza.com" target="_blank" rel="noopener">Pausa y Danza</a> · Bakery <a href="https://instagram.com/muchachita_tulum" target="_blank" rel="noopener">@muchachita_tulum</a></p>
     </div>
 
