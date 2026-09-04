@@ -5,7 +5,7 @@ import Layout from '../layouts/Layout.astro';
 
 <header class="head">
   <div class="shape-y"></div>
-  <p class="head-eye">★ Queer group trips · Latin America</p>
+  <p class="head-eye">★ Sapphic, Queer &amp; Trans Group Trips · Latin America</p>
   <h1>Trips that actually<br>make it out of<br>the group chat.</h1>
   <p>For anyone who wants to support local businesses and local projects along the way: sapphic, queer, and trans focused group trips. I'm bicultural, not just bilingual, raised between Mexico and the U.S., with family roots in Mexico City going back generations. That's what lets me bridge both worlds for solo travelers ready to make real connections. Tulum now, Mexico City coming soon.</p>
 </header>
@@ -171,7 +171,8 @@ footer{background:var(--dark);padding:var(--s-md) var(--s-sm);border-top:3px sol
   nav{padding:0 40px;}
   .head{padding:var(--s-lg) 40px;}
   .head h1{font-size:60px;}
-  .trips{padding:var(--s-md) 40px var(--s-lg);max-width:760px;margin:0 auto;}
+  .trips{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;padding:var(--s-md) 40px var(--s-lg);max-width:1000px;margin:0 auto;}
+  .trip{margin-bottom:0;}
   .host{padding:var(--s-lg) 40px;}
   footer{flex-direction:row;align-items:center;justify-content:space-between;padding:var(--s-md) 40px;}
 }

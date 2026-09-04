@@ -25,10 +25,11 @@ const orgSchema = {
     <h1>
       <span class="l l1">Tours &amp; group trips</span>
       <span class="l l2">for queer &amp; trans</span>
-      <span class="l l3">people <span class="l4">in Tulum.</span></span>
+      <span class="l l3">people</span>
+      <span class="l l4">in Tulum.</span>
     </h1>
     <div class="hero-grid">
-      <img src="/images/tour-photo-street-food-churro.jpg" alt="Friends holding churros together on a Tulum street food tour">
+      <img src="/images/food-tour-sitdown.jpg" alt="A friend celebrating over bao buns at a Tulum restaurant">
       <img src="/images/hero-grid-cenote-friends.jpg" alt="Friends laughing together at a cenote in Tulum">
       <img src="/images/secret-cenote-cave.jpg" alt="A couple at the entrance of the Secret Cenote in Tulum">
       <img src="/images/IMG_0477.jpeg" alt="A couple laughing together on a jungle trail in Tulum">
@@ -38,6 +39,10 @@ const orgSchema = {
       <a href="#tours" class="btn-p">See the Tours →</a>
       <a href="/group-trips" class="btn-s">Upcoming Group Trips →</a>
     </div>
+    <a href="#reviews" class="hero-social-proof">
+      <span class="stars">★★★★★</span>
+      <span>19 five-star reviews on Google</span>
+    </a>
   </div>
 </header>
 
@@ -48,17 +53,6 @@ const orgSchema = {
   <p style="font-size:12.5px;color:var(--dark);opacity:0.85;line-height:1.5;max-width:520px;margin:0 auto;text-align:center;">Is your hotel or destination already this welcoming, but not sure how to show it? <a href="/work-with-me" style="color:var(--blue);font-weight:700;">Let's talk →</a></p>
 </section>
 
-<!-- SOCIAL PROOF STRIP -->
-<a href="#reviews" style="text-decoration:none;display:block;">
-<section style="background:var(--white);border-bottom:3px solid var(--dark);padding:18px var(--s-sm);cursor:pointer;transition:background 0.15s;">
-  <div style="max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;text-align:center;">
-    <span style="color:var(--yellow);font-size:18px;letter-spacing:2px;">★★★★★</span>
-    <span style="font-family:var(--fb);font-size:14px;font-weight:700;color:var(--dark);">19 five-star reviews on Google</span>
-    <span style="font-family:var(--fb);font-size:13px;color:var(--magenta);font-weight:700;">Read them →</span>
-  </div>
-</section>
-</a>
-
 <!-- PHOTO BAND — real queer joy in Tulum -->
 <section style="background:var(--bone);border-bottom:3px solid var(--dark);padding:0;">
   <div class="photo-band">
@@ -68,22 +62,23 @@ const orgSchema = {
   </div>
 </section>
 
-<!-- BRIDGE + CREDENTIALS -->
+<!-- BRIDGE + CREDENTIALS — one unified about-me block -->
 <section class="bridge">
   <div class="bridge-inner">
     <img class="bridge-photo" src="/images/santi-hero-tulum.jpg" alt="Santi laughing in the water near Tulum, wearing a life vest">
     <div class="bridge-text">
-      <p>Born in Mexico. Raised in the U.S. Came home to build a life in Tulum.</p>
-      <p class="folx">Recently cast as a model for a campaign by FOLX, the queer and trans telehealth company.</p>
-      <p class="small">A bit about me</p>
+      <p><strong>I'm Santi (they/them).</strong> Born in Mexico. Raised in the U.S. Came home to build a life in Tulum.</p>
+      <p class="small">Fun facts about me</p>
+      <div class="creds" aria-label="Fun facts">
+        <div class="cred"><div class="cnum">01</div><div><div class="ct">UCLA Wildlife Biologist</div><div class="cd">Let's get nerdy about the plants and animals along the way.</div></div></div>
+        <div class="cred"><div class="cnum">02</div><div><div class="ct">Pattie Gonia Scholarship</div><div class="cd">Queer Outdoor Expedition recipient, 2023.</div></div></div>
+        <div class="cred"><div class="cnum">03</div><div><div class="ct">International Conference Speaker</div><div class="cd">On designing experiences for queer and trans travelers.</div></div></div>
+        <a href="/group-trips" class="cred" style="text-decoration:none;color:inherit;"><div class="cnum">04</div><div><div class="ct">Creator of Curated Group Trips &amp; Retreats</div><div class="cd">See the trips →</div></div></a>
+        <div class="cred"><div class="cnum">05</div><div><div class="ct">FOLX Campaign Model</div><div class="cd">Recently cast as a model for FOLX, the queer and trans telehealth company.</div></div></div>
+      </div>
+      <a href="/about" class="bridge-more">More about me →</a>
     </div>
   </div>
-</section>
-<section class="creds" aria-label="Credentials">
-  <div class="cred"><div class="cnum">01</div><div><div class="ct">UCLA Wildlife Biologist</div><div class="cd">Let's get nerdy about the plants and animals along the way.</div></div></div>
-  <div class="cred"><div class="cnum">02</div><div><div class="ct">Pattie Gonia Scholarship</div><div class="cd">Queer Outdoor Expedition recipient, 2023.</div></div></div>
-  <div class="cred"><div class="cnum">03</div><div><div class="ct">International Conference Speaker</div><div class="cd">On designing experiences for queer and trans travelers.</div></div></div>
-  <a href="/group-trips" class="cred" style="text-decoration:none;color:inherit;"><div class="cnum">04</div><div><div class="ct">Creator of Curated Group Trips &amp; Retreats</div><div class="cd">See the trips →</div></div></a>
 </section>
 
 <!-- GUIDE — above tours -->
@@ -212,11 +207,17 @@ const orgSchema = {
 
 <!-- FRIEND -->
 <section class="friend">
-  <p class="sec-eye">In the area?</p>
-  <h2>Looking for a<br>queer friend?</h2>
-  <p>I do a lot of activities. You're welcome to join.</p>
-  <p class="hobbies">Dance class · jiu jitsu · life drawing night · theatre in Spanish · and whatever else is happening that week.</p>
-  <a href="/book" class="btn-friend" style="display:inline-block;text-decoration:none;text-align:center;">Tell me what you're up to →</a>
+  <div class="friend-inner">
+    <div class="friend-intro">
+      <p class="sec-eye">In the area?</p>
+      <h2>Looking for a<br>queer friend?</h2>
+      <p>I do a lot of activities. You're welcome to join.</p>
+    </div>
+    <div class="friend-box">
+      <p class="hobbies">Dance class · jiu jitsu · life drawing night · theatre in Spanish · and whatever else is happening that week.</p>
+      <a href="/book" class="btn-friend" style="display:inline-block;text-decoration:none;text-align:center;">Tell me what you're up to →</a>
+    </div>
+  </div>
 </section>
 
 
