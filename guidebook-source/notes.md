@@ -14,7 +14,8 @@ visitors: entrance to the National Park is now **free**. Caveats:
   entrance or the Cobá Road entrance.
 - **By car or scooter/moto**: you need a reservation to drive/scoot in. Use
   Ikal (spelled I-K-A-L), one of our local favorite beach clubs — fill out
-  their form and you can enter, and they have their own parking lot.
+  their form at ikaltulumhotel.com/access-registration and you can enter,
+  and they have their own parking lot.
 - **No car or moto**: go to either entrance (Tulum ruins or Cobá Road), then
   take the little bus into the park for **20 pesos**.
 - **Tulum ruins entrance fee**: 265 pesos for non-Mexican/non-local visitors.
