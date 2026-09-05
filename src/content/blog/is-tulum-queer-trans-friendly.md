@@ -30,7 +30,7 @@ This is my honest take, from personal experience running an agency that connects
 
 I'm Santi. I'm queer, nonbinary, Mexican, and I've called Tulum home for over 10 years. I run Queerness Experiences, and I want to walk you through what matters before you visit.
 
-<div class="post-photo-ph">PHOTO — SANTI OR A TOUR MOMENT IN TULUM (queer-friendly-tulum-local-guide-queerness-experiences.jpg)</div>
+<img class="post-photo" src="/images/group-trips-photo.jpg" alt="A group smiling together on a Queerness Experiences trip in Tulum">
 
 ## Why I started this agency
 
@@ -58,13 +58,13 @@ None of this is an excuse. It's context. And the trend is moving in the directio
 
 Here's something that surprises a lot of American travelers: Mexico is one of only 11 countries in the world that has written LGBTQ+ anti-discrimination protections directly into its constitution, the same company as Sweden and Portugal. The United States has not done this at the federal level.
 
-Same-sex marriage has been legal in Quintana Roo, the state Tulum is in, since 2012. Non-binary legal recognition exists federally.
+Same-sex marriage has been legal in Quintana Roo, the state Tulum is in, since 2012. Mexico also offers a federal "X" gender marker option on passports for nonbinary travelers, though broader legal recognition is still handled state by state, not nationally.
 
 To be honest with you: legal protections and lived reality aren't always the same thing, and conditions vary a lot depending on where you are. The same way a queer traveler would have a very different experience in New York City versus a small town in rural Georgia, Tulum, Mexico City, and Puerto Vallarta are not the same experience as a small, rural town elsewhere in Mexico. Tourist hubs and major metro areas tend to be more internationally minded and more used to queer visitors. That's true here just like it's true everywhere.
 
 In two years of running queer and trans tours here, I've heard mostly great things, and lots of just neutral things: people haven't made comments about the situation, in the airport or anywhere else. If you're thinking about a queer destination wedding, Tulum is legally straightforward and genuinely stunning.
 
-<div class="post-photo-ph">PHOTO — CENOTE, JUNGLE, OR TOUR MOMENT (queer-safe-tulum-tour-queerness-experiences.jpg)</div>
+<img class="post-photo" src="/images/secret-cenote-cave.jpg" alt="Entering the Secret Cenote through the cave in Tulum">
 
 ## Pride, Tulum-style
 
@@ -102,7 +102,7 @@ For nightlife specifically, the main gay bar is Red Room, which skews toward gay
 
 Have a question that's not in the guide? [Message us](/book). We're happy to help.
 
-<div class="post-photo-ph">PHOTO — LA GUARIDA OR GROUP TOUR MOMENT (queer-tulum-la-guarida-queerness-experiences.jpg)</div>
+<img class="post-photo" src="/images/la-guarida-theater.jpg" alt="A theater class at La Guarida, a bar and cultural center in Tulum">
 
 ## Ready to see Tulum with a local?
 
