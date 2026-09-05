@@ -6,18 +6,18 @@ pubDate: 2026-01-20
 updatedDate: 2026-05-01
 draft: false
 faq:
-  - q: "Is Tulum queer friendly?"
+  - q: "Is Tulum queer and trans friendly?"
     a: "Yes. Tulum is genuinely welcoming for queer and trans travelers. You can hold your partner's hand, be visibly queer, and move through town without drama, particularly in tourist areas."
   - q: "Is Tulum safe for queer and trans travelers?"
-    a: "Yes. In two years of running queer and trans tours, I've only heard great things. Mexico has constitutional anti-discrimination protections for LGBTQ+ people, something the US doesn't have at the federal level. Use common sense at night outside tourist areas, as you would anywhere."
+    a: "Yes, with some important caveats and insights, read the full breakdown above."
   - q: "Will I get misgendered in Tulum?"
     a: "There's a real chance, especially outside queer spaces, but it usually comes from Spanish being a heavily gendered language, not from rejection. Within Tulum's queer community specifically, people are notably good about using gender-neutral language. It's something the town is actively getting better at."
   - q: "Can I hold my partner's hand in Tulum?"
-    a: "Yes. Queer couples hold hands and show affection in Tulum every day without incident."
+    a: "Yes. You'll see other queer couples holding hands and showing affection in Tulum."
   - q: "Is there a gay bar in Tulum?"
     a: "The main gay bar is Red Room, which skews toward gay men. Our real recommendation for a broader queer-friendly night out is La Guarida."
   - q: "Is Tulum good for a queer destination wedding?"
-    a: "Yes. Same-sex marriage has been legal in Quintana Roo since 2012. We work with vetted queer and trans-friendly vendors."
+    a: "Yes. Same-sex marriage has been legal in Quintana Roo since 2012. Message us for tips on photographers and wedding planners if needed."
   - q: "Does Mexico have legal protections for LGBTQ+ people?"
     a: "Yes. Mexico is one of only 11 countries worldwide with LGBTQ+ anti-discrimination protections written directly into its constitution, alongside countries like Sweden and Portugal. Same-sex marriage is legal nationwide."
   - q: "Do you do tours for solo travelers?"
@@ -116,7 +116,7 @@ We do solo travelers, couples, friend groups, and collaborations with group trip
 
 <div class="post-acc-item">
   <input type="checkbox" id="facc1" class="post-acc-toggle">
-  <label for="facc1" class="post-acc-head"><span>Is Tulum queer friendly?</span><span class="post-acc-plus">+</span></label>
+  <label for="facc1" class="post-acc-head"><span>Is Tulum queer and trans friendly?</span><span class="post-acc-plus">+</span></label>
   <div class="post-acc-body"><div class="post-acc-body-inner">
     <p>Yes. Tulum is genuinely welcoming for queer and trans travelers. You can hold your partner's hand, be visibly queer, and move through town without drama, particularly in tourist areas.</p>
   </div></div>
@@ -126,7 +126,7 @@ We do solo travelers, couples, friend groups, and collaborations with group trip
   <input type="checkbox" id="facc2" class="post-acc-toggle">
   <label for="facc2" class="post-acc-head"><span>Is Tulum safe for queer and trans travelers?</span><span class="post-acc-plus">+</span></label>
   <div class="post-acc-body"><div class="post-acc-body-inner">
-    <p>Yes. In two years of running queer and trans tours, I've only heard great things. Mexico has constitutional anti-discrimination protections for LGBTQ+ people, something the US doesn't have at the federal level. Use common sense at night outside tourist areas, as you would anywhere.</p>
+    <p>Yes, with some important caveats and insights, read the full breakdown above.</p>
   </div></div>
 </div>
 
@@ -142,7 +142,7 @@ We do solo travelers, couples, friend groups, and collaborations with group trip
   <input type="checkbox" id="facc4" class="post-acc-toggle">
   <label for="facc4" class="post-acc-head"><span>Can I hold my partner's hand in Tulum?</span><span class="post-acc-plus">+</span></label>
   <div class="post-acc-body"><div class="post-acc-body-inner">
-    <p>Yes. Queer couples hold hands and show affection in Tulum every day without incident.</p>
+    <p>Yes. You'll see other queer couples holding hands and showing affection in Tulum.</p>
   </div></div>
 </div>
 
@@ -158,7 +158,7 @@ We do solo travelers, couples, friend groups, and collaborations with group trip
   <input type="checkbox" id="facc6" class="post-acc-toggle">
   <label for="facc6" class="post-acc-head"><span>Is Tulum good for a queer destination wedding?</span><span class="post-acc-plus">+</span></label>
   <div class="post-acc-body"><div class="post-acc-body-inner">
-    <p>Yes. Same-sex marriage has been legal in Quintana Roo since 2012. We work with vetted queer and trans-friendly vendors.</p>
+    <p>Yes. Same-sex marriage has been legal in Quintana Roo since 2012. Message us for tips on photographers and wedding planners if needed.</p>
   </div></div>
 </div>
 
