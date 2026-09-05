@@ -29,7 +29,7 @@ A few of the places I actually send friends to when they visit: the number one r
   <input type="checkbox" id="racc2" class="post-acc-toggle">
   <label for="racc2" class="post-acc-head"><span>Story Horse — my favorite specialty coffee shop</span><span class="post-acc-plus">+</span></label>
   <div class="post-acc-body"><div class="post-acc-body-inner">
-    <div class="post-photo-ph">PHOTO — STORY HORSE (coffee bar, roasting setup, morning light)</div>
+    <img class="post-photo" src="/images/story-horse-coffee.jpg" alt="Santi holding an iced coffee from Story Horse cafe in Tulum">
     <p><strong>Specialty coffee · Tulum Centro</strong></p>
     <p>A specialty coffee shop roasting its own beans, started by a Mexican-Irish couple (the name is the Irish way of saying hello, "what's the story, horse?"). Quietly one of the best cups in town. Come slow down for a morning and let the day open up from here.</p>
   </div></div>

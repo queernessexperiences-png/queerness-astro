@@ -30,6 +30,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="tour-body">
       <div class="tour-body-inner">
         <p class="tour-desc">Tours to a cenote not even locals know about. The entrance is an ancient well created by the Maya. You enter through the well, down into cool, still water that has been here for thousands of years. Cared for by an extremely knowledgeable Maya family. The kind of spot you'd never find on your own, and never forget once you have.</p>
+        <img class="tour-addon-photo" src="/images/secret-cenote-addon-local.jpg" alt="The local cenote add-on, with cliff jumping and clear water for snorkeling">
         <p class="tour-desc"><strong>Optional add-on: visit a local cenote with cliff jumping, perfect for free diving and amazing snorkeling. +700 MXN per person.</strong></p>
         <div class="tour-meta">
           <span class="meta-pill">4-5 hours</span>
@@ -296,6 +297,7 @@ a{color:inherit;text-decoration:none;}
 .tour input:checked ~ .tour-body{max-height:800px;}
 .tour-body-inner{padding:0 16px 18px;}
 .tour-desc{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:var(--s-sm);}
+.tour-addon-photo{width:100%;aspect-ratio:16/9;object-fit:cover;border:3px solid var(--dark);box-shadow:4px 4px 0 var(--terra);margin-bottom:var(--s-sm);}
 .tour-meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:var(--s-sm);}
 .meta-pill{font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;padding:4px 10px;background:var(--bone);border:2px solid var(--dark);color:var(--dark);}
 .tour-foot{display:flex;align-items:center;justify-content:space-between;border-top:2px solid var(--border);padding-top:14px;}
