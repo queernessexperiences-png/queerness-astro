@@ -23,6 +23,21 @@ visitors: entrance to the National Park is now **free**. Caveats:
 This replaces the old flat "120 pesos" entrance fee note in the Ikal beach
 club entry — that number is outdated.
 
+## Bars & Nightlife
+
+- **La Guarida** — at night, different rooms often host different parties,
+  each its own theme.
+- **Negro Huitlacoche** — cross-reference from the food page: Monday jam
+  nights are a big enough deal to mention in nightlife too.
+- **Palma Central** — salsa Tuesdays. Starts with a beginner-friendly salsa
+  lesson at 7pm, then DJ sets + live music (bands like Cocoson). Salsa,
+  bachata, cumbia. ~80 MXN entry incl. a drink ticket. Non-negotiable per
+  Santi, one of the best group nights out in town.
+- **Cara Feliz** — karaoke most nights. Multiple microphones, air
+  conditioning.
+- [ "Lapezine" — a venue Santi mentioned but the spelling didn't come
+  through clearly. Still need to confirm and add. ]
+
 ## Beach Clubs
 
 - **Ikal** — the local favorite. Best if already in the National Park. No
