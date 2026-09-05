@@ -39,7 +39,7 @@ A few of the places I actually send friends to when they visit: the number one r
   <input type="checkbox" id="racc3" class="post-acc-toggle">
   <label for="racc3" class="post-acc-head"><span>La Guarida — a café, bar, and cultural center</span><span class="post-acc-plus">+</span></label>
   <div class="post-acc-body"><div class="post-acc-body-inner">
-    <div class="post-photo-ph">PHOTO — LA GUARIDA (rooftop bar, live music night)</div>
+    <img class="post-photo" src="/images/la-guarida-theater.jpg" alt="A theater class at La Guarida, a bar and cultural center in Tulum">
     <p><strong>Café · bar · cultural center · Tulum Centro</strong></p>
     <p>Part café, part rooftop bar, part cultural center. A bohemian maze of rooms and hidden corners with live music, jam sessions, workshops, and movie nights, built around community rather than a tourist crowd. Settle in with a mezcal, end up on the rooftop. Check what's on the night you go; there's almost always something.</p>
   </div></div>
