@@ -31,14 +31,15 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
     <div><label class="fl">Tell me more about you and what you're looking for</label><textarea class="fi" name="message" rows="3" placeholder="A little about your trip, your group, or what you're hoping for" style="resize:vertical;font-family:var(--fb);" required></textarea></div>
-    <button type="submit" class="fsub">Send. I'll reply within 24 hours</button>
+    <button type="submit" class="fsub">Submit</button>
   </form>
 </section>
 
 </Layout>
 
 <style>
-  .tour-checks{display:flex;flex-direction:column;gap:8px;}
+  .tour-checks{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+  @media(max-width:479px){.tour-checks{grid-template-columns:1fr;}}
   .tour-check{display:flex;align-items:center;gap:10px;background:var(--white);border:2px solid var(--dark);padding:11px 14px;font-family:var(--fb);font-size:14.5px;color:var(--dark);cursor:pointer;}
   .tour-check input{width:18px;height:18px;accent-color:var(--magenta);flex-shrink:0;cursor:pointer;}
 </style>

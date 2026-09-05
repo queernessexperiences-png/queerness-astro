@@ -157,7 +157,7 @@ h1 .l4{display:block;font-size:0.5em;margin-top:4px;}
 .friend h2{font-family:var(--ff);font-size:36px;line-height:1.14;color:var(--dark);text-transform:uppercase;margin:0 0 var(--s-sm);}
 .friend p{font-size:18px;color:var(--dark);line-height:1.7;margin-bottom:var(--s-sm);max-width:520px;}
 .friend .hobbies{font-size:15px;color:var(--dark);font-weight:500;margin-bottom:var(--s-md);max-width:none;}
-.friend-box{background:var(--white);border:3px solid var(--dark);box-shadow:6px 6px 0 var(--dark);padding:24px;margin-top:var(--s-sm);}
+.friend-box{background:var(--white);border:3px solid var(--dark);box-shadow:6px 6px 0 var(--dark);padding:16px;margin-top:var(--s-sm);max-width:420px;}
 .friend-form{display:flex;flex-direction:column;gap:var(--s-sm);max-width:440px;}
 .ff-in{background:var(--white);border:2px solid var(--dark);padding:13px 14px;font-size:16.5px;font-family:var(--fb);color:var(--dark);outline:none;width:100%;}
 .ff-in:focus{border-color:var(--magenta);}
