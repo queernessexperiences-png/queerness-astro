@@ -49,7 +49,6 @@ A few of the places I actually send friends to when they visit: the number one r
   <input type="checkbox" id="racc4" class="post-acc-toggle">
   <label for="racc4" class="post-acc-head"><span>Getting around Tulum: there's no Uber</span><span class="post-acc-plus">+</span></label>
   <div class="post-acc-body"><div class="post-acc-body-inner">
-    <div class="post-photo-ph">PHOTO — EIBY APP / TULUM STREET (getting around)</div>
     <p>There's no Uber in Tulum, which catches almost everyone off guard. The app locals use instead is <strong>Eiby</strong>, think of it as our version of a ride app. Download it before you need it and you'll get fair prices instead of the tourist markup.</p>
   </div></div>
 </div>
@@ -58,7 +57,6 @@ A few of the places I actually send friends to when they visit: the number one r
   <input type="checkbox" id="racc5" class="post-acc-toggle">
   <label for="racc5" class="post-acc-head"><span>The ATM trick that saves you money</span><span class="post-acc-plus">+</span></label>
   <div class="post-acc-body"><div class="post-acc-body-inner">
-    <div class="post-photo-ph">PHOTO — ATM / CURRENCY SCREEN (decline conversion)</div>
     <p>Tulum ATMs are set up to charge you on the currency conversion. They'll offer to "convert for you" at a terrible rate, and most people just tap yes. <strong>Always decline the conversion.</strong> When the machine asks whether to charge in your home currency or in pesos, choose pesos every time, and let your own bank do the conversion.</p>
   </div></div>
 </div>
