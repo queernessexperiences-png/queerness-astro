@@ -10,10 +10,20 @@ import Layout from '../layouts/Layout.astro';
   <p>For sapphic, queer, and trans people excited to travel while prioritizing local businesses and local projects along the way. Created by Santi Solis, a queer, bilingual, and bicultural group trip creator. Being bicultural is what lets me bridge both worlds for travelers ready to make real connections when they travel to Latin America and experience Mexican culture from a local's perspective. Tulum now, Mexico City coming soon.</p>
 </header>
 
-<section style="background:var(--white);padding:var(--s-lg) var(--s-sm);max-width:680px;margin:0 auto;">
-  <p class="sec-eye">What these trips actually are</p>
-  <p style="font-size:17px;line-height:1.8;color:var(--dark);margin-bottom:var(--s-sm);">These trips are about interacting with the culture and learning the specific, nuanced, charming details of Latin culture, not just seeing the sights. Because I'm bicultural, I can actually teach people these things: the song that gets everyone singing in the middle of the street the second it plays, the dance moves that show up at every wedding and every social gathering, the food that tastes like our grandparents, the decorations that make us feel connected to generations before us. That's what I want to show people on these trips.</p>
-  <p style="font-size:17px;line-height:1.8;color:var(--dark);">At the same time as they're learning about our culture, people get to understand and bond with each other in a new way, one they may never have had access to before. Even just the way we greet each other, the way Latin people create space for others, it's something I think every queer person deserves to experience.</p>
+<section style="background:var(--white);padding:var(--s-lg) var(--s-sm);max-width:1120px;margin:0 auto;">
+  <div class="trips-about-inner">
+    <div class="trips-about-text">
+      <p class="sec-eye">What these trips actually are</p>
+      <p style="font-size:17px;line-height:1.8;color:var(--dark);margin-bottom:var(--s-sm);">These trips start by interacting with the culture and learning the specific, nuanced, charming details that make Latin culture so special, not just seeing the sights: the song that gets everyone singing in the middle of the street the second it plays, the dance moves that show up at every wedding and every social gathering, the decorations that make us feel connected to generations before us. Making you feel more connected to the people you meet, and to yourself. I think that's important.</p>
+      <p style="font-size:17px;line-height:1.8;color:var(--dark);">Hi, I'm Santi. I'm Mexican, born in Mexico, raised in the U.S., and I've been living in Tulum for almost ten years. People in Latin America have a special way of creating space for others, and I think every queer person deserves to experience that. I want to bring that back into queer community.</p>
+    </div>
+    <div class="trips-about-grid">
+      <img src="/images/group-trips-photo.jpg" alt="A group smiling together on a Queerness Experiences trip in Tulum">
+      <img src="/images/IMG_4652.jpeg" alt="Friends swimming through the mangroves in Tulum">
+      <img src="/images/hero-grid-cenote-friends.jpg" alt="Friends laughing together at a cenote in Tulum">
+      <img src="/images/IMG_0477.jpeg" alt="A couple laughing together on a jungle trail in Tulum">
+    </div>
+  </div>
 </section>
 
 <section class="trips">
@@ -116,7 +126,7 @@ import Layout from '../layouts/Layout.astro';
 <section class="host">
   <p class="host-eye">Bringing your group to Tulum?</p>
   <h2>Let's plan it<br>together</h2>
-  <p>I offer consulting on different things to do, or I can help you plan the whole trip out, focused on local businesses and local experiences. Raised between two cultures with family roots in Mexico City going back generations, I can introduce your group to the friends I actually have here and the places I believe in. If that sounds like a fit, let's chat.</p>
+  <p>I offer consulting on different things to do, or I can help you plan the whole trip out, focused on local businesses and local experiences. Raised between two cultures, I can introduce your group to the friends I actually have here and the places I believe in. If that sounds like a fit, let's chat.</p>
   <a href="#" class="btn-host">Let's Talk →</a>
 </section>
 
@@ -171,6 +181,13 @@ footer{background:var(--dark);padding:var(--s-md) var(--s-sm);border-top:3px sol
 .flogo{font-family:var(--fb);font-size:16px;font-weight:700;color:var(--magenta);line-height:1.15;}
 .flinks{display:flex;flex-wrap:wrap;gap:var(--s-sm);list-style:none;}
 .flinks a{font-size:12px;font-weight:500;color:rgba(255,255,255,0.5);}
+.trips-about-inner{display:flex;flex-direction:column;gap:var(--s-md);}
+.trips-about-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.trips-about-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;border:3px solid var(--dark);}
+.trips-about-grid img:nth-child(1){transform:rotate(-2deg);}
+.trips-about-grid img:nth-child(2){transform:rotate(1.5deg);margin-top:14px;}
+.trips-about-grid img:nth-child(3){transform:rotate(1deg);margin-top:-10px;}
+.trips-about-grid img:nth-child(4){transform:rotate(-1.5deg);}
 
 @media(min-width:720px){
   nav{padding:0 40px;}
@@ -178,6 +195,7 @@ footer{background:var(--dark);padding:var(--s-md) var(--s-sm);border-top:3px sol
   .head h1{font-size:60px;}
   .trips{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;padding:var(--s-md) 40px var(--s-lg);max-width:1000px;margin:0 auto;}
   .trip{margin-bottom:0;}
+  .trips-about-inner{display:grid;grid-template-columns:1fr 440px;gap:48px;align-items:center;}
   .host{padding:var(--s-lg) 40px;}
   footer{flex-direction:row;align-items:center;justify-content:space-between;padding:var(--s-md) 40px;}
 }
