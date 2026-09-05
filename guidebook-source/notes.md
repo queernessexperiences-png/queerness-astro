@@ -37,9 +37,17 @@ club entry — that number is outdated.
 ## Where to Eat — additions
 
 - **Del Cielo** — Santi's breakfast recommendation. "Del Cielo" = "from the
-  sky." Super yummy. Healthy breakfast options, but also good for something
-  more indulgent/munchies. Juices are really good. [ Still need: what Santi
-  usually orders, more on the vibe. ]
+  sky." Acai bowls, avocado toast, green juice. Super yummy, delicious.
+  Healthy breakfast options, but also good for something more
+  indulgent/munchies. [ Still need: what Santi usually orders, more on the
+  vibe. ]
+- **Bomba Snack** — juice recommendation. Run by Fer (F-E-R), an awesome,
+  super cool guy who makes great juice. Photo: santi-green-juice.jpg
+  (already in public/images, not yet placed on the live site).
+
+## Activities
+
+- **Jiu-jitsu** — Instagram: https://www.instagram.com/openmat.mujeres/
 
 ## Still open / unresolved from earlier passes
 
@@ -47,6 +55,5 @@ club entry — that number is outdated.
   replacement needed.
 - Weed/smoke shop question — decided: leave out of the guidebook entirely,
   no FAQ, Santi doesn't want to be a referral source.
-- Jiu-jitsu details, Safety Tips section, a few local/organic store name
-  spellings (chan selvita, Woolis market, cocoa amor) — still need real
-  details from Santi.
+- Safety Tips section, a few local/organic store name spellings (chan
+  selvita, Woolis market, cocoa amor) — still need real details from Santi.
