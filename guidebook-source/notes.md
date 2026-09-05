@@ -35,8 +35,10 @@ club entry — that number is outdated.
   Santi, one of the best group nights out in town.
 - **Cara Feliz** — karaoke most nights. Multiple microphones, air
   conditioning.
-- [ "Lapezine" — a venue Santi mentioned but the spelling didn't come
-  through clearly. Still need to confirm and add. ]
+- **La Pizzine** — two locations (La Veleta + Pueblo/town), both throw
+  parties on different nights. Instagram: @la_pizzinetulum (this is
+  "Lapezine" from the earlier dictation, confirmed via search + Santi's
+  correction).
 
 ## Beach Clubs
 
