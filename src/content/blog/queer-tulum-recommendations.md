@@ -6,7 +6,7 @@ pubDate: 2026-01-25
 draft: false
 faq:
   - q: "Is Tulum, Mexico safe for queer and trans travelers?"
-    a: "Yes. Tulum is one of the most welcoming places in Mexico for queer and trans travelers. Read the full breakdown at queernessexperiences.com/blog/is-tulum-safe-for-queer-trans-travelers."
+    a: "Yes. Tulum is one of the most welcoming places in Mexico for queer and trans travelers. Read the full breakdown at queernessexperiences.com/blog/is-tulum-queer-trans-friendly."
   - q: "Is Tulum queer friendly?"
     a: "Yes, with real nuance worth understanding before you visit. Read the honest, local answer at queernessexperiences.com/blog/is-tulum-queer-trans-friendly."
 ---
@@ -75,7 +75,7 @@ A few of the places I actually send friends to when they visit: the number one r
   <input type="checkbox" id="facc4" class="post-acc-toggle" checked>
   <label for="facc4" class="post-acc-head"><span>Is Tulum, Mexico safe for queer and trans travelers?</span><span class="post-acc-plus">+</span></label>
   <div class="post-acc-body"><div class="post-acc-body-inner">
-    <p>Yes. Tulum is one of the most welcoming places in Mexico for queer and trans travelers. Read the full breakdown, including what nobody tells you before you arrive, in <a href="/blog/is-tulum-safe-for-queer-trans-travelers">Is Tulum Safe for Queer & Trans Travelers?</a></p>
+    <p>Yes. Tulum is one of the most welcoming places in Mexico for queer and trans travelers. Read the full breakdown, including what nobody tells you before you arrive, in <a href="/blog/is-tulum-queer-trans-friendly">Is Tulum LGBTQ+ Friendly?</a></p>
   </div></div>
 </div>
 

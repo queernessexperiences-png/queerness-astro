@@ -27,3 +27,6 @@
 # No equivalent content on the new site yet — sending to the homepage for now:
 /post/volunteering-in-tulum     /                                       301
 
+# Safety post was merged into the "friendly" post — it's the one canonical page now
+/blog/is-tulum-safe-for-queer-trans-travelers  /blog/is-tulum-queer-trans-friendly  301
+
