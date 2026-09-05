@@ -5,20 +5,19 @@ HTML was lost when it lived only in a temp scratchpad folder. This file lives
 in the git repo so that never happens again. Rebuild the styled version from
 this whenever there's time; until then, this is the source of truth for facts.)
 
-## National Park entrance rules (updated August 2026)
+## National Park entrance rules (updated — since the president's visit, summer 2026)
 
-The rules changed as of August 2026:
+Since the president visited in summer 2026, the rules changed in favor of
+visitors: entrance to the National Park is now **free**. Caveats:
 
-- **On foot or bike**: entrance to the National Park is now **free**.
-- **By car or scooter/moto**: make a reservation with a beach club (e.g. Ikal —
-  ikaltulumhotel.com/access-registration) and show the reservation at the gate.
-  You don't have to actually go to that beach club, though it's recommended.
-  This reservation is only valid for the entrance on **Cobá Road** — not the
-  entrance on the Tulum ruins road. [ Consider adding a map pin distinguishing
-  the two entrances. ]
-- **No car or moto, not walking/biking in**: go to either the Tulum (ruins)
-  entrance or the Cobá Road entrance, then take one of the large golf carts
-  into the park for **20 pesos**.
+- **On foot or bike**: free, and you can go in through either the Tulum ruins
+  entrance or the Cobá Road entrance.
+- **By car or scooter/moto**: you need a reservation to drive/scoot in. Use
+  Ikal (spelled I-K-A-L), one of our local favorite beach clubs — fill out
+  their form and you can enter, and they have their own parking lot.
+- **No car or moto**: go to either entrance (Tulum ruins or Cobá Road), then
+  take the little bus into the park for **20 pesos**.
+- **Tulum ruins entrance fee**: 265 pesos for non-Mexican/non-local visitors.
 
 This replaces the old flat "120 pesos" entrance fee note in the Ikal beach
 club entry — that number is outdated.
