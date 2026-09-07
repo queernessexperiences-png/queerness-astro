@@ -87,6 +87,9 @@ here are the two easy ways, pick ONE:
 - [ ] Check that redirects resolved — search site:queernessexperiences.com after a few days
 - [ ] Watch Search Console for crawl errors for 2 weeks
 
+## 10. Future marketing ideas (not launch blockers)
+- [ ] Video sales letters (VSLs) — for tours and/or group trips pages
+
 ## Timeline reality check
 Steps 1-4 (content) are the real work — budget most of your week there.
 Steps 5-8 (deploy + DNS + email) is one focused afternoon, done carefully.

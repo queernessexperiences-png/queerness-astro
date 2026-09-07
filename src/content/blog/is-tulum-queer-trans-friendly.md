@@ -5,6 +5,8 @@ keyword: "is tulum lgbtq friendly"
 pubDate: 2026-01-20
 updatedDate: 2026-05-01
 draft: false
+heroImage: "/images/friendly.jpeg"
+heroAlt: "Two queer travelers laughing and embracing while swimming near a dock in Tulum"
 faq:
   - q: "Is Tulum queer and trans friendly?"
     a: "Yes. Tulum is genuinely welcoming for queer and trans travelers. You can hold your partner's hand, be visibly queer, and move through town without drama, particularly in tourist areas."

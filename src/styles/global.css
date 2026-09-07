@@ -65,7 +65,7 @@ nav{position:sticky;top:0;z-index:100;background:var(--white);border-bottom:3px 
 h1{font-family:var(--ff);font-size:44px;line-height:1;letter-spacing:0.04em;text-transform:uppercase;color:var(--white);position:relative;z-index:2;margin-bottom:var(--s-md);-webkit-text-stroke:1.5px rgba(0,0,0,0.3);paint-order:stroke fill;}
 h1 .l{display:block;line-height:1;margin-bottom:6px;}
 h1 .l4{display:block;font-size:0.5em;margin-top:4px;}
-.hero-social-proof{display:inline-flex;align-items:center;gap:8px;margin-top:var(--s-md);padding:10px 14px;background:rgba(255,255,255,0.12);border:2px solid rgba(255,255,255,0.4);position:relative;z-index:2;font-family:var(--fb);font-size:12.5px;font-weight:700;color:var(--white);}
+.hero-social-proof{display:inline-flex;align-items:center;gap:8px;margin-top:10px;padding:10px 14px;background:rgba(255,255,255,0.12);border:2px solid rgba(255,255,255,0.4);position:relative;z-index:2;font-family:var(--fb);font-size:12.5px;font-weight:700;color:var(--white);}
 .hero-social-proof .stars{color:var(--yellow);letter-spacing:1px;font-size:14px;}
 .hero-grid{position:relative;z-index:2;margin-bottom:var(--s-md);width:88%;display:grid;grid-template-columns:1fr 1fr;gap:12px;}
 .hero-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;border:3px solid rgba(255,255,255,0.4);}
@@ -95,7 +95,7 @@ h1 .l4{display:block;font-size:0.5em;margin-top:4px;}
 
 /* GUIDE — placed above tours, per plan */
 .guide{background:var(--magenta);padding:var(--s-lg) var(--s-sm);border-top:3px solid var(--dark);}
-.sec-eye{font-family:var(--fb);font-size:12.5px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--magenta);margin:0 0 12px;display:block;}
+.sec-eye{font-family:var(--fb);font-size:12.5px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--magenta);margin:0 0 4px;display:block;}
 .guide h2{font-family:var(--ff);font-size:36px;line-height:1.14;color:var(--white);text-transform:uppercase;margin:0 0 var(--s-sm);}
 .guide h2 .accent{color:var(--yellow);}
 .guide-lead{font-size:18px;color:rgba(255,255,255,0.92);line-height:1.7;margin-bottom:var(--s-md);max-width:520px;}
@@ -137,7 +137,7 @@ h1 .l4{display:block;font-size:0.5em;margin-top:4px;}
 .mini{background:var(--white);border:3px solid var(--dark);border-top:5px solid var(--blue);padding:16px 18px;display:flex;align-items:center;justify-content:space-between;}
 .mini-name{font-family:var(--ff);font-size:20px;color:var(--dark);text-transform:uppercase;}
 .mini-link{font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--magenta);}
-.food-feature{margin-top:var(--s-lg);margin-bottom:var(--s-md);background:var(--yellow);border:3px solid var(--dark);box-shadow:6px 6px 0 var(--terra);padding:28px 24px;}
+.food-feature{margin-top:var(--s-lg);margin-bottom:var(--s-md);background:var(--yellow);border:3px solid var(--dark);box-shadow:6px 6px 0 var(--terra);padding:28px 24px;max-width:640px;}
 .food-feature-caption{font-family:var(--ff);font-size:22px;line-height:1.3;color:var(--dark);text-transform:uppercase;max-width:640px;}
 .food-feature-credit{font-size:13px;color:var(--dark);opacity:0.7;margin-top:10px;}
 .food-feature-credit a{color:var(--magenta);font-weight:700;text-decoration:underline;}
@@ -149,6 +149,7 @@ h1 .l4{display:block;font-size:0.5em;margin-top:4px;}
 .groups .sec-eye{color:var(--white);}
 .groups h2{font-family:var(--ff);font-size:36px;line-height:1.14;color:var(--white);text-transform:uppercase;margin:0 0 var(--s-sm);}
 .groups p{font-size:18px;color:rgba(255,255,255,0.9);line-height:1.7;margin-bottom:var(--s-md);max-width:520px;}
+.groups-tagline{font-weight:700;color:var(--white) !important;}
 .btn-groups{display:block;background:var(--white);color:var(--terra);padding:16px;font-size:14.5px;font-weight:700;font-family:var(--fb);letter-spacing:0.05em;text-transform:uppercase;text-align:center;border:3px solid var(--dark);box-shadow:5px 5px 0 var(--dark);}
 
 /* FRIEND — looking for a queer friend, with form */
@@ -205,9 +206,9 @@ h1 .l4{display:block;font-size:0.5em;margin-top:4px;}
 .contact-lead{font-size:18px;color:rgba(255,255,255,0.88);margin-bottom:var(--s-md);line-height:1.7;max-width:480px;}
 .form{display:flex;flex-direction:column;gap:var(--s-sm);}
 .fl{font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.75);display:block;margin-bottom:6px;}
-.fi,.fs{background:rgba(255,255,255,0.1);border:2px solid rgba(255,255,255,0.4);padding:13px 14px;font-size:16.5px;font-family:var(--fb);color:var(--white);outline:none;width:100%;}
-.fi::placeholder{color:rgba(255,255,255,0.4);}
-.fi:focus,.fs:focus{border-color:var(--yellow);}
+.fi,.fs{background:var(--bone);border:2px solid var(--yellow);padding:13px 14px;font-size:16.5px;font-family:var(--fb);color:var(--dark);outline:none;width:100%;}
+.fi::placeholder{color:var(--muted);}
+.fi:focus,.fs:focus{border-color:var(--terra);}
 .fs{color:rgba(255,255,255,0.7);}
 .fs option{background:var(--terra);color:var(--white);}
 .fnote{font-size:13px;color:rgba(255,255,255,0.55);line-height:1.6;}
@@ -268,7 +269,7 @@ footer{background:var(--dark);padding:var(--s-md) var(--s-sm);border-top:3px sol
 }
 
 /* THIN ACCENT LINES — section finish */
-.sec-eye{position:relative;padding-bottom:12px;}
+.sec-eye{position:relative;padding-bottom:6px;}
 .sec-eye::after{content:'';position:absolute;left:0;bottom:0;width:40px;height:2px;background:currentColor;opacity:0.5;}
 .section-rule{height:2px;background:var(--dark);opacity:0.15;max-width:1120px;margin:0 auto;}
 

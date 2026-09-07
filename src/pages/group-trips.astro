@@ -7,6 +7,7 @@ import Layout from '../layouts/Layout.astro';
   <div class="shape-y"></div>
   <p class="head-eye">★ Sapphic, Queer &amp; Trans Group Trips · Latin America</p>
   <h1>Trips that actually<br>make it out of<br>the group chat.</h1>
+  <p class="head-hook">Trips that teach you how to say yes in Spanish. No, we don't say "sí." One way involves a finger, one way involves an egg.</p>
   <p>For sapphic, queer, and trans people excited to travel while prioritizing local businesses and local projects along the way. Created by Santi Solis, a queer, bilingual, and bicultural group trip creator. Being bicultural is what lets me bridge both worlds for travelers ready to make real connections when they travel to Latin America and experience Mexican culture from a local's perspective. Tulum now, Mexico City coming soon.</p>
 </header>
 
@@ -16,7 +17,7 @@ import Layout from '../layouts/Layout.astro';
       <p class="sec-eye">What these trips actually are</p>
       <p style="font-size:17px;line-height:1.8;color:var(--dark);margin-bottom:var(--s-sm);">These trips start by interacting with the culture and learning the specific, nuanced, charming details that make Latin culture so special, not just seeing the sights: the song that gets everyone singing in the middle of the street the second it plays, the dance moves that show up at every wedding and every social gathering, the decorations that make us feel connected to generations before us. Making you feel more connected to the people you meet, and to yourself. I think that's important.</p>
       <p style="font-size:17px;line-height:1.8;color:var(--dark);">Hi, I'm Santi. I'm Mexican, born in Mexico, raised in the U.S., and I've been living in Tulum for almost ten years. People in Latin America have a special way of creating space for others, and I think every queer person deserves to experience that. I want to bring that back into queer community.</p>
-      <p class="gstat" style="border-top:none;padding-top:0;margin-top:var(--s-sm);">Small example: we don't just say "sí." There are a couple other options, one involves a finger, one involves an egg. You'll leave knowing both.</p>
+      <blockquote class="pull-quote">People in Latin America have a special way of creating space for others.</blockquote>
     </div>
     <div class="trips-about-grid">
       <img src="/images/group-trips-photo.jpg" alt="A group smiling together on a Queerness Experiences trip in Tulum">
@@ -72,7 +73,7 @@ import Layout from '../layouts/Layout.astro';
   <!-- CAMP QUEERNESS — COMING SOON -->
   <div class="trip">
     <div class="trip-photo">
-      <img class="trip-photo-img" src="/images/camp-queerness-picnic.jpg" alt="Friends painting together over a spread of fresh fruit in the jungle near Tulum">
+      <img class="trip-photo-img" src="/images/camp-queerness-picnic.jpg" alt="Friends painting together over a spread of fresh fruit in the jungle near Tulum" style="object-position:center 15%;">
       <span class="trip-status status-soon">Coming soon</span>
     </div>
     <div class="trip-body">
@@ -143,7 +144,6 @@ import Layout from '../layouts/Layout.astro';
         <button type="submit" class="fsub">Let's Talk →</button>
       </form>
     </div>
-    <div class="host-photo">PHOTO PLACEHOLDER — a group Santi has hosted or planned for</div>
   </div>
 </section>
 
@@ -168,6 +168,8 @@ a{color:inherit;text-decoration:none;}
 .head-eye{font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-bottom:4px;position:relative;z-index:2;}
 .head h1{font-family:var(--ff);font-size:40px;line-height:0.96;text-transform:uppercase;color:var(--white);position:relative;z-index:2;-webkit-text-stroke:1.5px rgba(0,0,0,0.3);paint-order:stroke fill;margin-bottom:var(--s-sm);}
 .head p{font-size:14.5px;color:rgba(255,255,255,0.9);line-height:1.7;position:relative;z-index:2;max-width:520px;}
+.head-hook{font-family:var(--fb);font-weight:700;font-size:16px !important;color:var(--white) !important;max-width:460px;margin-bottom:var(--s-sm);position:relative;z-index:2;background:rgba(0,0,0,0.35);border-left:3px solid var(--yellow);padding:10px 14px;}
+.pull-quote{background:var(--bone);border:3px solid var(--dark);box-shadow:6px 6px 0 var(--yellow);padding:20px 24px;margin:var(--s-md) 0 0;font-family:var(--ff);font-size:22px;line-height:1.3;color:var(--dark);text-transform:uppercase;}
 
 /* TRIPS */
 .trips{padding:var(--s-md) var(--s-sm) var(--s-lg);}
