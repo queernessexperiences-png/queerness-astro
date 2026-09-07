@@ -16,6 +16,7 @@ import Layout from '../layouts/Layout.astro';
       <p class="sec-eye">What these trips actually are</p>
       <p style="font-size:17px;line-height:1.8;color:var(--dark);margin-bottom:var(--s-sm);">These trips start by interacting with the culture and learning the specific, nuanced, charming details that make Latin culture so special, not just seeing the sights: the song that gets everyone singing in the middle of the street the second it plays, the dance moves that show up at every wedding and every social gathering, the decorations that make us feel connected to generations before us. Making you feel more connected to the people you meet, and to yourself. I think that's important.</p>
       <p style="font-size:17px;line-height:1.8;color:var(--dark);">Hi, I'm Santi. I'm Mexican, born in Mexico, raised in the U.S., and I've been living in Tulum for almost ten years. People in Latin America have a special way of creating space for others, and I think every queer person deserves to experience that. I want to bring that back into queer community.</p>
+      <p class="gstat" style="border-top:none;padding-top:0;margin-top:var(--s-sm);">Small example: we don't just say "sí." There are a couple other options, one involves a finger, one involves an egg. You'll leave knowing both.</p>
     </div>
     <div class="trips-about-grid">
       <img src="/images/group-trips-photo.jpg" alt="A group smiling together on a Queerness Experiences trip in Tulum">
@@ -116,7 +117,7 @@ import Layout from '../layouts/Layout.astro';
     </div>
     <div class="faq-item">
       <input type="checkbox" id="gfaq5">
-      <label class="faq-q" for="gfaq5">Can you help organize a group trip?<span class="tog">+</span></label>
+      <label class="faq-q" for="gfaq5">I'm bringing my group to Tulum, can you give me your local insight?<span class="tog">+</span></label>
       <div class="faq-a"><div class="faq-a-inner">Yes. I can help you create a whole itinerary, connect you with local businesses, private chefs, activities, and experiences, or we can co-host.</div></div>
     </div>
   </div>
@@ -124,10 +125,26 @@ import Layout from '../layouts/Layout.astro';
 
 <!-- HOST CTA -->
 <section class="host">
-  <p class="host-eye">Bringing your group to Tulum?</p>
-  <h2>Let's plan it<br>together</h2>
-  <p>I offer consulting on different things to do, or I can help you plan the whole trip out, focused on local businesses and local experiences. Raised between two cultures, I can introduce your group to the friends I actually have here and the places I believe in. If that sounds like a fit, let's chat.</p>
-  <a href="#" class="btn-host">Let's Talk →</a>
+  <div class="host-inner">
+    <div class="host-text">
+      <p class="host-eye">Bringing your group to Tulum?</p>
+      <h2>Let's plan it<br>together</h2>
+      <p>I offer consulting on different things to do, or I can help you plan the whole trip out, focused on local businesses and local experiences. Raised between two cultures, I can introduce your group to the friends I actually have here and the places I believe in. If that sounds like a fit, let's chat.</p>
+      <form class="form" name="group-plan" method="POST" data-netlify="true" action="/thank-you">
+        <input type="hidden" name="form-name" value="group-plan" />
+        <div style="display:flex;gap:12px;">
+          <div style="flex:1;"><label class="fl">First name</label><input class="fi" type="text" name="first-name" placeholder="First name" required></div>
+          <div style="flex:1;"><label class="fl">Last name</label><input class="fi" type="text" name="last-name" placeholder="Last name" required></div>
+        </div>
+        <div><label class="fl">Email</label><input class="fi" type="email" name="email" placeholder="your@email.com" required></div>
+        <div><label class="fl">Group size</label><input class="fi" type="text" name="group-size" placeholder="How many people"></div>
+        <div><label class="fl">Rough dates</label><input class="fi" type="text" name="dates" placeholder="When are you thinking"></div>
+        <div><label class="fl">Tell me about your group</label><textarea class="fi" name="message" rows="4" placeholder="What you're hoping to plan or do" style="resize:vertical;font-family:var(--fb);" required></textarea></div>
+        <button type="submit" class="fsub">Let's Talk →</button>
+      </form>
+    </div>
+    <div class="host-photo">PHOTO PLACEHOLDER — a group Santi has hosted or planned for</div>
+  </div>
 </section>
 
 </Layout>
@@ -148,7 +165,7 @@ a{color:inherit;text-decoration:none;}
 /* HEADER */
 .head{background:var(--terra);padding:var(--s-md) var(--s-sm) var(--s-lg);position:relative;overflow:hidden;}
 .shape-y{position:absolute;top:0;right:0;width:40%;height:50%;background:var(--yellow);clip-path:polygon(28% 0,100% 0,100% 100%,0 100%);z-index:0;}
-.head-eye{font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-bottom:var(--s-sm);position:relative;z-index:2;}
+.head-eye{font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-bottom:4px;position:relative;z-index:2;}
 .head h1{font-family:var(--ff);font-size:40px;line-height:0.96;text-transform:uppercase;color:var(--white);position:relative;z-index:2;-webkit-text-stroke:1.5px rgba(0,0,0,0.3);paint-order:stroke fill;margin-bottom:var(--s-sm);}
 .head p{font-size:14.5px;color:rgba(255,255,255,0.9);line-height:1.7;position:relative;z-index:2;max-width:520px;}
 
@@ -176,6 +193,8 @@ a{color:inherit;text-decoration:none;}
 .host h2{font-family:var(--ff);font-size:30px;color:var(--white);text-transform:uppercase;line-height:1;margin-bottom:var(--s-sm);}
 .host p{font-size:14px;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:var(--s-md);max-width:520px;}
 .btn-host{display:inline-block;background:var(--yellow);color:var(--dark);font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:15px 28px;border:3px solid var(--yellow);}
+.host-inner{display:flex;flex-direction:column;gap:var(--s-md);}
+.host-photo{width:100%;aspect-ratio:4/3;background:repeating-linear-gradient(135deg,rgba(255,255,255,0.06),rgba(255,255,255,0.06) 12px,rgba(255,255,255,0.1) 12px,rgba(255,255,255,0.1) 24px);border:3px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;font-family:var(--fb);font-size:11px;letter-spacing:0.04em;text-transform:uppercase;color:rgba(255,255,255,0.6);text-align:center;padding:12px;}
 
 footer{background:var(--dark);padding:var(--s-md) var(--s-sm);border-top:3px solid var(--yellow);display:flex;flex-direction:column;gap:var(--s-sm);}
 .flogo{font-family:var(--fb);font-size:16px;font-weight:700;color:var(--magenta);line-height:1.15;}
@@ -184,10 +203,6 @@ footer{background:var(--dark);padding:var(--s-md) var(--s-sm);border-top:3px sol
 .trips-about-inner{display:flex;flex-direction:column;gap:var(--s-md);}
 .trips-about-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
 .trips-about-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;border:3px solid var(--dark);}
-.trips-about-grid img:nth-child(1){transform:rotate(-2deg);}
-.trips-about-grid img:nth-child(2){transform:rotate(1.5deg);margin-top:14px;}
-.trips-about-grid img:nth-child(3){transform:rotate(1deg);margin-top:-10px;}
-.trips-about-grid img:nth-child(4){transform:rotate(-1.5deg);}
 
 @media(min-width:720px){
   nav{padding:0 40px;}
@@ -197,6 +212,8 @@ footer{background:var(--dark);padding:var(--s-md) var(--s-sm);border-top:3px sol
   .trip{margin-bottom:0;}
   .trips-about-inner{display:grid;grid-template-columns:1fr 440px;gap:48px;align-items:center;}
   .host{padding:var(--s-lg) 40px;}
+  .host-inner{max-width:1120px;margin:0 auto;flex-direction:row;align-items:center;gap:48px;}
+  .host-photo{width:360px;flex-shrink:0;aspect-ratio:4/3;}
   footer{flex-direction:row;align-items:center;justify-content:space-between;padding:var(--s-md) 40px;}
 }
 </style>

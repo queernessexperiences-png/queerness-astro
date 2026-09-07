@@ -17,10 +17,11 @@ import Layout from '../layouts/Layout.astro';
 <style>
   .about-hero h2{-webkit-text-stroke:1.5px rgba(0,0,0,0.3);paint-order:stroke fill;max-width:640px;position:relative;z-index:2;}
   .about-hero .guide-lead,.about-hero .guide-photo{position:relative;z-index:2;}
+  .story-photo-portrait{width:100%;max-width:320px;aspect-ratio:3/4;object-fit:cover;border:3px solid var(--dark);box-shadow:6px 6px 0 var(--yellow);margin-bottom:var(--s-md);}
 </style>
 
 <section class="creds" aria-label="Credentials" style="background:var(--bone);padding:var(--s-lg) var(--s-sm);">
-  <div class="cred"><div class="cnum">01</div><div><div class="ct">UCLA Wildlife Biologist</div><div class="cd">Former field biologist. The science behind every nature-based tour.</div></div></div>
+  <div class="cred"><div class="cnum">01</div><div><div class="ct">Wildlife Biologist, UCLA-affiliated Lab</div><div class="cd">Former field biologist in the Rocky Mountains. The science behind every nature-based tour.</div></div></div>
   <div class="cred"><div class="cnum">02</div><div><div class="ct">Conference Speaker</div><div class="cd">Spoke on a panel about creating queer experiences at IGLTA's conference. Also invited by the Guadalajara tourism board to speak on the same topic.</div></div></div>
   <div class="cred"><div class="cnum">03</div><div><div class="ct">Women's Day Speaker &amp; MC</div><div class="cd">Led a talk to 300+ women across Latin America on expanding their comfort zones, and served as master of ceremonies for Women's Day in Tulum.</div></div></div>
   <div class="cred"><div class="cnum">04</div><div><div class="ct">Committee Member, LADLE</div><div class="cd">Los Amigos de la Esquina. Started as an original volunteer, later general manager, now on committee.</div></div></div>
@@ -32,10 +33,10 @@ import Layout from '../layouts/Layout.astro';
 
 <section style="background:var(--white);padding:var(--s-lg) var(--s-sm);max-width:680px;margin:0 auto;">
   <p class="sec-eye">My story</p>
-  <p style="font-size:17px;line-height:1.8;color:var(--dark);margin-bottom:var(--s-sm);">Born in Mexico, raised in the U.S., I moved to Tulum in 2017 expecting to stay for three months, and here I am all these years later. Before this, I worked as a wildlife biologist at UCLA. Now I run travel experiences for queer, trans, and nonbinary people who want the real Tulum, not a resort version of it.</p>
+  <img class="story-photo-portrait" src="/images/santi-iglta-guadalajara.jpg" alt="Santi speaking on a panel at the IGLTA LGBTQ+ Travel Symposium in Guadalajara, Jalisco">
+  <p style="font-size:17px;line-height:1.8;color:var(--dark);margin-bottom:var(--s-sm);">Born in Mexico, my family moved to the States when I was three, and I grew up in LA. I moved to Tulum in 2017 expecting to stay for three months, and here I am all these years later. Before this, I worked as a wildlife biologist for a research lab based out of UCLA. Now I run travel experiences for queer, trans, and nonbinary people who want the real Tulum, not a resort version of it.</p>
   <p style="font-size:17px;line-height:1.8;color:var(--dark);margin-bottom:var(--s-sm);">Outside of tours, I'm part of a local theater group and take go-go dancing classes. I also serve on the committee for Los Amigos de la Esquina (LADLE), a local nonprofit offering art, wellbeing, and life-skills programs for Mayan and local Mexican kids. I started there as a volunteer, later became general manager, and now help guide the organization from the committee.</p>
   <div class="guide-photo">PHOTO — SANTI AT LADLE / COMMUNITY EVENT</div>
-  <img class="guide-photo" src="/images/santi-iglta-guadalajara.jpg" alt="Santi speaking on a panel at the IGLTA LGBTQ+ Travel Symposium in Guadalajara, Jalisco">
   <div class="guide-photo">PHOTO — SANTI DOING A TOUR</div>
 </section>
 

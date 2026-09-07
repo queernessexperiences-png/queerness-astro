@@ -8,6 +8,14 @@
 // key — otherwise MailerLite will reject or silently drop unknown fields.
 const SYNCED_FORMS = new Set(['contact', 'waitlist', 'work-with-me', 'wpath-2026']);
 
+// Group IDs each form's subscribers get added to, so MailerLite automations
+// (triggered on "subscriber joins group") can send the right thank-you email.
+const FORM_GROUPS = {
+  contact: ['197907418221380958'], // Tour Inquiries
+  waitlist: ['197907420859598058'], // Group Trip Inquiries
+  'wpath-2026': ['197907562547381585'], // WPATH Inquiries
+};
+
 function wpathInterests(data) {
   const labels = {
     'date-cooking-class': 'Cooking class',
@@ -69,13 +77,15 @@ export async function handler(event) {
   if (formName === 'contact' || formName === 'waitlist') fields.tour = interest || undefined;
   if (formName === 'wpath-2026') fields.wpath_interests = interest || undefined;
 
+  const groups = FORM_GROUPS[formName];
+
   const res = await fetch('https://connect.mailerlite.com/api/subscribers', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       Authorization: `Bearer ${apiKey}`,
     },
-    body: JSON.stringify({ email, fields }),
+    body: JSON.stringify({ email, fields, groups }),
   });
 
   if (!res.ok) {

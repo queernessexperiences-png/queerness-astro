@@ -7,7 +7,7 @@ const orgSchema = {
   name: 'Queerness Experiences',
   description: 'Queer Tulum tours and group trips, Mexican-owned and operated. LGBTQ+ travel experiences for lesbian, sapphic, gay, bi, trans, and queer travelers.',
   url: 'https://queernessexperiences.com',
-  image: 'https://static.wixstatic.com/media/44aee0_29ba316a87a442cf81b472eb524bb73e~mv2.png',
+  image: 'https://queernessexperiences.com/images/group-trips-photo.jpg',
   founder: { '@type': 'Person', name: 'Santi Solis' },
   areaServed: { '@type': 'City', name: 'Tulum' },
   address: { '@type': 'PostalAddress', addressLocality: 'Tulum', addressRegion: 'Quintana Roo', addressCountry: 'MX' },
@@ -29,7 +29,7 @@ const orgSchema = {
       <span class="l l4">in Tulum.</span>
     </h1>
     <div class="hero-grid">
-      <img src="/images/IMG_4652.jpeg" alt="Friends swimming through the mangroves in Tulum">
+      <img src="/images/hero-grid-mangroves-crop.jpg" alt="Friends swimming through the mangroves in Tulum">
       <img src="/images/hero-grid-cenote-friends.jpg" alt="Friends laughing together at a cenote in Tulum">
       <img src="/images/secret-cenote-cave.jpg" alt="A couple at the entrance of the Secret Cenote in Tulum">
       <img src="/images/IMG_0477.jpeg" alt="A couple laughing together on a jungle trail in Tulum">
@@ -62,7 +62,7 @@ const orgSchema = {
       <p><strong>I'm Santi (they/them).</strong> Born in Mexico. Raised in the U.S. Came home to build a life in Tulum.</p>
       <p class="small">Fun facts about me</p>
       <div class="creds" aria-label="Fun facts">
-        <div class="cred"><div class="cnum">01</div><div><div class="ct">UCLA Wildlife Biologist</div><div class="cd">Let's get nerdy about the plants and animals along the way.</div></div></div>
+        <div class="cred"><div class="cnum">01</div><div><div class="ct">Wildlife Biologist, UCLA-affiliated Lab</div><div class="cd">Worked in the Rocky Mountains for a research lab based out of UCLA. Let's get nerdy about the plants and animals along the way.</div></div></div>
         <div class="cred"><div class="cnum">02</div><div><div class="ct">Pattie Gonia Scholarship</div><div class="cd">Queer Outdoor Expedition recipient, 2023.</div></div></div>
         <div class="cred"><div class="cnum">03</div><div><div class="ct">International Conference Speaker</div><div class="cd">On designing experiences for queer and trans travelers.</div></div></div>
         <a href="/group-trips" class="cred" style="text-decoration:none;color:inherit;"><div class="cnum">04</div><div><div class="ct">Creator of Curated Group Trips &amp; Retreats</div><div class="cd">See the trips →</div></div></a>
@@ -91,6 +91,44 @@ const orgSchema = {
       <div class="gstat">Book any tour and the full guidebook is yours free.</div>
     </div>
   </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <p class="sec-eye" style="color:var(--yellow);">Our reviews</p>
+  <h2>What queer &amp; trans<br>travelers say</h2>
+  <div class="review-scroll">
+    <div class="rcard">
+      <div class="rstars">★★★★★</div>
+      <input type="checkbox" id="rev1" class="rev-toggle">
+      <p class="rtext">I procrastinated in writing this review because anything I say will be an understatement to <strong>how delightful Santi is, how fantastic their tours are</strong>, and how the whole experience will easily become the highlight of any trip to Tulum.</p>
+      <label for="rev1" class="rev-more">Read more +</label>
+      <p class="rname">— Kristen Eckstrand, Google review</p>
+    </div>
+    <div class="rcard">
+      <div class="rstars">★★★★★</div>
+      <input type="checkbox" id="rev2" class="rev-toggle">
+      <p class="rtext"><strong>Santi made exploring and connecting feel effortless</strong>, when in reality, I never would have found the spaces, knowledge, fun, and people without them.</p>
+      <label for="rev2" class="rev-more">Read more +</label>
+      <p class="rname">— Haley Gowland, Google review</p>
+    </div>
+    <div class="rcard">
+      <div class="rstars">★★★★★</div>
+      <input type="checkbox" id="rev3" class="rev-toggle">
+      <p class="rtext"><strong>The website and guide were super helpful.</strong> They MADE my trip to Tulum. Santi is very responsive and knowledgeable about Tulum. I did the cenote and the street food tours and they were AMAZING. I highly highly recommend both — they were so different but each gave me a glimpse of Tulum I never would have seen without the tour. Santi is an absolute delight. The cenotes were stunning. The food was delicious. The culture and educational experience was phenomenal. I can't say enough good things.</p>
+      <label for="rev3" class="rev-more">Read more +</label>
+      <p class="rname">— Chashah Johnson, Local Guide, Google review</p>
+    </div>
+    <div class="rcard">
+      <div class="rstars">★★★★★</div>
+      <input type="checkbox" id="rev4" class="rev-toggle">
+      <p class="rtext">I had such an amazing time on this tour! As a foodie, I really appreciated checking out La Norteña and eating all the authentic, delicious food that Santi recommended.</p>
+      <label for="rev4" class="rev-more">Read more +</label>
+      <p class="rname">— Marissa Herrera, Local Guide, Google review</p>
+    </div>
+  </div>
+  <p class="scroll-hint">← Swipe to read more reviews →</p>
+  <a href="https://www.google.com/maps/place/Queerness+Experiences/@20.4203707,-87.5893973,94594m/data=!3m1!1e3!4m8!3m7!1s0x213eac5d05676035:0x9ad4bb88e0a769c2!8m2!3d20.4200372!4d-87.259726!9m1!1b1!16s%2Fg%2F11w4tpph1c?hl=en" target="_blank" rel="noopener" class="btn-reviews">Read all 19 reviews on Google →</a>
 </section>
 
 <!-- TOURS — two flagships + mini boxes -->
@@ -194,6 +232,7 @@ const orgSchema = {
   <p class="sec-eye">Coming up</p>
   <h2>Group trips<br>coming up</h2>
   <p>I'm hosting queer group trips in Tulum and beyond. A group trip with Queer Connect, plus two new experiences of my own on the way: the Luxury Lesbians retreat, for lesbian, sapphic, queer, and trans professionals 30+, and Camp Queerness.</p>
+  <p class="gstat" style="border-top:none;padding-top:0;color:var(--yellow);">Small example of what you'll learn: we don't just say "sí." There are a couple other options, one involves a finger, one involves an egg.</p>
   <a href="/group-trips" class="btn-groups">See Upcoming Group Trips →</a>
 </section>
 
@@ -203,52 +242,13 @@ const orgSchema = {
     <div class="friend-intro">
       <p class="sec-eye">In the area?</p>
       <h2>Looking for a<br>queer friend?</h2>
-      <p>I do a lot of activities. You're welcome to join.</p>
+      <p>I do a lot of activities, you're welcome to join!</p>
     </div>
     <div class="friend-box">
       <p class="hobbies">Dance class · jiu jitsu · life drawing night · theatre in Spanish · and whatever else is happening that week.</p>
-      <a href="/book" class="btn-friend" style="display:inline-block;text-decoration:none;text-align:center;">Tell me what you're up to →</a>
+      <a href="mailto:info@queernessexperiences.com?subject=Let's%20hang%20out" class="btn-friend" style="display:inline-block;text-decoration:none;text-align:center;">Message me, let's join a class together →</a>
     </div>
   </div>
-</section>
-
-
-<!-- REVIEWS -->
-<section class="reviews" id="reviews">
-  <p class="sec-eye" style="color:var(--yellow);">Our reviews</p>
-  <h2>What queer &amp; trans<br>travelers say</h2>
-  <div class="review-scroll">
-    <div class="rcard">
-      <div class="rstars">★★★★★</div>
-      <input type="checkbox" id="rev1" class="rev-toggle">
-      <p class="rtext">I procrastinated in writing this review because anything I say will be an understatement to <strong>how delightful Santi is, how fantastic their tours are</strong>, and how the whole experience will easily become the highlight of any trip to Tulum.</p>
-      <label for="rev1" class="rev-more">Read more +</label>
-      <p class="rname">— Kristen Eckstrand, Google review</p>
-    </div>
-    <div class="rcard">
-      <div class="rstars">★★★★★</div>
-      <input type="checkbox" id="rev2" class="rev-toggle">
-      <p class="rtext"><strong>Santi made exploring and connecting feel effortless</strong>, when in reality, I never would have found the spaces, knowledge, fun, and people without them.</p>
-      <label for="rev2" class="rev-more">Read more +</label>
-      <p class="rname">— Haley Gowland, Google review</p>
-    </div>
-    <div class="rcard">
-      <div class="rstars">★★★★★</div>
-      <input type="checkbox" id="rev3" class="rev-toggle">
-      <p class="rtext"><strong>The website and guide were super helpful.</strong> They MADE my trip to Tulum. Santi is very responsive and knowledgeable about Tulum. I did the cenote and the street food tours and they were AMAZING. I highly highly recommend both — they were so different but each gave me a glimpse of Tulum I never would have seen without the tour. Santi is an absolute delight. The cenotes were stunning. The food was delicious. The culture and educational experience was phenomenal. I can't say enough good things.</p>
-      <label for="rev3" class="rev-more">Read more +</label>
-      <p class="rname">— Chashah Johnson, Local Guide, Google review</p>
-    </div>
-    <div class="rcard">
-      <div class="rstars">★★★★★</div>
-      <input type="checkbox" id="rev4" class="rev-toggle">
-      <p class="rtext">I had such an amazing time on this tour! As a foodie, I really appreciated checking out La Norteña and eating all the authentic, delicious food that Santi recommended.</p>
-      <label for="rev4" class="rev-more">Read more +</label>
-      <p class="rname">— Marissa Herrera, Local Guide, Google review</p>
-    </div>
-  </div>
-  <p class="scroll-hint">← Swipe to read more reviews →</p>
-  <a href="https://www.google.com/maps/place/Queerness+Experiences/@20.4203707,-87.5893973,94594m/data=!3m1!1e3!4m8!3m7!1s0x213eac5d05676035:0x9ad4bb88e0a769c2!8m2!3d20.4200372!4d-87.259726!9m1!1b1!16s%2Fg%2F11w4tpph1c?hl=en" target="_blank" rel="noopener" class="btn-reviews">Read all 19 reviews on Google →</a>
 </section>
 
 <!-- FAQ -->
