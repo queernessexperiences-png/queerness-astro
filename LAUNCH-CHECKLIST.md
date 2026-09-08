@@ -78,7 +78,13 @@ here are the two easy ways, pick ONE:
 
 ## 8. ⚠️ DNS cutover (do email first, per step 5)
 - [ ] Point your domain's A record / CNAME at Netlify (Netlify gives exact instructions)
-- [ ] Re-add your MX records so email survives
+- [ ] Re-add your MX records so email survives. Confirmed 2026-09-08, your email is Google Workspace (not Wix's own mail), recreate these exact 5 records on the new DNS host:
+  - Priority 10 → aspmx.l.google.com
+  - Priority 20 → alt1.aspmx.l.google.com
+  - Priority 30 → alt2.aspmx.l.google.com
+  - Priority 40 → alt3.aspmx.l.google.com
+  - Priority 50 → alt4.aspmx.l.google.com
+- [ ] Re-add the MailerLite domain verification TXT + CNAME records too (added on Wix on 2026-09-07, do NOT carry over automatically when DNS moves, or MailerLite sender auth breaks again)
 - [ ] Wait for DNS to propagate (can take a few hours)
 
 ## 9. Post-launch SEO
@@ -89,6 +95,7 @@ here are the two easy ways, pick ONE:
 
 ## 10. Future marketing ideas (not launch blockers)
 - [ ] Video sales letters (VSLs) — for tours and/or group trips pages
+- [ ] Add ManyChat to Instagram
 
 ## Timeline reality check
 Steps 1-4 (content) are the real work — budget most of your week there.
