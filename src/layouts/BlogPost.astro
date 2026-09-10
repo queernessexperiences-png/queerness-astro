@@ -1,6 +1,6 @@
 ---
 import Layout from './Layout.astro';
-const { title, description, keyword, pubDate, updatedDate, heroImage, heroAlt, faq, slug } = Astro.props;
+const { title, description, keyword, pubDate, updatedDate, heroImage, heroAlt, heroPosition, faq, slug } = Astro.props;
 const displayDate = (updatedDate || pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 
 // Every other post funnels to the free recommendations. The
@@ -38,7 +38,7 @@ const faqSchema = faq && faq.length > 0 ? {
       <span class="post-cta-top-link">{ctaTopLink}</span>
     </a>
 
-    {heroImage && <img class="post-hero" src={heroImage} alt={heroAlt || title} />}
+    {heroImage && <img class="post-hero" src={heroImage} alt={heroAlt || title} style={heroPosition ? `object-position:${heroPosition};` : undefined} />}
     {!heroImage && <div class="post-hero-ph">PHOTO — HERO IMAGE FOR THIS POST</div>}
     <div class="post-body">
       <slot />
