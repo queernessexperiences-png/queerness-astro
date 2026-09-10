@@ -276,7 +276,7 @@ footer{background:var(--dark);padding:var(--s-md) var(--s-sm);border-top:3px sol
 
 /* THIN ACCENT LINES — section finish */
 .sec-eye{position:relative;padding-bottom:6px;}
-.sec-eye::after{content:'';position:absolute;left:0;bottom:0;width:40px;height:2px;background:currentColor;opacity:0.5;}
+.sec-eye::after{content:'';position:absolute;left:0;bottom:0;width:22px;height:2px;background:currentColor;opacity:0.6;}
 .section-rule{height:2px;background:var(--dark);opacity:0.15;max-width:1120px;margin:0 auto;}
 
 /* PHOTO BAND */
