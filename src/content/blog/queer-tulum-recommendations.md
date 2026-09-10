@@ -77,7 +77,7 @@ A few of the places I actually send friends to when they visit: the number one r
   <div class="post-acc-body"><div class="post-acc-body-inner">
     <p><strong>Classic Mexican music.</strong> The songs you'll hear at weddings, house parties, karaoke, and just about anywhere people are out drinking.</p>
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/34CvMlQhe54w7xJTqGFu0J?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    <p style="margin-top:16px;"><strong>Fun songs we love, more modern.</strong> Queer rap and current stuff, for a different side of the vibe.</p>
+    <p style="margin-top:16px;"><strong>Fun songs we love, more modern.</strong> Queer rap and current stuff, for a different side of the vibe. Right now that includes two tracks from Indigenous rappers, as I get more exposed to incredible Indigenous artists, I'll keep adding to this playlist.</p>
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1DdS3SWql2Td0n6q9GLD6s?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
   </div></div>
 </div>
