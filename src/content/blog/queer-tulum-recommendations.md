@@ -6,6 +6,7 @@ pubDate: 2026-01-25
 draft: false
 heroImage: "/images/santi-green-juice.jpg"
 heroAlt: "Santi holding a fresh green juice at Bomba Snack in Tulum"
+heroPosition: "center 78%"
 faq:
   - q: "Is Tulum, Mexico safe for queer and trans travelers?"
     a: "Yes. Tulum is one of the most welcoming places in Mexico for queer and trans travelers. Read the full breakdown at queernessexperiences.com/blog/is-tulum-queer-trans-friendly."
