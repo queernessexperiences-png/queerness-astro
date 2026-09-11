@@ -85,7 +85,23 @@ A few of the places I actually send friends to when they visit: the number one r
 ## FAQ
 
 <div class="post-acc-item">
-  <input type="checkbox" id="facc4" class="post-acc-toggle" checked>
+  <input type="checkbox" id="facc1" class="post-acc-toggle" checked>
+  <label for="facc1" class="post-acc-head"><span>What's actually in the full Tulum guidebook?</span><span class="post-acc-plus">+</span></label>
+  <div class="post-acc-body"><div class="post-acc-body-inner">
+    <p>A full 3-4 day plan, in order, so you're not wasting time figuring it out once you land. Every place I actually send friends to: food, coffee, a queer-friendly bar, and more. Plus the getting-around and money stuff that saves you real money, like the no-Uber workaround and the ATM trick. And you get direct email access to me, so if something's not in the guide or you're looking for something specific, just send me your questions. <a href="/guidebook">See the full guidebook →</a></p>
+  </div></div>
+</div>
+
+<div class="post-acc-item">
+  <input type="checkbox" id="facc2" class="post-acc-toggle">
+  <label for="facc2" class="post-acc-head"><span>How is the full guidebook different from this free page?</span><span class="post-acc-plus">+</span></label>
+  <div class="post-acc-body"><div class="post-acc-body-inner">
+    <p>This free page is about one day's worth of recommendations. The full guidebook is the real thing: 3-4 days, fully planned out, written by someone who actually lives here, plus the direct access to me by email.</p>
+  </div></div>
+</div>
+
+<div class="post-acc-item">
+  <input type="checkbox" id="facc4" class="post-acc-toggle">
   <label for="facc4" class="post-acc-head"><span>Is Tulum, Mexico safe for queer and trans travelers?</span><span class="post-acc-plus">+</span></label>
   <div class="post-acc-body"><div class="post-acc-body-inner">
     <p>Yes. Tulum is one of the most welcoming places in Mexico for queer and trans travelers. Read the full breakdown, including what nobody tells you before you arrive, in <a href="/blog/is-tulum-queer-trans-friendly">Is Tulum LGBTQ+ Friendly?</a></p>
