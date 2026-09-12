@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Bringing Your Group to Tulum? | Queerness Experiences" description={"Planning to bring your own group to Tulum? Get local consulting and trip planning from a bicultural, bilingual local, focused on local businesses and local experiences."}>
+
+<section class="host" id="host-plan">
+  <div class="host-inner">
+    <div class="host-text">
+      <p class="host-eye">Bringing your group to Tulum?</p>
+      <h2>Let's plan it<br>together</h2>
+      <p>I offer consulting on different things to do, or I can help you plan the whole trip out, focused on local businesses and local experiences. Raised between two cultures, I can introduce your group to the friends I actually have here and the places I believe in. If that sounds like a fit, let's chat.</p>
+      <form class="form" name="group-plan" method="POST" data-netlify="true" action="/thank-you">
+        <input type="hidden" name="form-name" value="group-plan" />
+        <div style="display:flex;gap:12px;">
+          <div style="flex:1;"><label class="fl">First name</label><input class="fi" type="text" name="first-name" placeholder="First name" required></div>
+          <div style="flex:1;"><label class="fl">Last name</label><input class="fi" type="text" name="last-name" placeholder="Last name" required></div>
+        </div>
+        <div><label class="fl">Email</label><input class="fi" type="email" name="email" placeholder="your@email.com" required></div>
+        <div><label class="fl">Group size</label><input class="fi" type="text" name="group-size" placeholder="How many people"></div>
+        <div><label class="fl">Rough dates</label><input class="fi" type="text" name="dates" placeholder="When are you thinking"></div>
+        <div><label class="fl">Tell me about your group</label><textarea class="fi" name="message" rows="4" placeholder="What you're hoping to plan or do" style="resize:vertical;font-family:var(--fb);" required></textarea></div>
+        <button type="submit" class="fsub">Let's Talk →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</Layout>
+
+<style is:global>
+.host{background:var(--dark);padding:var(--s-lg) var(--s-sm);}
+.host-eye{font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--yellow);margin-bottom:var(--s-sm);}
+.host h2{font-family:var(--ff);font-size:30px;color:var(--white);text-transform:uppercase;line-height:1;margin-bottom:var(--s-sm);}
+.host p{font-size:14px;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:var(--s-md);max-width:520px;}
+.host-inner{display:flex;flex-direction:column;gap:var(--s-md);}
+
+@media(min-width:720px){
+  .host{padding:var(--s-lg) 40px;}
+  .host-inner{max-width:1120px;margin:0 auto;flex-direction:row;align-items:center;gap:48px;}
+}
+</style>

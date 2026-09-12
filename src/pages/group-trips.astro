@@ -63,7 +63,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="faq-item">
       <input type="checkbox" id="gfaq3">
       <label class="faq-q" for="gfaq3">How is this different from other queer and sapphic trips?<span class="tog">+</span></label>
-      <div class="faq-a"><div class="faq-a-inner">Right now I focus specifically on Latin America. I'm the founder, based in Mexico, and I'm bicultural, not just bilingual. That means you get to experience Mexico as if you had a local friend guiding you every step of the way.</div></div>
+      <div class="faq-a"><div class="faq-a-inner">Camp Queerness is created by me, a bicultural, bilingual, queer and trans UCLA-trained biologist. That gives you insight into Mexico in a way you can only get from a local person. I've been running tours for queer and trans travelers here in Tulum for over three years.</div></div>
     </div>
     <div class="faq-item">
       <input type="checkbox" id="gfaq4">
@@ -73,33 +73,12 @@ import Layout from '../layouts/Layout.astro';
     <div class="faq-item">
       <input type="checkbox" id="gfaq5">
       <label class="faq-q" for="gfaq5">I'm bringing my group to Tulum, can you give me your local insight?<span class="tog">+</span></label>
-      <div class="faq-a"><div class="faq-a-inner">Yes. If you're bringing a queer group to Tulum, reach out and I'll help you get local insight, connect you with local businesses and private chefs, or co-host with you. <a href="#host-plan">Let's plan it together →</a></div></div>
+      <div class="faq-a"><div class="faq-a-inner">Yes. If you're bringing a queer group to Tulum, reach out and I'll help you get local insight, connect you with local businesses and private chefs, or co-host with you. <a href="/bring-your-group">Let's plan it together →</a></div></div>
     </div>
   </div>
 </section>
 
-<!-- HOST CTA -->
-<section class="host" id="host-plan">
-  <div class="host-inner">
-    <div class="host-text">
-      <p class="host-eye">Bringing your group to Tulum?</p>
-      <h2>Let's plan it<br>together</h2>
-      <p>I offer consulting on different things to do, or I can help you plan the whole trip out, focused on local businesses and local experiences. Raised between two cultures, I can introduce your group to the friends I actually have here and the places I believe in. If that sounds like a fit, let's chat.</p>
-      <form class="form" name="group-plan" method="POST" data-netlify="true" action="/thank-you">
-        <input type="hidden" name="form-name" value="group-plan" />
-        <div style="display:flex;gap:12px;">
-          <div style="flex:1;"><label class="fl">First name</label><input class="fi" type="text" name="first-name" placeholder="First name" required></div>
-          <div style="flex:1;"><label class="fl">Last name</label><input class="fi" type="text" name="last-name" placeholder="Last name" required></div>
-        </div>
-        <div><label class="fl">Email</label><input class="fi" type="email" name="email" placeholder="your@email.com" required></div>
-        <div><label class="fl">Group size</label><input class="fi" type="text" name="group-size" placeholder="How many people"></div>
-        <div><label class="fl">Rough dates</label><input class="fi" type="text" name="dates" placeholder="When are you thinking"></div>
-        <div><label class="fl">Tell me about your group</label><textarea class="fi" name="message" rows="4" placeholder="What you're hoping to plan or do" style="resize:vertical;font-family:var(--fb);" required></textarea></div>
-        <button type="submit" class="fsub">Let's Talk →</button>
-      </form>
-    </div>
-  </div>
-</section>
+<!-- HOST CTA moved to /bring-your-group — keeping this page focused on one offer: Camp Queerness. -->
 
 </Layout>
 
@@ -146,15 +125,6 @@ a{color:inherit;text-decoration:none;}
 .btn-trip{display:inline-block;background:var(--magenta);color:var(--white);font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:11px 18px;border:2px solid var(--dark);box-shadow:3px 3px 0 var(--dark);}
 .btn-trip-wait{display:inline-block;background:var(--white);color:var(--dark);font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:11px 18px;border:2px solid var(--dark);box-shadow:3px 3px 0 var(--dark);}
 
-/* HOST CTA — for organizers */
-.host{background:var(--dark);padding:var(--s-lg) var(--s-sm);}
-.host-eye{font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--yellow);margin-bottom:var(--s-sm);}
-.host h2{font-family:var(--ff);font-size:30px;color:var(--white);text-transform:uppercase;line-height:1;margin-bottom:var(--s-sm);}
-.host p{font-size:14px;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:var(--s-md);max-width:520px;}
-.btn-host{display:inline-block;background:var(--yellow);color:var(--dark);font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:15px 28px;border:3px solid var(--yellow);}
-.host-inner{display:flex;flex-direction:column;gap:var(--s-md);}
-.host-photo{width:100%;aspect-ratio:4/3;background:repeating-linear-gradient(135deg,rgba(255,255,255,0.06),rgba(255,255,255,0.06) 12px,rgba(255,255,255,0.1) 12px,rgba(255,255,255,0.1) 24px);border:3px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;font-family:var(--fb);font-size:11px;letter-spacing:0.04em;text-transform:uppercase;color:rgba(255,255,255,0.6);text-align:center;padding:12px;}
-
 footer{background:var(--dark);padding:var(--s-md) var(--s-sm);border-top:3px solid var(--yellow);display:flex;flex-direction:column;gap:var(--s-sm);}
 .flogo{font-family:var(--fb);font-size:16px;font-weight:700;color:var(--magenta);line-height:1.15;}
 .flinks{display:flex;flex-wrap:wrap;gap:var(--s-sm);list-style:none;}
@@ -170,9 +140,6 @@ footer{background:var(--dark);padding:var(--s-md) var(--s-sm);border-top:3px sol
   .trips{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;padding:var(--s-md) 40px var(--s-lg);max-width:1000px;margin:0 auto;}
   .trip{margin-bottom:0;}
   .trips-about-inner{display:grid;grid-template-columns:1fr 440px;gap:48px;align-items:center;}
-  .host{padding:var(--s-lg) 40px;}
-  .host-inner{max-width:1120px;margin:0 auto;flex-direction:row;align-items:center;gap:48px;}
-  .host-photo{width:360px;flex-shrink:0;aspect-ratio:4/3;}
   footer{flex-direction:row;align-items:center;justify-content:space-between;padding:var(--s-md) 40px;}
 }
 </style>
