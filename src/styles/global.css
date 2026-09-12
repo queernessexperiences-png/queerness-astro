@@ -153,6 +153,8 @@ h1 .l4{display:block;font-size:0.5em;margin-top:4px;}
 .groups h2{font-family:var(--ff);font-size:36px;line-height:1.14;color:var(--white);text-transform:uppercase;margin:0 0 var(--s-sm);}
 .groups p{font-size:18px;color:rgba(255,255,255,0.9);line-height:1.7;margin-bottom:var(--s-md);max-width:520px;}
 .groups-tagline{font-weight:700;color:var(--white) !important;}
+.groups-details-list li{color:var(--white);}
+.groups-details-list li::before{color:var(--yellow);}
 .groups-numbered{list-style:none;counter-reset:groups-count;display:flex;flex-direction:column;gap:10px;margin-bottom:var(--s-md);max-width:520px;}
 .groups-numbered li{counter-increment:groups-count;font-size:16px;color:rgba(255,255,255,0.9);line-height:1.5;display:flex;gap:10px;}
 .groups-numbered li::before{content:counter(groups-count) ".";color:var(--yellow);font-weight:700;flex-shrink:0;}
