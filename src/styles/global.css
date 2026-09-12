@@ -132,7 +132,7 @@ h1 .l4{display:block;font-size:0.5em;margin-top:4px;}
 .flag-toggle-check:checked ~ .flag-toggle-label .less{display:inline;}
 .flag-foot{display:flex;align-items:center;justify-content:space-between;border-top:2px solid var(--border);padding-top:14px;}
 .flag-price{font-size:13px;font-weight:700;color:var(--dark);}
-.flag-link{font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--magenta);border-bottom:2px solid var(--magenta);}
+.flag-link{font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--magenta);}
 .mini-grid{display:flex;flex-direction:column;gap:var(--s-sm);margin-top:var(--s-md);}
 .mini{background:var(--white);border:3px solid var(--dark);border-top:5px solid var(--blue);padding:16px 18px;display:flex;align-items:center;justify-content:space-between;}
 .mini-name{font-family:var(--ff);font-size:20px;color:var(--dark);text-transform:uppercase;}
