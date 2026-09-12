@@ -8,10 +8,22 @@ import Layout from '../layouts/Layout.astro';
   <p class="head-eye">★ Camp Queerness · Tulum</p>
   <h1>A Queer Summer<br>Camp for Grownups.</h1>
   <p class="head-hook">Trips that teach you how to say yes in Spanish. No, we don't say "sí." One way involves a finger, one way involves an egg.</p>
-  <p>Camp Queerness: overnight camp, reimagined for sapphic, queer, and trans adults. Kayaking through the Sian Ka'an biosphere reserve, dancing, singing, painting, eating incredible food, and sharing stories with people who get it. Created by Santi Solis, a queer, bilingual, and bicultural camp counselor at heart. I worked at camps most of my life and only ever got to go as a day camper myself, so this is the camp I always wanted. Being bicultural is what lets me bridge both worlds and give you the real thing, not a resort version of it.</p>
+  <div class="hero-grid" style="margin-top:var(--s-md);">
+    <img src="/images/camp-queerness-picnic.jpg" alt="Friends painting together over a spread of fresh fruit in the jungle near Tulum" style="object-position:center 15%;">
+    <img src="/images/IMG_1374.jpeg" alt="Swinging out over a cenote on a Camp Queerness trip in Tulum">
+    <img src="/images/group-trips-photo.jpg" alt="A group smiling together on a Queerness Experiences trip in Tulum">
+    <img src="/images/IMG_4652.jpeg" alt="Friends swimming through the mangroves in Tulum">
+  </div>
 </header>
 
 <!-- "WHAT THESE TRIPS ACTUALLY ARE" — pulled 2026-09-12, written for multiple group trips, doesn't fit Camp Queerness alone. Full markup preserved in git history, may reuse pieces of this copy elsewhere later. -->
+
+<section style="background:var(--bone);padding:var(--s-lg) var(--s-sm);">
+  <div class="trips-about-inner" style="max-width:1120px;margin:0 auto;">
+    <p style="font-size:17px;line-height:1.8;color:var(--dark);">Camp Queerness: overnight camp, reimagined for sapphic, queer, and trans adults. Kayaking through the Sian Ka'an biosphere reserve, dancing, singing, painting, eating incredible food, and sharing stories with people who get it. Created by Santi Solis, a queer, bilingual, and bicultural camp counselor at heart. I worked at camps most of my life and only ever got to go as a day camper myself, so this is the camp I always wanted. Being bicultural is what lets me bridge both worlds and give you the real thing, not a resort version of it.</p>
+    <img src="/images/IMG_3923.jpeg" alt="Santi kayaking at sunset near Tulum" style="width:100%;border:3px solid var(--dark);box-shadow:6px 6px 0 var(--yellow);aspect-ratio:4/3;object-fit:cover;">
+  </div>
+</section>
 
 <!-- CAMP QUEERNESS — the whole page is this, not boxed as one card among others -->
 <section style="background:var(--white);padding:var(--s-lg) var(--s-sm);max-width:1120px;margin:0 auto;">
@@ -30,15 +42,11 @@ import Layout from '../layouts/Layout.astro';
     <img src="/images/group-trips-photo.jpg" alt="A group smiling together on a Queerness Experiences trip in Tulum">
     <img src="/images/IMG_4652.jpeg" alt="Friends swimming through the mangroves in Tulum">
   </div>
-
-  <a href="/waitlist" class="btn-p" style="text-align:center;">Join the Waitlist →</a>
 </section>
 
-  <!-- QUEER CONNECT — paused, focusing on Camp Queerness. Full markup preserved in git history if reviving later. -->
+<!-- QUEER CONNECT — paused, focusing on Camp Queerness. Full markup preserved in git history if reviving later. -->
 
-  <!-- LUXURY LESBIANS — paused for now, focusing on Camp Queerness. Card removed 2026-09-11, full markup preserved in git history if reviving later. -->
-
-</section>
+<!-- LUXURY LESBIANS — paused for now, focusing on Camp Queerness. Card removed 2026-09-11, full markup preserved in git history if reviving later. -->
 
 <!-- FAQ -->
 <section class="faq" id="faq">
@@ -53,7 +61,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="faq-item">
       <input type="checkbox" id="gfaq-stay">
       <label class="faq-q" for="gfaq-stay">Where will we be staying?<span class="tog">+</span></label>
-      <div class="faq-a"><div class="faq-a-inner">We'll be staying at a nice villa in Tulum town.</div></div>
+      <div class="faq-a"><div class="faq-a-inner">We'll be staying at a nice villa in Tulum town. Even though it's called camp, we won't be camping, but we will be spending a lot of time outdoors.</div></div>
     </div>
     <div class="faq-item">
       <input type="checkbox" id="gfaq2">
@@ -63,7 +71,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="faq-item">
       <input type="checkbox" id="gfaq3">
       <label class="faq-q" for="gfaq3">How is this different from other queer and sapphic trips?<span class="tog">+</span></label>
-      <div class="faq-a"><div class="faq-a-inner">Camp Queerness is created by me, a bicultural, bilingual, queer and trans UCLA-trained biologist. That gives you insight into Mexico in a way you can only get from a local person. I've been running tours for queer and trans travelers here in Tulum for over three years.</div></div>
+      <div class="faq-a"><div class="faq-a-inner">I'm a bicultural, bilingual, queer and trans UCLA-trained biologist, and I created Camp Queerness myself. That gives you insight into Mexico in a way you can only get from a local person. I've been running tours for queer and trans travelers here in Tulum for over three years.</div></div>
     </div>
     <div class="faq-item">
       <input type="checkbox" id="gfaq4">
@@ -76,6 +84,10 @@ import Layout from '../layouts/Layout.astro';
       <div class="faq-a"><div class="faq-a-inner">Yes. If you're bringing a queer group to Tulum, reach out and I'll help you get local insight, connect you with local businesses and private chefs, or co-host with you. <a href="/bring-your-group">Let's plan it together →</a></div></div>
     </div>
   </div>
+</section>
+
+<section style="background:var(--white);padding:0 var(--s-sm) var(--s-lg);text-align:center;">
+  <a href="/waitlist" class="btn-p" style="display:inline-block;">Join the Waitlist →</a>
 </section>
 
 <!-- HOST CTA moved to /bring-your-group — keeping this page focused on one offer: Camp Queerness. -->
