@@ -7,7 +7,7 @@ import Layout from '../layouts/Layout.astro';
   <div class="shape-y"></div>
   <p class="head-eye">★ Camp Queerness · Tulum</p>
   <h1>A Queer Summer<br>Camp for Grownups.</h1>
-  <p>Camp Queerness: overnight camp, reimagined for sapphic, queer, and trans adults.</p>
+  <p>Camp Queerness: overnight camp, reimagined for sapphic, queer, and trans adults. This time in the jungle, and of course, with Mexican flair.</p>
   <div class="hero-grid" style="margin-top:var(--s-md);">
     <img src="/images/camp-queerness-picnic.jpg" alt="Friends painting together over a spread of fresh fruit in the jungle near Tulum" style="object-position:center 15%;">
     <img src="/images/IMG_1374.jpeg" alt="Swinging out over a cenote on a Camp Queerness trip in Tulum">
@@ -18,9 +18,29 @@ import Layout from '../layouts/Layout.astro';
 
 <!-- "WHAT THESE TRIPS ACTUALLY ARE" — pulled 2026-09-12, written for multiple group trips, doesn't fit Camp Queerness alone. Full markup preserved in git history, may reuse pieces of this copy elsewhere later. -->
 
+<section style="background:var(--white);padding:var(--s-lg) var(--s-sm);max-width:1120px;margin:0 auto;">
+  <p class="sec-eye">What we'll do</p>
+  <h2>Things we're<br>gonna do</h2>
+  <div class="activity-boxes">
+    <div class="activity-box">Kayak on the lagoon</div>
+    <div class="activity-box">Float through the rivers</div>
+    <div class="activity-box activity-box-photo" style="background-image:url('/images/IMG_6302.jpeg');">
+      <span>Rappel into a cenote</span>
+    </div>
+    <div class="activity-box">Explore the jungle and search for birds and monkeys</div>
+    <div class="activity-box">Eat Mexican and pre-Hispanic food</div>
+    <div class="activity-box">Learn new dance moves</div>
+    <div class="activity-box">Learn about the music, culture, and art</div>
+    <div class="activity-box">Learn about queer activism in Latin America</div>
+    <div class="activity-box">Learn fun cultural nuances</div>
+    <div class="activity-box">Have picnics</div>
+    <div class="activity-box">Take naps</div>
+  </div>
+</section>
+
 <section style="background:var(--bone);padding:var(--s-lg) var(--s-sm);">
   <div class="trips-about-inner" style="max-width:1120px;margin:0 auto;">
-    <img src="/images/IMG_3942.jpeg" alt="Kayaking near Tulum" style="width:100%;border:3px solid var(--dark);box-shadow:6px 6px 0 var(--yellow);aspect-ratio:4/3;object-fit:cover;">
+    <img src="/images/IMG_3923.jpeg" alt="Kayaking at sunset near Tulum" style="width:100%;border:3px solid var(--dark);box-shadow:6px 6px 0 var(--yellow);aspect-ratio:4/3;object-fit:cover;">
     <p style="font-size:17px;line-height:1.8;color:var(--dark);">Kayaking through the Sian Ka'an biosphere reserve, dancing, singing, painting, eating incredible food, and sharing stories with people who get it. Created by Santi Solis, a queer, bilingual, and bicultural camp counselor at heart. I worked at camps most of my life and only ever got to go as a day camper myself, so this is the camp I always wanted. Being bicultural is what lets me bridge both worlds and give you the real thing, not a resort version of it.</p>
   </div>
 </section>
@@ -127,6 +147,12 @@ a{color:inherit;text-decoration:none;}
 .trip-status{position:absolute;top:0;left:0;font-family:var(--fb);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:5px 10px;border-right:3px solid var(--dark);border-bottom:3px solid var(--dark);}
 .status-confirmed{background:var(--magenta);color:var(--white);}
 .status-soon{background:var(--yellow);color:var(--dark);}
+.activity-boxes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:var(--s-md);}
+.activity-box{background:var(--bone);border:3px solid var(--dark);box-shadow:5px 5px 0 var(--magenta);padding:16px;font-family:var(--fb);font-weight:700;font-size:14.5px;color:var(--dark);display:flex;align-items:center;min-height:90px;line-height:1.35;}
+.activity-box-photo{background-size:cover;background-position:center;position:relative;padding:0;overflow:hidden;}
+.activity-box-photo span{background:rgba(0,0,0,0.55);color:var(--white);padding:8px 12px;width:100%;height:100%;display:flex;align-items:center;}
+@media(min-width:600px){.activity-boxes{grid-template-columns:1fr 1fr 1fr;}}
+
 .trip-body{padding:20px;}
 .trip-partner{font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--magenta);margin-bottom:6px;}
 .trip-name{font-family:var(--ff);font-size:26px;color:var(--dark);text-transform:uppercase;line-height:1;margin-bottom:12px;}
