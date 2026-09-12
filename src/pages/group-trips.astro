@@ -27,6 +27,21 @@ import Layout from '../layouts/Layout.astro';
   <h2>Camp<br>Itinerary</h2>
 
   <p class="activity-group-h">Things you'll do</p>
+  <div class="mini-carousel">
+    <input type="radio" name="car-do" id="car-do-1" checked>
+    <input type="radio" name="car-do" id="car-do-2">
+    <input type="radio" name="car-do" id="car-do-3">
+    <div class="mini-carousel-track">
+      <img src="/images/IMG_1374.jpeg" alt="Swinging out over a cenote on a Camp Queerness trip in Tulum">
+      <img src="/images/IMG_2264.jpeg" alt="Climbing down into a private cenote in Tulum">
+      <img src="/images/IMG_3923.jpeg" alt="Kayaking at sunset near Tulum">
+    </div>
+    <div class="mini-carousel-dots">
+      <label for="car-do-1"></label>
+      <label for="car-do-2"></label>
+      <label for="car-do-3"></label>
+    </div>
+  </div>
   <div class="activity-boxes">
     <div class="activity-box">Kayak at sunset on the lagoon</div>
     <div class="activity-box">Float through canals built by the ancient Maya</div>
@@ -41,6 +56,18 @@ import Layout from '../layouts/Layout.astro';
   </div>
 
   <p class="activity-group-h">Things you'll eat</p>
+  <div class="mini-carousel mini-carousel-2">
+    <input type="radio" name="car-eat" id="car-eat-1" checked>
+    <input type="radio" name="car-eat" id="car-eat-2">
+    <div class="mini-carousel-track">
+      <img src="/images/camp-queerness-picnic.jpg" alt="Friends painting together over a spread of fresh fruit in the jungle near Tulum" style="object-position:center 15%;">
+      <img src="/images/food-feature-mango.jpg" alt="Santi picking out fresh mangoes at a local market in Tulum">
+    </div>
+    <div class="mini-carousel-dots">
+      <label for="car-eat-1"></label>
+      <label for="car-eat-2"></label>
+    </div>
+  </div>
   <div class="activity-boxes">
     <div class="activity-box">Mexican and pre-Hispanic food</div>
     <div class="activity-box">Stuff our faces with mangoes and avocados</div>
@@ -48,6 +75,18 @@ import Layout from '../layouts/Layout.astro';
   </div>
 
   <p class="activity-group-h">Things you'll learn</p>
+  <div class="mini-carousel mini-carousel-2">
+    <input type="radio" name="car-learn" id="car-learn-1" checked>
+    <input type="radio" name="car-learn" id="car-learn-2">
+    <div class="mini-carousel-track">
+      <img src="/images/la-guarida-theater.jpg" alt="A cultural workshop at La Guarida in Tulum">
+      <img src="/images/IMG_2627.jpeg" alt="A mural exploring Mexican culture in Tulum" style="object-position:center 20%;">
+    </div>
+    <div class="mini-carousel-dots">
+      <label for="car-learn-1"></label>
+      <label for="car-learn-2"></label>
+    </div>
+  </div>
   <div class="activity-boxes">
     <div class="activity-box">Mexican music, culture, and art</div>
     <div class="activity-box">Queer activism in Latin America</div>
@@ -186,6 +225,21 @@ a{color:inherit;text-decoration:none;}
 .status-confirmed{background:var(--magenta);color:var(--white);}
 .status-soon{background:var(--yellow);color:var(--dark);}
 .activity-group-h{font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--magenta);margin:var(--s-md) 0 10px;}
+.mini-carousel{position:relative;overflow:hidden;aspect-ratio:16/9;border:3px solid var(--dark);box-shadow:6px 6px 0 var(--magenta);}
+.mini-carousel input{position:absolute;opacity:0;pointer-events:none;}
+.mini-carousel-track{display:flex;width:300%;height:100%;transition:transform 0.4s ease;}
+.mini-carousel-track img{width:33.3333%;height:100%;object-fit:cover;flex-shrink:0;}
+.mini-carousel-2 .mini-carousel-track{width:200%;}
+.mini-carousel-2 .mini-carousel-track img{width:50%;}
+.mini-carousel input:nth-of-type(1):checked ~ .mini-carousel-track{transform:translateX(0%);}
+.mini-carousel input:nth-of-type(2):checked ~ .mini-carousel-track{transform:translateX(-33.3333%);}
+.mini-carousel input:nth-of-type(3):checked ~ .mini-carousel-track{transform:translateX(-66.6666%);}
+.mini-carousel-2 input:nth-of-type(2):checked ~ .mini-carousel-track{transform:translateX(-50%);}
+.mini-carousel-dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:2;}
+.mini-carousel-dots label{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,0.6);border:2px solid var(--dark);cursor:pointer;display:block;}
+.mini-carousel input:nth-of-type(1):checked ~ .mini-carousel-dots label:nth-child(1){background:var(--magenta);}
+.mini-carousel input:nth-of-type(2):checked ~ .mini-carousel-dots label:nth-child(2){background:var(--magenta);}
+.mini-carousel input:nth-of-type(3):checked ~ .mini-carousel-dots label:nth-child(3){background:var(--magenta);}
 .activity-group-h:first-of-type{margin-top:var(--s-md);}
 .activity-boxes{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
 .activity-box{background:var(--bone);border:3px solid var(--dark);box-shadow:5px 5px 0 var(--magenta);padding:16px;font-family:var(--fb);font-weight:700;font-size:14.5px;color:var(--dark);display:flex;align-items:center;min-height:90px;line-height:1.35;}
