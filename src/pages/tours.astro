@@ -45,6 +45,26 @@ import Layout from '../layouts/Layout.astro';
           <span class="meta-pill">Local Maya family</span>
           <span class="meta-pill">Swimming</span>
         </div>
+        <div class="tour-itin">
+          <p class="tour-itin-h">Itinerary</p>
+          <ul class="tour-itin-list">
+            <li>Meet at a cafe in Tulum town</li>
+            <li>~20-30 min drive to the cenotes</li>
+            <li>Secret Cave Cenote</li>
+            <li>Optional add-on: local favorite open cenote (cliff jumping)</li>
+            <li>Drive back</li>
+          </ul>
+        </div>
+        <div class="tour-inc">
+          <div>
+            <p class="tour-inc-h">Included</p>
+            <ul class="tour-inc-list"><li>Round-trip transport from the cafe</li><li>Professional guide</li><li>Entrance fees</li><li>Life jackets &amp; snorkels</li><li>Snacks</li></ul>
+          </div>
+          <div>
+            <p class="tour-inc-h">Not included</p>
+            <ul class="tour-inc-list"><li>Hotel pickup/drop-off (+800 MXN, Hotel Zone)</li><li>Food beyond snacks</li></ul>
+          </div>
+        </div>
         <div class="tour-foot">
           <span class="tour-price">FROM 2,200 MXN / PERSON</span>
           <a href="#" class="btn-book">Book This →</a>
@@ -75,6 +95,26 @@ import Layout from '../layouts/Layout.astro';
           <span class="meta-pill">Ancient Mayan canals</span>
           <span class="meta-pill">Mangroves &amp; lagoons</span>
           <span class="meta-pill">Floating</span>
+        </div>
+        <div class="tour-itin">
+          <p class="tour-itin-h">Itinerary</p>
+          <ul class="tour-itin-list">
+            <li>Meet at Story Horse Cafe in the morning</li>
+            <li>~20-30 min drive to Muyil</li>
+            <li>Float the ancient Mayan canals</li>
+            <li>Boat through the lagoons and mangroves</li>
+            <li>Drive back</li>
+          </ul>
+        </div>
+        <div class="tour-inc">
+          <div>
+            <p class="tour-inc-h">Included</p>
+            <ul class="tour-inc-list"><li>Round-trip transport from the cafe</li><li>Professional guide</li><li>Entrance fees</li><li>Life jackets</li><li>Traditional Mexican &amp; healthy regional snacks</li></ul>
+          </div>
+          <div>
+            <p class="tour-inc-h">Not included</p>
+            <ul class="tour-inc-list"><li>Hotel pickup/drop-off (+800 MXN, Hotel Zone)</li></ul>
+          </div>
         </div>
         <div class="tour-foot">
           <span class="tour-price">FROM 3,400 MXN / PERSON</span>
@@ -230,6 +270,23 @@ import Layout from '../layouts/Layout.astro';
   <a href="https://www.google.com/maps/place/Queerness+Experiences/@20.4203707,-87.5893973,94594m/data=!3m1!1e3!4m8!3m7!1s0x213eac5d05676035:0x9ad4bb88e0a769c2!8m2!3d20.4200372!4d-87.259726!9m1!1b1!16s%2Fg%2F11w4tpph1c?hl=en" target="_blank" rel="noopener" class="btn-reviews">Read all reviews on Google →</a>
 </section>
 
+<section class="faq" id="tour-faq">
+  <p class="sec-eye">Before you book</p>
+  <h2>Reservations &amp;<br>cancellations</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <input type="checkbox" id="tfaq1" checked>
+      <label class="faq-q" for="tfaq1">How do I reserve a tour?<span class="tog">+</span></label>
+      <div class="faq-a"><div class="faq-a-inner">Message me on WhatsApp to check availability first. Once we've confirmed a date, your spot is reserved with a 50% deposit via Zelle, Wise, or PayPal (5% fee applies to PayPal).</div></div>
+    </div>
+    <div class="faq-item">
+      <input type="checkbox" id="tfaq2">
+      <label class="faq-q" for="tfaq2">What's the cancellation policy?<span class="tog">+</span></label>
+      <div class="faq-a"><div class="faq-a-inner">Full refund if you cancel a week or more before your tour. 50% refund if you cancel between 48 hours and 6 days out. Inside 48 hours, deposits are non-refundable. Tours happen rain or shine.</div></div>
+    </div>
+  </div>
+</section>
+
 <section class="cta" id="book">
   <p class="cta-eye">Book a tour</p>
   <h2>When are you<br>arriving?</h2>
@@ -301,6 +358,13 @@ a{color:inherit;text-decoration:none;}
 .tour-addon-photo{width:100%;aspect-ratio:16/9;object-fit:cover;border:3px solid var(--dark);box-shadow:4px 4px 0 var(--terra);margin-bottom:var(--s-sm);}
 .tour-meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:var(--s-sm);}
 .meta-pill{font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;padding:4px 10px;background:var(--bone);border:2px solid var(--dark);color:var(--dark);}
+.tour-itin,.tour-inc{margin-bottom:var(--s-sm);}
+.tour-itin-h,.tour-inc-h{font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--dark);margin-bottom:6px;}
+.tour-itin-list,.tour-inc-list{list-style:none;font-size:13.5px;color:var(--muted);line-height:1.6;}
+.tour-itin-list li,.tour-inc-list li{padding-left:14px;position:relative;margin-bottom:3px;}
+.tour-itin-list li::before,.tour-inc-list li::before{content:'→';position:absolute;left:0;color:var(--magenta);font-weight:700;}
+.tour-inc{display:flex;gap:24px;flex-wrap:wrap;}
+.tour-inc>div{flex:1;min-width:160px;}
 .tour-foot{display:flex;align-items:center;justify-content:space-between;border-top:2px solid var(--border);padding-top:14px;}
 .tour-price{font-size:13px;font-weight:700;color:var(--dark);}
 .btn-book{background:var(--magenta);color:var(--white);font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:10px 16px;border:2px solid var(--dark);box-shadow:3px 3px 0 var(--dark);}
