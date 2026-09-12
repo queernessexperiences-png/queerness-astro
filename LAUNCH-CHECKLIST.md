@@ -9,6 +9,7 @@ Work top to bottom. The ⚠️ items are the ones that protect your #1 ranking a
 - [ ] If anything errors, paste the error to Claude and fix before continuing
 
 ## 2. Fill in real content
+- [ ] Intro to Cenotes Tour needs a new hero photo (currently using secret-cenote-group.jpg as a placeholder)
 - [ ] Replace every PHOTO placeholder with real images (drop files in /public/images/, update the src)
 - [ ] Add alt text to every image, each with a keyword (e.g. alt="queer cenote tour tulum")
 - [ ] Paste your 3-4 best Google reviews into the review cards on the homepage
