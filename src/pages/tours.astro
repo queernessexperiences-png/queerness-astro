@@ -4,10 +4,12 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="LGBTQ+ Tulum Tours | Queerness Experiences" description={"LGBTQ+ Tulum tours for queer and trans travelers and families: secret cenote, Muyil river float, jungle and monkeys, food tour, and Town Chisme."}>
 
 <header class="head">
-  <div class="shape-y"></div>
-  <p class="head-eye">★ Small-group tours</p>
-  <h1>LGBTQ+ Tulum Tours</h1>
-  <p>Curated for sapphic, queer, and trans people. Every tour is small and personal, often just your group. Tap any tour to see what the day looks like.</p>
+  <div class="head-top">
+    <div class="shape-y"></div>
+    <p class="head-eye">★ Small-group tours</p>
+    <h1>LGBTQ+ Tulum Tours</h1>
+    <p>Curated for sapphic, queer, and trans people. Every tour is small and personal, often just your group. Tap any tour to see what the day looks like.</p>
+  </div>
   <div class="food-feature" style="position:relative;z-index:2;margin-top:var(--s-md);margin-bottom:0;">
     <p class="food-feature-caption">Eating deliciously is a priority. Local bakeries, locally-owned restaurants, an amazing chef, seasonal local fruit. Every tour is tailored to dietary restrictions and allergies.</p>
   </div>
@@ -419,6 +421,7 @@ import Layout from '../layouts/Layout.astro';
     <input class="cta-in" type="email" name="email" placeholder="Email" required>
     <input class="cta-in" type="tel" name="whatsapp" placeholder="WhatsApp (include country code, e.g. +1 555 123 4567)">
     <input class="cta-in" type="text" name="dates" placeholder="Dates you're coming to Tulum">
+    <input class="cta-in" type="text" name="group-size" placeholder="How many people in your group?">
     <select class="cta-in cta-select" name="tour">
       <option value="" disabled selected>Which tour interests you?</option>
       <option>Secret Cenote</option>
@@ -453,8 +456,9 @@ a{color:inherit;text-decoration:none;}
 
 /* NAV */
 /* HEADER */
-.head{background:var(--magenta);padding:var(--s-md) var(--s-sm) var(--s-lg);position:relative;overflow:hidden;}
-.shape-y{position:absolute;top:0;right:0;width:38%;height:46%;background:var(--yellow);clip-path:polygon(28% 0,100% 0,100% 100%,0 100%);z-index:0;}
+.head{background:var(--magenta);padding:var(--s-md) var(--s-sm) var(--s-lg);position:relative;}
+.head-top{position:relative;overflow:hidden;margin:calc(var(--s-md) * -1) calc(var(--s-sm) * -1) 0;padding:var(--s-md) var(--s-sm) var(--s-md);}
+.shape-y{position:absolute;top:0;right:0;width:38%;height:100%;background:var(--yellow);clip-path:polygon(28% 0,100% 0,100% 100%,0 100%);z-index:0;}
 .head-eye{font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:var(--s-sm);position:relative;z-index:2;}
 .head h1{font-family:var(--ff);font-size:44px;line-height:0.94;text-transform:uppercase;color:var(--white);position:relative;z-index:2;-webkit-text-stroke:1.5px rgba(0,0,0,0.3);paint-order:stroke fill;margin-bottom:var(--s-sm);}
 .head p{font-size:14.5px;color:rgba(255,255,255,0.9);line-height:1.7;position:relative;z-index:2;max-width:520px;}
@@ -527,6 +531,7 @@ footer{background:var(--dark);padding:var(--s-md) var(--s-sm);border-top:3px sol
   nav{padding:0 40px;}
   .head{padding:var(--s-lg) 40px;}
   .head h1{font-size:64px;}
+  .head-top{margin:calc(var(--s-lg) * -1) -40px 0;padding:var(--s-lg) 40px var(--s-md);}
   .tours{padding:var(--s-md) 40px var(--s-lg);max-width:1000px;margin:0 auto;}
   .tour-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;}
   .tour{margin-bottom:0;}
