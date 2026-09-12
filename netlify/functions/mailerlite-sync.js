@@ -6,13 +6,13 @@
 // Custom fields used below (tour, trip, wpath_interests) must exist in
 // MailerLite first — Subscribers > Fields > add a field with that exact
 // key — otherwise MailerLite will reject or silently drop unknown fields.
-const SYNCED_FORMS = new Set(['contact', 'waitlist', 'work-with-me', 'wpath-2026']);
+const SYNCED_FORMS = new Set(['contact', 'camp-queerness-waitlist', 'work-with-me', 'wpath-2026']);
 
 // Group IDs each form's subscribers get added to, so MailerLite automations
 // (triggered on "subscriber joins group") can send the right thank-you email.
 const FORM_GROUPS = {
   contact: ['197907418221380958'], // Tour Inquiries
-  waitlist: ['197907420859598058'], // Group Trip Inquiries
+  'camp-queerness-waitlist': ['198417408306709811'], // Camp Queerness Waitlist
   'wpath-2026': ['197907562547381585'], // WPATH Inquiries
 };
 
@@ -67,15 +67,18 @@ export async function handler(event) {
   let interest;
   if (formName === 'contact') {
     interest = Array.isArray(data.tour) ? data.tour.join(', ') : data.tour;
-  } else if (formName === 'waitlist') {
-    interest = data.trip;
   } else if (formName === 'wpath-2026') {
     interest = wpathInterests(data);
   }
 
   const fields = { name: name || undefined, last_name: data['last-name'] || undefined };
-  if (formName === 'contact' || formName === 'waitlist') fields.tour = interest || undefined;
+  if (formName === 'contact') fields.tour = interest || undefined;
   if (formName === 'wpath-2026') fields.wpath_interests = interest || undefined;
+  if (formName === 'camp-queerness-waitlist') {
+    fields.phone = data.phone || undefined;
+    fields.camp_group_size = data['group-size'] || undefined;
+    fields.camp_reason = data.reason || undefined;
+  }
 
   const groups = FORM_GROUPS[formName];
 
