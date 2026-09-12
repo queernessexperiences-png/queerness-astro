@@ -10,6 +10,7 @@ Work top to bottom. The ⚠️ items are the ones that protect your #1 ranking a
 
 ## 2. Fill in real content
 - [ ] Intro to Cenotes Tour needs a new hero photo (currently using secret-cenote-group.jpg as a placeholder)
+- [ ] Decide Camp Queerness pricing and length (thinking ~$3,700 USD, 5 or 6 days — not on the site yet)
 - [ ] Replace every PHOTO placeholder with real images (drop files in /public/images/, update the src)
 - [ ] Add alt text to every image, each with a keyword (e.g. alt="queer cenote tour tulum")
 - [ ] Paste your 3-4 best Google reviews into the review cards on the homepage
