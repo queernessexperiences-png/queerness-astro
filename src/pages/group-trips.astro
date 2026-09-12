@@ -34,6 +34,7 @@ import Layout from '../layouts/Layout.astro';
       <span>Rappel into a cenote</span>
     </div>
     <div class="activity-box">Explore the jungle and search for birds and monkeys</div>
+    <div class="activity-box">Explore a private cenote</div>
     <div class="activity-box">Learn new dance moves</div>
     <div class="activity-box">Have picnics</div>
     <div class="activity-box">Take naps</div>
@@ -54,6 +55,12 @@ import Layout from '../layouts/Layout.astro';
   </div>
 </section>
 
+<section style="background:var(--bone);padding:var(--s-lg) var(--s-sm);max-width:1120px;margin:0 auto;">
+  <p class="sec-eye">Home base</p>
+  <h2>Where<br>you'll stay</h2>
+  <p style="background:var(--white);border:3px solid var(--dark);box-shadow:6px 6px 0 var(--magenta);padding:18px 22px;font-size:17px;font-weight:500;color:var(--dark);line-height:1.6;">We're renting out a private villa in a super quiet neighborhood of Tulum, just outside of the town center. Close enough for easy access to explore during free time, but far enough that you'll get to hear the sounds of the jungle.</p>
+</section>
+
 <!-- CAMP QUEERNESS — the whole page is this, not boxed as one card among others -->
 <section style="background:var(--white);padding:var(--s-lg) var(--s-sm);max-width:1120px;margin:0 auto;">
   <div class="trips-about-grid" style="margin:var(--s-md) 0;">
@@ -67,6 +74,36 @@ import Layout from '../layouts/Layout.astro';
 <!-- QUEER CONNECT — paused, focusing on Camp Queerness. Full markup preserved in git history if reviving later. -->
 
 <!-- LUXURY LESBIANS — paused for now, focusing on Camp Queerness. Card removed 2026-09-11, full markup preserved in git history if reviving later. -->
+
+<section class="reviews" id="reviews">
+  <p class="sec-eye" style="color:var(--white);">Don't take our word for it</p>
+  <h2>What people say</h2>
+  <p class="scroll-hint">← swipe to read more →</p>
+  <div class="review-scroll">
+    <div class="rcard">
+      <div class="rstars">★★★★★</div>
+      <input type="checkbox" id="grev1" class="rev-toggle">
+      <p class="rtext">Ay ay ay, what a time!!! Santi was a dream. The entire tour, start to finish, through Tulum and into the jungle and down into the cenote was better than I ever could've imagined.</p>
+      <label for="grev1" class="rev-more">Read more</label>
+      <p class="rname">— Corinna Harris, Google review</p>
+    </div>
+    <div class="rcard">
+      <div class="rstars">★★★★★</div>
+      <input type="checkbox" id="grev2" class="rev-toggle">
+      <p class="rtext">My partner and I booked two tours with Santi during our trip to Tulum, Street Food in the evening and Cenotes the next day. Before the trip, Santi was incredibly communicative and helpful as I planned, offering amazing local recs.</p>
+      <label for="grev2" class="rev-more">Read more</label>
+      <p class="rname">— Madge Dietrich, Google review</p>
+    </div>
+    <div class="rcard">
+      <div class="rstars">★★★★★</div>
+      <input type="checkbox" id="grev3" class="rev-toggle">
+      <p class="rtext">We found Santi on Reddit while looking for queer experiences in Tulum and had a great tailored tour of the Muyil river. During the tour, they use their extensive knowledge in marine biology to share facts about the river.</p>
+      <label for="grev3" class="rev-more">Read more</label>
+      <p class="rname">— Diana Ledesma, Google review</p>
+    </div>
+  </div>
+  <a href="https://www.google.com/maps/place/Queerness+Experiences/@20.4203707,-87.5893973,94594m/data=!3m1!1e3!4m8!3m7!1s0x213eac5d05676035:0x9ad4bb88e0a769c2!8m2!3d20.4200372!4d-87.259726!9m1!1b1!16s%2Fg%2F11w4tpph1c?hl=en" target="_blank" rel="noopener" class="btn-reviews">Read all reviews on Google →</a>
+</section>
 
 <!-- FAQ -->
 <section class="faq" id="faq">
@@ -179,6 +216,7 @@ footer{background:var(--dark);padding:var(--s-md) var(--s-sm);border-top:3px sol
   .head{padding:var(--s-lg) 40px;}
   .head h1{font-size:60px;}
   .head-top{margin:calc(var(--s-lg) * -1) -40px 0;padding:var(--s-lg) 40px var(--s-md);}
+  .head .hero-grid{width:100%;max-width:680px;}
   .trips{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;padding:var(--s-md) 40px var(--s-lg);max-width:1000px;margin:0 auto;}
   .trip{margin-bottom:0;}
   .trips-about-inner{display:grid;grid-template-columns:1fr 440px;gap:48px;align-items:center;}
