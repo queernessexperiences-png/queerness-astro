@@ -5,7 +5,7 @@ import Layout from '../layouts/Layout.astro';
 
 <section class="contact" id="contact">
   <p class="sec-eye">Book a tour</p>
-  <h2>When are you<br>arriving?</h2>
+  <h1>When are you<br>arriving?</h1>
   <p class="contact-lead">Tell me your dates and which tour interests you. I'll reply within 24 hours.</p>
   <form class="form" name="contact" method="POST" data-netlify="true" action="/thank-you">
     <input type="hidden" name="form-name" value="contact" />
@@ -21,14 +21,20 @@ import Layout from '../layouts/Layout.astro';
       <label class="fl">Which tour(s) interest you? Pick as many as you like</label>
       <div class="tour-checks">
         <label class="tour-check"><input type="checkbox" name="tour" value="Secret Cenote"> Secret Cenote</label>
+        <label class="tour-check"><input type="checkbox" name="tour" value="Intro to Cenotes Tour"> Intro to Cenotes Tour</label>
         <label class="tour-check"><input type="checkbox" name="tour" value="Muyil River Float"> Muyil River Float</label>
-        <label class="tour-check"><input type="checkbox" name="tour" value="Stories Behind the Storefront"> Stories Behind the Storefront</label>
+        <label class="tour-check"><input type="checkbox" name="tour" value="Stories Behind the Storefronts"> Stories Behind the Storefronts</label>
         <label class="tour-check"><input type="checkbox" name="tour" value="Food Tour"> Food Tour</label>
         <label class="tour-check"><input type="checkbox" name="tour" value="Monkey Spotting"> Monkey Spotting</label>
-        <label class="tour-check"><input type="checkbox" name="tour" value="Upcoming group trip"> Upcoming group trip</label>
         <label class="tour-check"><input type="checkbox" name="tour" value="Not sure yet"> Not sure yet, help me choose</label>
         <label class="tour-check"><input type="checkbox" name="tour" value="Other"> Other</label>
       </div>
+    </div>
+    <div class="camp-interest-box">
+      <label class="tour-check" style="background:var(--bone);">
+        <input type="checkbox" name="tour" value="Interested in Camp Queerness (dates TBD)">
+        Also interested in Camp Queerness, our upcoming group trip? Dates aren't set yet, but I'll keep you posted.
+      </label>
     </div>
     <div><label class="fl">Tell me more about you and what you're looking for</label><textarea class="fi" name="message" rows="3" placeholder="A little about your trip, your group, or what you're hoping for" style="resize:vertical;font-family:var(--fb);" required></textarea></div>
     <button type="submit" class="fsub">Submit</button>
@@ -42,4 +48,5 @@ import Layout from '../layouts/Layout.astro';
   @media(max-width:479px){.tour-checks{grid-template-columns:1fr;}}
   .tour-check{display:flex;align-items:center;gap:10px;background:var(--white);border:2px solid var(--dark);padding:11px 14px;font-family:var(--fb);font-size:14.5px;color:var(--dark);cursor:pointer;}
   .tour-check input{width:18px;height:18px;accent-color:var(--magenta);flex-shrink:0;cursor:pointer;}
+  .camp-interest-box{margin-top:var(--s-sm);}
 </style>

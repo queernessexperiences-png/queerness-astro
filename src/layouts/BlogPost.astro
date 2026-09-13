@@ -1,17 +1,20 @@
 ---
 import Layout from './Layout.astro';
-const { title, description, keyword, pubDate, updatedDate, heroImage, heroAlt, heroPosition, faq, slug } = Astro.props;
+const { title, description, keyword, pubDate, updatedDate, heroImage, heroAlt, heroPosition, heroCaption, faq, slug } = Astro.props;
 const displayDate = (updatedDate || pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 
 // Every other post funnels to the free recommendations. The
 // recommendations post itself funnels to the paid guidebook instead.
 const isRecsPost = slug === 'queer-tulum-recommendations';
-const ctaHref = isRecsPost ? '/guidebook' : '/blog/queer-tulum-recommendations';
+const isFriendlyPost = slug === 'is-tulum-queer-trans-friendly';
+const hideTopBanner = isRecsPost || isFriendlyPost;
+const hideBottomCta = isFriendlyPost;
+const ctaHref = isRecsPost ? 'https://queernessexperiences.gumroad.com/l/lgbtq-tulum-guide' : '/blog/queer-tulum-recommendations';
 const ctaTopText = isRecsPost ? 'Want it all planned out, plus a local to message with questions?' : 'Want the free recommendations?';
 const ctaTopLink = isRecsPost ? 'Get the Full Guidebook →' : 'See the Free Recommendations →';
 const ctaH2 = isRecsPost ? 'Get the full Tulum guidebook' : 'Get my free Tulum recommendations';
 const ctaText = isRecsPost
-  ? "Everything I'd tell a friend visiting Tulum, curated for queer travelers. 3-4 days, fully planned out. Buying the guide also gets you direct access to me. If something's not in the guide, or you're looking for something specific, just send me your questions."
+  ? "Everything I'd tell a friend visiting Tulum, curated for queer travelers. 3-4 days, fully planned out. <strong>Buying the guide also gets you direct access to me to ask questions.</strong> If something's not in the guide, or you're looking for something specific, just send me your questions and I'll do my absolute best to connect you with what you're looking for."
   : 'My favorite restaurant, coffee shop, and bar, plus the practical tips that save you time and money.';
 const ctaBtnText = isRecsPost ? 'Get the Full Guidebook →' : 'See the Free Recommendations →';
 
@@ -32,25 +35,43 @@ const faqSchema = faq && faq.length > 0 ? {
     <h1 class="post-h1">{title}</h1>
     <p class="post-meta">{updatedDate ? 'Updated' : 'Published'} {displayDate} · by <a href="/about">Santi Solis</a></p>
 
-    <!-- Funnel: top mention, so it's visible before anyone scrolls -->
-    <a href={ctaHref} class="post-cta-top">
-      <span class="post-cta-top-eye">{ctaTopText}</span>
-      <span class="post-cta-top-link">{ctaTopLink}</span>
-    </a>
+    <!-- Funnel: top mention, so it's visible before anyone scrolls (recs post + friendliness post move this into the body instead) -->
+    {!hideTopBanner && (
+      <a href={ctaHref} class="post-cta-top">
+        <span class="post-cta-top-eye">{ctaTopText}</span>
+        <span class="post-cta-top-link">{ctaTopLink}</span>
+      </a>
+    )}
 
-    {heroImage && <img class="post-hero" src={heroImage} alt={heroAlt || title} style={heroPosition ? `object-position:${heroPosition};` : undefined} />}
-    {!heroImage && <div class="post-hero-ph">PHOTO — HERO IMAGE FOR THIS POST</div>}
+    {!isRecsPost && heroImage && <img class="post-hero" src={heroImage} alt={heroAlt || title} style={heroPosition ? `object-position:${heroPosition};` : undefined} />}
+    {!isRecsPost && !heroImage && <div class="post-hero-ph">PHOTO — HERO IMAGE FOR THIS POST</div>}
+    {!isRecsPost && heroImage && heroCaption && <p class="post-hero-caption">{heroCaption}</p>}
     <div class="post-body">
       <slot />
     </div>
 
-    <!-- Funnel: every post ends pointing at the free recommendations (or booking, for that post itself) -->
-    <div class="post-cta">
-      <p class="post-cta-eye">Planning your trip?</p>
-      <h2 class="post-cta-h2">{ctaH2}</h2>
-      <p class="post-cta-text">{ctaText}</p>
-      <a href={ctaHref} class="post-cta-btn">{ctaBtnText}</a>
-    </div>
+    <!-- Funnel: every post ends offering both the free recs and the paid guidebook (recs post points to Gumroad; friendliness post places its own copy inline instead) -->
+    {!hideBottomCta && (
+      <div class="post-cta">
+        <p class="post-cta-eye">Planning your trip?</p>
+        {isRecsPost ? (
+          <>
+            <h2 class="post-cta-h2">{ctaH2}</h2>
+            <p class="post-cta-text" set:html={ctaText} />
+            <a href={ctaHref} class="post-cta-btn">{ctaBtnText}</a>
+          </>
+        ) : (
+          <>
+            <h2 class="post-cta-h2">Free recs, or the full guide?</h2>
+            <p class="post-cta-text">Our free recommendations are perfect for a day trip in Tulum. Staying longer? The full guidebook has 3-4 days planned out, plus direct email access to me.</p>
+            <div class="post-cta-btn-row">
+              <a href="/blog/queer-tulum-recommendations" class="post-cta-btn">See the Free Recommendations →</a>
+              <a href="https://queernessexperiences.gumroad.com/l/lgbtq-tulum-guide" class="post-cta-btn">Get the Full Guidebook →</a>
+            </div>
+          </>
+        )}
+      </div>
+    )}
   </article>
 
   <style is:global>
@@ -60,9 +81,17 @@ const faqSchema = faq && faq.length > 0 ? {
     .post-meta{font-family:var(--fb);font-size:13px;color:var(--muted);margin-bottom:var(--s-md);}
     .post-meta a{text-decoration:underline;}
     .post-cta-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;background:var(--yellow);border:3px solid var(--dark);box-shadow:4px 4px 0 var(--dark);padding:12px 16px;margin-bottom:var(--s-md);text-decoration:none;}
-    .post-cta-top-eye{font-family:var(--fb);font-size:13px;font-weight:500;color:var(--dark);}
-    .post-cta-top-link{font-family:var(--fb);font-size:12px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--dark);border-bottom:2px solid var(--dark);}
+    .post-cta-top-eye{font-family:var(--fb);font-size:17px;font-weight:500;color:var(--dark);}
+    .post-cta-top-link{font-family:var(--fb);font-size:15px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--dark);border-bottom:2px solid var(--dark);}
     .post-hero,.post-hero-ph{width:100%;aspect-ratio:16/9;border:3px solid var(--dark);box-shadow:5px 5px 0 var(--yellow);margin-bottom:var(--s-lg);object-fit:cover;}
+    .post-hero-caption{font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:0.03em;color:var(--muted);text-align:center;margin:calc(var(--s-lg) * -1 + var(--s-sm)) 0 var(--s-md);}
+    .post-hero-grid-wrap{background:var(--magenta);padding:var(--s-lg) var(--s-md) var(--s-md);margin:0 calc(var(--s-sm) * -1) var(--s-md);}
+    .post-hero-grid-caption{font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:rgba(255,255,255,0.85);text-align:center;margin:var(--s-sm) 0 0;}
+    .post-hero-grid.hero-grid img{margin:0;border:3px solid rgba(255,255,255,0.4);}
+    .post-hero-grid.hero-grid img:nth-child(1){margin:0;transform:rotate(-2deg);}
+    .post-hero-grid.hero-grid img:nth-child(2){margin-top:14px;transform:rotate(1.5deg);}
+    .post-hero-grid.hero-grid img:nth-child(3){margin-top:-10px;transform:rotate(1deg);}
+    .post-hero-grid.hero-grid img:nth-child(4){margin:0;transform:rotate(-1.5deg);}
     .post-hero-ph{background:repeating-linear-gradient(135deg,rgba(26,26,24,0.05),rgba(26,26,24,0.05) 12px,rgba(26,26,24,0.09) 12px,rgba(26,26,24,0.09) 24px);display:flex;align-items:center;justify-content:center;font-family:var(--fb);font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(26,26,24,0.4);}
     /* Inline photo placeholder — drop one under any H2 in a post's markdown that needs a photo */
     .post-photo-ph{width:100%;aspect-ratio:4/3;border:3px solid var(--dark);box-shadow:4px 4px 0 var(--magenta);margin:var(--s-sm) 0 var(--s-md);background:repeating-linear-gradient(135deg,rgba(26,26,24,0.05),rgba(26,26,24,0.05) 12px,rgba(26,26,24,0.09) 12px,rgba(26,26,24,0.09) 24px);display:flex;align-items:center;justify-content:center;font-family:var(--fb);font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(26,26,24,0.4);text-align:center;padding:12px;}
@@ -70,14 +99,17 @@ const faqSchema = faq && faq.length > 0 ? {
     /* Accordion — for posts with several short entries readers should skim, not read start to finish */
     .post-acc-item{border:3px solid var(--dark);margin-bottom:var(--s-sm);box-shadow:4px 4px 0 var(--dark);overflow:hidden;}
     .post-acc-toggle{position:absolute;opacity:0;pointer-events:none;}
-    .post-acc-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;cursor:pointer;background:var(--bone);font-family:var(--ff);font-size:16px;text-transform:uppercase;color:var(--dark);}
-    .post-acc-plus{font-family:var(--fb);font-size:20px;font-weight:700;color:var(--magenta);flex-shrink:0;transition:transform 0.2s;}
-    .post-acc-toggle:checked ~ .post-acc-head .post-acc-plus{transform:rotate(45deg);}
+    .post-acc-head{display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:14px 16px;cursor:pointer;background:var(--bone);font-family:var(--ff);font-size:16px;text-transform:uppercase;color:var(--dark);}
+    .post-acc-plus{font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--magenta);flex-shrink:0;display:flex;align-items:center;gap:6px;}
+    .post-acc-plus-icon{font-size:18px;transition:transform 0.2s;display:inline-block;}
+    .post-acc-toggle:checked ~ .post-acc-head .post-acc-plus-icon{transform:rotate(45deg);}
     .post-acc-body{max-height:0;overflow:hidden;transition:max-height 0.3s ease;}
     .post-acc-toggle:checked ~ .post-acc-body{max-height:2000px;}
     .post-acc-body-inner{padding:16px;}
     .post-acc-body-inner p{margin-bottom:10px;font-size:16px;line-height:1.7;}
     .post-acc-body-inner p:last-child{margin-bottom:0;}
+    .post-acc-close{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:16px;padding:12px;background:var(--dark);color:var(--white);font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;cursor:pointer;}
+    .post-acc-close:hover{background:var(--magenta);}
     .post-body{font-size:17px;line-height:1.8;color:var(--dark);}
     .post-body h2{font-family:var(--ff);font-size:26px;text-transform:uppercase;color:var(--dark);line-height:1.15;margin:var(--s-lg) 0 var(--s-sm);letter-spacing:0.02em;}
     .post-body h3{font-family:var(--fb);font-size:19px;font-weight:700;color:var(--dark);margin:var(--s-md) 0 8px;}
@@ -88,11 +120,20 @@ const faqSchema = faq && faq.length > 0 ? {
     .post-body li{margin-bottom:8px;}
     .post-body img{width:100%;border:3px solid var(--dark);margin:var(--s-md) 0;}
     .post-body blockquote{border-left:5px solid var(--magenta);background:var(--bone);padding:14px 18px;margin:var(--s-md) 0;font-style:italic;}
-    .post-cta{background:var(--magenta);border:3px solid var(--dark);box-shadow:6px 6px 0 var(--dark);padding:24px;margin-top:var(--s-lg);}
+    .post-cta{background:var(--magenta);border:3px solid var(--dark);box-shadow:6px 6px 0 var(--dark);padding:24px;margin-top:var(--s-md);}
     .post-cta-eye{font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--yellow);margin-bottom:8px;}
-    .post-cta-h2{font-family:var(--ff);font-size:28px;text-transform:uppercase;color:var(--white);line-height:1.1;margin-bottom:10px;}
+    .post-cta-h2{font-family:var(--ff);font-size:28px;text-transform:uppercase;color:var(--white);line-height:1.1;margin:0 0 10px;}
     .post-cta-text{font-size:15px;color:rgba(255,255,255,0.92);line-height:1.6;margin-bottom:var(--s-md);}
+    .post-body .post-cta-btn{color:var(--dark);border-bottom:3px solid var(--dark);}
     .post-cta-btn{display:inline-block;background:var(--yellow);color:var(--dark);font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;padding:15px 26px;border:3px solid var(--dark);box-shadow:4px 4px 0 var(--dark);}
-    @media(min-width:720px){.post{padding:var(--s-lg) var(--s-sm);}.post-h1{font-size:52px;}}
+    .post-cta-btn-row{display:flex;flex-wrap:wrap;gap:14px;}
+    .post-two-col{display:flex;gap:24px;align-items:stretch;margin:var(--s-md) 0;}
+    .post-two-col img.post-photo{width:100%;min-height:260px;object-fit:cover;margin:0;flex:1;}
+    .post-two-col > div:first-child{flex:0 0 320px;display:flex;flex-direction:column;}
+    .post-two-col > div:last-child{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center;}
+    .post-photo-caption{display:block;font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:0.03em;text-transform:uppercase;color:var(--magenta);border-bottom:2px solid var(--magenta);padding-bottom:2px;margin-top:8px;width:fit-content;}
+    .post-two-col-reverse{flex-direction:row-reverse;}
+    @media(max-width:600px){.post-two-col{flex-direction:column;}.post-two-col img.post-photo{width:100%;flex:none;aspect-ratio:4/3;object-position:top;}.post-two-col > div:first-child{flex:none;width:100%;}}
+    @media(min-width:720px){.post{padding:var(--s-lg) var(--s-sm);}.post-h1{font-size:52px;}.post-h2-recs{margin-top:calc(var(--s-lg) + 80px);}}
   </style>
 </Layout>

@@ -7,7 +7,7 @@ import Layout from '../layouts/Layout.astro';
   <div class="host-inner">
     <div class="host-text">
       <p class="host-eye">Bringing your group to Tulum?</p>
-      <h2>Let's plan it<br>together</h2>
+      <h1>Let's plan it<br>together</h1>
       <p>I offer consulting on different things to do, or I can help you plan the whole trip out, focused on local businesses and local experiences. Raised between two cultures, I can introduce your group to the friends I actually have here and the places I believe in. If that sounds like a fit, let's chat.</p>
       <form class="form" name="group-plan" method="POST" data-netlify="true" action="/thank-you">
         <input type="hidden" name="form-name" value="group-plan" />
@@ -30,7 +30,7 @@ import Layout from '../layouts/Layout.astro';
 <style is:global>
 .host{background:var(--dark);padding:var(--s-lg) var(--s-sm);}
 .host-eye{font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--yellow);margin-bottom:var(--s-sm);}
-.host h2{font-family:var(--ff);font-size:30px;color:var(--white);text-transform:uppercase;line-height:1;margin-bottom:var(--s-sm);}
+.host h1,.host h2{font-family:var(--ff);font-size:30px;color:var(--white);text-transform:uppercase;line-height:1;margin-bottom:var(--s-sm);}
 .host p{font-size:14px;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:var(--s-md);max-width:520px;}
 .host-inner{display:flex;flex-direction:column;gap:var(--s-md);}
 

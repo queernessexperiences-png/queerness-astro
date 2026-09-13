@@ -51,13 +51,18 @@ const orgSchema = {
   <p style="font-size:17px;color:var(--dark);line-height:1.6;font-weight:500;max-width:640px;margin:0 auto;text-align:center;">Tulum being queer and trans friendly surprises people. It's not a queer-centric town, but you'll see queer and gender-diverse people any time you walk out on the street. We're a regular part of the community and of daily life here.</p>
 </section>
 
-<!-- CONSULTING — sale for group leaders/agencies already bringing a group -->
-<section style="background:var(--blue);padding:var(--s-lg) var(--s-sm);text-align:center;">
-  <p class="sec-eye" style="color:var(--yellow);display:inline-block;">For travel agencies &amp; group leaders</p>
-  <p style="font-family:var(--ff);font-size:28px;line-height:1.2;color:var(--white);text-transform:uppercase;max-width:560px;margin:0 auto var(--s-sm);">Already Bringing a Group to Tulum?</p>
-  <p style="font-size:17px;line-height:1.7;color:rgba(255,255,255,0.85);max-width:540px;margin:0 auto var(--s-md);">We offer consulting for travel agencies and group leaders already bringing queer groups to Tulum or other places in Latin America, so you get access to local insight and experiences.</p>
-  <a href="/bring-your-group" class="btn-p" style="display:inline-block;max-width:280px;margin:0 auto;">Let's Talk →</a>
-</section>
+<style>
+  .consulting-inner{display:flex;flex-direction:column;gap:var(--s-md);align-items:center;text-align:center;max-width:1120px;margin:0 auto;}
+  .consulting-photo{width:100%;max-width:420px;aspect-ratio:4/5;object-fit:cover;border:4px solid var(--white);box-shadow:6px 6px 0 var(--yellow);}
+  .consulting-h{font-family:var(--ff);font-size:28px;line-height:1.2;color:var(--white);text-transform:uppercase;margin:0 0 var(--s-sm);}
+  .consulting-body{font-size:17px;line-height:1.7;color:rgba(255,255,255,0.85);margin:0 0 var(--s-md);max-width:540px;}
+  @media(min-width:720px){
+    .consulting-inner{flex-direction:row;text-align:left;align-items:center;gap:48px;}
+    .consulting-photo{max-width:360px;flex-shrink:0;}
+    .consulting-text{flex:1;}
+    .consulting-body{margin-left:0;margin-right:0;}
+  }
+</style>
 
 <!-- BRIDGE + CREDENTIALS — one unified about-me block -->
 <section class="bridge">
@@ -67,16 +72,16 @@ const orgSchema = {
       <p class="small" style="margin-top:0;">Meet the founder</p>
       <p><strong>I'm Santi (they/them).</strong> Born in Mexico. Raised in the U.S. Came home to build a life in Tulum.</p>
       <a href="/about" class="bridge-more">More about me →</a>
+      <p class="small bridge-facts-label">Fun facts about me</p>
+      <div class="creds" aria-label="Fun facts">
+        <div class="cred"><div class="cnum">01</div><div><div class="ct">Former UCLA Wildlife Biologist</div><div class="cd">I studied marmots. Let's get nerdy about the plants and animals along the way.</div></div></div>
+        <div class="cred"><div class="cnum">02</div><div><div class="ct">Pattie Gonia Scholarship</div><div class="cd">Queer Outdoor Expedition recipient, 2023.</div></div></div>
+        <div class="cred"><div class="cnum">03</div><div><div class="ct">International Conference Speaker</div><div class="cd">On designing experiences for queer and trans travelers.</div></div></div>
+        <a href="/group-trips" class="cred" style="text-decoration:none;color:inherit;"><div class="cnum">04</div><div><div class="ct">Creative, Curated Group Trips</div><div class="cd">For queer and trans people. See the trips →</div></div></a>
+        <div class="cred"><div class="cnum">05</div><div><div class="ct">FOLX Campaign Model</div><div class="cd">Recently cast as a model for FOLX, the queer and trans telehealth company.</div></div></div>
+        <div class="cred"><div class="cnum">06</div><div><div class="ct">Brave Trails Volunteer</div><div class="cd">Volunteered at Brave Trails, a camp for queer and trans youth.</div></div></div>
+      </div>
     </div>
-  </div>
-  <p class="small bridge-facts-label">Fun facts about me</p>
-  <div class="creds" aria-label="Fun facts">
-    <div class="cred"><div class="cnum">01</div><div><div class="ct">Former UCLA Wildlife Biologist</div><div class="cd">I studied marmots. Let's get nerdy about the plants and animals along the way.</div></div></div>
-    <div class="cred"><div class="cnum">02</div><div><div class="ct">Pattie Gonia Scholarship</div><div class="cd">Queer Outdoor Expedition recipient, 2023.</div></div></div>
-    <div class="cred"><div class="cnum">03</div><div><div class="ct">International Conference Speaker</div><div class="cd">On designing experiences for queer and trans travelers.</div></div></div>
-    <a href="/group-trips" class="cred" style="text-decoration:none;color:inherit;"><div class="cnum">04</div><div><div class="ct">Creative, Curated Group Trips</div><div class="cd">For queer and trans people. See the trips →</div></div></a>
-    <div class="cred"><div class="cnum">05</div><div><div class="ct">FOLX Campaign Model</div><div class="cd">Recently cast as a model for FOLX, the queer and trans telehealth company.</div></div></div>
-    <div class="cred"><div class="cnum">06</div><div><div class="ct">Brave Trails Volunteer</div><div class="cd">Volunteered at Brave Trails, a camp for queer and trans youth.</div></div></div>
   </div>
 </section>
 
@@ -110,7 +115,7 @@ const orgSchema = {
     <div class="rcard">
       <div class="rstars">★★★★★</div>
       <input type="checkbox" id="rev3" class="rev-toggle">
-      <p class="rtext"><strong>The website and guide were super helpful.</strong> They MADE my trip to Tulum. Santi is very responsive and knowledgeable about Tulum. I did the cenote and the street food tours and they were AMAZING. I highly highly recommend both — they were so different but each gave me a glimpse of Tulum I never would have seen without the tour. Santi is an absolute delight. The cenotes were stunning. The food was delicious. The culture and educational experience was phenomenal. I can't say enough good things.</p>
+      <p class="rtext"><strong>The website and guide were super helpful. They MADE my trip to Tulum.</strong> Santi is very responsive and knowledgeable about Tulum. I did the cenote and the street food tours and they were AMAZING. I highly highly recommend both — they were so different but each gave me a glimpse of Tulum I never would have seen without the tour. Santi is an absolute delight. The cenotes were stunning. The food was delicious. The culture and educational experience was phenomenal. I can't say enough good things.</p>
       <label for="rev3" class="rev-more">Read more +</label>
       <p class="rname">— Chashaa Johnson, Google review</p>
     </div>
@@ -140,7 +145,7 @@ const orgSchema = {
     <button type="button" class="scroll-arrow scroll-arrow-left" aria-label="Scroll to previous review" onclick="this.closest('.reviews-inner').querySelector('.review-scroll').scrollBy({left:-320,behavior:'smooth'})">←</button>
     <button type="button" class="scroll-arrow scroll-arrow-right" aria-label="Scroll to next review" onclick="this.closest('.reviews-inner').querySelector('.review-scroll').scrollBy({left:320,behavior:'smooth'})">→</button>
   </div>
-  <a href="https://www.google.com/maps/place/Queerness+Experiences/@20.4203707,-87.5893973,94594m/data=!3m1!1e3!4m8!3m7!1s0x213eac5d05676035:0x9ad4bb88e0a769c2!8m2!3d20.4200372!4d-87.259726!9m1!1b1!16s%2Fg%2F11w4tpph1c?hl=en" target="_blank" rel="noopener" class="btn-reviews">Read all 19 reviews on Google →</a>
+  <a href="https://www.google.com/maps/place/Queerness+Experiences/@20.4203707,-87.5893973,94594m/data=!3m1!1e3!4m8!3m7!1s0x213eac5d05676035:0x9ad4bb88e0a769c2!8m2!3d20.4200372!4d-87.259726!9m1!1b1!16s%2Fg%2F11w4tpph1c?hl=en" target="_blank" rel="noopener" class="btn-reviews">Read all our reviews on Google →</a>
   </div>
 </section>
 
@@ -172,7 +177,6 @@ const orgSchema = {
       </div>
       <div class="flagship">
         <img class="ph flag-photo flag-photo-tall" src="/images/muyil-river-float-group.jpg" alt="Group floating in the mangroves on the Muyil River Float tour">
-        <div class="flag-tag">Most booked</div>
         <div class="flag-body">
           <div class="flag-name">Muyil River Float</div>
           <p class="flag-desc">Relaxation tour. Float through canals built by the ancient Maya.</p>
@@ -203,9 +207,9 @@ const orgSchema = {
         </div>
       </div>
       <div class="flagship">
-        <img class="ph flag-photo" src="/images/town-chisme-tacos.jpg" alt="Santi enjoying a huge taco spread on the Town Chisme tour in Tulum">
+        <img class="ph flag-photo" src="/images/la-guarida-workshop-group.jpg" alt="A group workshop in La Guarida's blue-walled room on the Stories Behind the Storefronts tour in Tulum">
         <div class="flag-body">
-          <div class="flag-name">Stories Behind the Storefront</div>
+          <div class="flag-name">Stories Behind the Storefronts</div>
           <p class="flag-desc">Explore the local side of Tulum. Get the chisme (gossip).</p>
           <input type="checkbox" id="flagmore3" class="flag-toggle-check">
           <label for="flagmore3" class="flag-toggle-label"><span class="more">+ More details</span><span class="less">− Less details</span></label>
@@ -251,7 +255,6 @@ const orgSchema = {
 
     <div class="tours-all">
       <a href="/tours" class="btn-alltours">See the Tours →</a>
-      <a href="/group-trips" class="btn-alltours" style="box-shadow:5px 5px 0 var(--magenta);margin-top:16px;">Group Trips &amp; Retreats →</a>
     </div>
   </div>
 </section>
@@ -259,28 +262,55 @@ const orgSchema = {
 <!-- GROUP TRIPS COMING UP -->
 <section class="groups" id="groups">
   <p class="sec-eye">Coming up</p>
-  <h2>Camp<br>Queerness</h2>
-  <p class="groups-tagline">Summer camp, reimagined for sapphic, queer, and trans grownups, with an added Mexican flair.</p>
-  <p class="groups-tagline" style="margin-bottom:8px;">For people who want to:</p>
-  <ul class="trips-details-list groups-details-list">
-    <li>Play mermaids at a private cenote</li>
-    <li>Kayak at sunset in the biosphere</li>
-    <li>Experience and learn about traditional Mexican and pre-Hispanic food</li>
-    <li>Listen to and share stories at night</li>
-    <li>Learn new dance moves</li>
-    <li>Explore the jungle</li>
-    <li>Birdwatch</li>
-    <li>Learn fun cultural nuances of Mexican culture</li>
-  </ul>
-  <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin-bottom:var(--s-md);max-width:640px;">
-    <img src="/images/IMG_3923.jpeg" alt="Kayaking at sunset near Tulum" style="width:140px;height:140px;object-fit:cover;border:3px solid var(--dark);box-shadow:5px 5px 0 var(--yellow);flex-shrink:0;">
-    <p style="background:var(--bone);border:3px solid var(--dark);box-shadow:5px 5px 0 var(--yellow);padding:14px 18px;font-weight:700;color:var(--dark);font-size:14.5px;line-height:1.5;flex:1;min-width:200px;margin:0;">Fun cultural nuance you'll learn: we don't just say "sí." There are a couple other options, one involves a finger, one involves an egg.</p>
+  <div class="groups-two-col">
+    <img class="groups-hero-photo" src="/images/camp-queerness-picnic.jpg" alt="Friends painting together over a picnic spread of fresh fruit during Camp Queerness near Tulum">
+    <div>
+      <h2>Camp<br>Queerness</h2>
+      <p class="groups-tagline">Summer camp, reimagined for sapphic, queer, and trans grownups, with an added Mexican flair.</p>
+      <p class="groups-tagline" style="margin-bottom:8px;">For people who want to:</p>
+      <div class="groups-chips">
+        <span class="groups-chip">Play mermaids at a private cenote</span>
+        <span class="groups-chip">Kayak at sunset in the biosphere</span>
+        <span class="groups-chip">Eat traditional Mexican and pre-Hispanic food</span>
+        <span class="groups-chip">Share stories at night</span>
+        <span class="groups-chip">Birdwatch</span>
+        <span class="groups-chip">Learn new dance moves</span>
+        <span class="groups-chip">Explore the jungle</span>
+      </div>
+      <p class="groups-nuance">Fun cultural nuance you'll learn: in Mexican Spanish, we don't just say "sí." There are a couple other options — one involves a finger, one involves an egg.</p>
+      <a href="/group-trips" class="btn-groups" style="display:inline-block;max-width:280px;">See Camp Queerness →</a>
+    </div>
   </div>
-  <a href="/group-trips" class="btn-groups">See Camp Queerness →</a>
 </section>
 
+<!-- CONSULTING — sale for group leaders/agencies already bringing a group -->
+<section style="background:var(--blue);padding:var(--s-lg) var(--s-sm);">
+  <div class="consulting-inner">
+    <img class="consulting-photo" src="/images/hero-jungle-group.jpg" alt="A group of travelers smiling together in the jungle near Tulum">
+    <div class="consulting-text">
+      <p class="sec-eye" style="color:var(--yellow);display:inline-block;">For travel agencies &amp; group leaders</p>
+      <p class="consulting-h">Already Bringing a Group to Tulum?</p>
+      <p class="consulting-body">We offer consulting for travel agencies and group leaders already bringing queer groups to Tulum or other places in Latin America, so you get access to local insight and experiences.</p>
+      <a href="/bring-your-group" class="btn-p" style="display:inline-block;max-width:280px;">Let's Talk →</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .consulting-inner{display:flex;flex-direction:column;gap:var(--s-md);align-items:center;text-align:center;max-width:1120px;margin:0 auto;}
+  .consulting-photo{width:100%;max-width:420px;aspect-ratio:4/5;object-fit:cover;border:4px solid var(--white);box-shadow:6px 6px 0 var(--yellow);}
+  .consulting-h{font-family:var(--ff);font-size:28px;line-height:1.2;color:var(--white);text-transform:uppercase;margin:0 0 var(--s-sm);}
+  .consulting-body{font-size:17px;line-height:1.7;color:rgba(255,255,255,0.85);margin:0 0 var(--s-md);max-width:540px;}
+  @media(min-width:720px){
+    .consulting-inner{flex-direction:row;text-align:left;align-items:center;gap:48px;}
+    .consulting-photo{max-width:360px;flex-shrink:0;}
+    .consulting-text{flex:1;}
+    .consulting-body{margin-left:0;margin-right:0;}
+  }
+</style>
+
 <!-- FRIEND -->
-<section class="friend">
+<section class="friend" id="friend">
   <div class="friend-inner">
     <div class="friend-intro">
       <p class="sec-eye">In the area?</p>
@@ -300,9 +330,9 @@ const orgSchema = {
   <h2>Questions queer &amp;<br>trans travelers ask</h2>
   <div class="faq-list">
     <div class="faq-item">
-      <input type="checkbox" id="faq1" checked>
+      <input type="checkbox" id="faq1">
       <label class="faq-q" for="faq1">Is Tulum safe for LGBTQ+ travelers?<span class="tog">+</span></label>
-      <div class="faq-a"><div class="faq-a-inner">Tulum is one of the most welcoming places in Mexico for LGBTQ+ visitors. I wrote a full, honest guide on what to expect. <a href="/blog/is-tulum-queer-trans-friendly">Read: Is Tulum LGBTQ+ Friendly?</a></div></div>
+      <div class="faq-a"><div class="faq-a-inner">Tulum is a welcoming place in Mexico for LGBTQ+ visitors. I wrote a full, honest guide on what to expect. <a href="/blog/is-tulum-queer-trans-friendly">Read: Is Tulum LGBTQ+ Friendly?</a></div></div>
     </div>
     <div class="faq-item">
       <input type="checkbox" id="faq2">

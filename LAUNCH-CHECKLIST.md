@@ -17,6 +17,7 @@ Work top to bottom. The ⚠️ items are the ones that protect your #1 ranking a
 - [ ] Fill in the bracketed [ ] sections in the two pillar blog posts
 - [ ] Fill in the money-exchange place name in the recommendations post
 - [ ] Add real links: Gumroad, Instagram, Google reviews page, WhatsApp
+- [ ] Revisit Camp Queerness itinerary photos (do/eat/learn carousels + hero grid) — Santi isn't happy with the current picks, plans to swap them out later
 
 ## 3. Self-host the font
 - [ ] Download Cheddar Gothic Stencil, put the .woff2 in /public/fonts/
@@ -95,9 +96,13 @@ here are the two easy ways, pick ONE:
 - [ ] Check that redirects resolved — search site:queernessexperiences.com after a few days
 - [ ] Watch Search Console for crawl errors for 2 weeks
 
+## 9.5. WPATH page polish
+- [ ] Fix responsive sizing of the guide photos (Santi/Charlie) — too small on mobile, too big on desktop
+
 ## 10. Future marketing ideas (not launch blockers)
 - [ ] Video sales letters (VSLs) — for tours and/or group trips pages
 - [ ] Add ManyChat to Instagram
+- [ ] Recommend travel insurance to guests when they book a reservation
 
 ## Timeline reality check
 Steps 1-4 (content) are the real work — budget most of your week there.

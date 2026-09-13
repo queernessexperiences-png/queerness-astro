@@ -15,7 +15,7 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
       {posts.map((post) => (
         <a href={`/blog/${post.slug}`} class="blog-card">
           {post.data.heroImage
-            ? <img class="blog-card-img" src={post.data.heroImage} alt={post.data.heroAlt || post.data.title} />
+            ? <img class="blog-card-img" src={post.data.heroImage} alt={post.data.heroAlt || post.data.title} style={post.data.heroPosition ? `object-position:${post.data.heroPosition};` : undefined} />
             : <div class="blog-card-ph">PHOTO</div>}
           <div class="blog-card-body">
             <h2 class="blog-card-title">{post.data.title}</h2>

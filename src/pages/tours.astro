@@ -1,15 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="LGBTQ+ Tulum Tours | Queerness Experiences" description={"LGBTQ+ Tulum tours for queer and trans travelers and families: secret cenote, Muyil river float, jungle and monkeys, food tour, and Stories Behind the Storefront."}>
+<Layout title="LGBTQ+ Tulum Tours | Queerness Experiences" description={"LGBTQ+ Tulum tours for queer and trans travelers and families: secret cenote, Muyil river float, jungle and monkeys, food tour, and Stories Behind the Storefronts."}>
 
 <header class="head">
   <div class="head-top">
     <div class="shape-y"></div>
     <p class="head-eye">★ Small-group tours</p>
     <h1>LGBTQ+ Tulum Tours</h1>
-    <p>Curated for sapphic, queer, and trans people. Every tour is small and personal, often just your group. Tap any tour to see what the day looks like.</p>
   </div>
+  <p class="head-body">Curated for sapphic, queer, and trans people. Every tour is small and personal, often just your group. Tap any tour to see what the day looks like. Honeymooners, couples, friend groups, solo travelers, all welcome. Bigger group, retreat, or event? That becomes a private tour, sized and priced for your group.</p>
   <div class="food-feature" style="position:relative;z-index:2;margin-top:var(--s-md);margin-bottom:0;">
     <p class="food-feature-caption">Eating deliciously is a priority. Local bakeries, locally-owned restaurants, an amazing chef, seasonal local fruit. Every tour is tailored to dietary restrictions and allergies.</p>
   </div>
@@ -33,7 +33,7 @@ import Layout from '../layouts/Layout.astro';
           <span class="tour-name">Secret Cenote</span>
           </div>
         <p class="tour-oneline">A cenote not even locals know about. The entrance is an ancient well created by the Maya.</p>
-        <span class="tour-toggle">+</span>
+        <span class="tour-toggle">More info <span class="tour-toggle-icon">+</span></span>
       </div>
     </label>
     <div class="tour-body">
@@ -65,7 +65,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <div>
             <p class="tour-inc-h">Not included</p>
-            <ul class="tour-inc-list"><li>Hotel pickup/drop-off (available on request)</li><li>Food beyond snacks</li></ul>
+            <ul class="tour-inc-list"><li>Hotel pickup/drop-off (available on request)</li></ul>
           </div>
         </div>
         <p class="tour-desc"><strong>Optional add-on: taco breakfast. +300 MXN per group.</strong></p>
@@ -88,7 +88,7 @@ import Layout from '../layouts/Layout.astro';
           <span class="tour-name">Muyil River Float</span>
           </div>
         <p class="tour-oneline">The most relaxing day in Tulum, boating through lagoons and mangroves.</p>
-        <span class="tour-toggle">+</span>
+        <span class="tour-toggle">More info <span class="tour-toggle-icon">+</span></span>
       </div>
     </label>
     <div class="tour-body">
@@ -100,6 +100,7 @@ import Layout from '../layouts/Layout.astro';
           <span class="meta-pill">Mangroves &amp; lagoons</span>
           <span class="meta-pill">Floating</span>
         </div>
+        <img class="tour-addon-photo" src="/images/muyil-mangrove-swim.jpg" alt="Friends swimming through the mangroves on the Muyil River Float tour" style="aspect-ratio:1440/1043;object-fit:cover;">
         <div class="tour-itin">
           <p class="tour-itin-h">Itinerary</p>
           <ul class="tour-itin-list">
@@ -141,7 +142,7 @@ import Layout from '../layouts/Layout.astro';
           <span class="tour-name">Intro to Cenotes Tour</span>
           </div>
         <p class="tour-oneline">Two off-the-beaten-path cenotes, cave and open water.</p>
-        <span class="tour-toggle">+</span>
+        <span class="tour-toggle">More info <span class="tour-toggle-icon">+</span></span>
       </div>
     </label>
     <div class="tour-body">
@@ -193,7 +194,7 @@ import Layout from '../layouts/Layout.astro';
           <span class="tour-name">Monkey Spotting + Lagoon Jungle Adventure</span>
           </div>
         <p class="tour-oneline">Our most adventurous tour. Spend the day in the jungle looking for wild monkeys.</p>
-        <span class="tour-toggle">+</span>
+        <span class="tour-toggle">More info <span class="tour-toggle-icon">+</span></span>
       </div>
     </label>
     <div class="tour-body">
@@ -205,6 +206,7 @@ import Layout from '../layouts/Layout.astro';
           <span class="meta-pill">Zip line &amp; canoe</span>
           <span class="meta-pill">Lunch included</span>
         </div>
+        <img class="tour-addon-photo" src="/images/monkey-canoe-paddle.jpg" alt="Canoeing on the lagoon on the Monkey Spotting + Lagoon Jungle Adventure tour" style="max-width:400px;aspect-ratio:3/4;object-fit:cover;">
         <div class="tour-itin">
           <p class="tour-itin-h">Itinerary</p>
           <ul class="tour-itin-list">
@@ -238,18 +240,22 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </div>
 
+  <div class="tours-note tours-note-lowkey" style="grid-column:1/-1;margin-bottom:var(--s-md);">
+    <strong>Want something more low-key?</strong> The Food Tour and Stories Behind the Storefronts are easy, walkable days if cenotes and jungle hikes aren't your thing.
+  </div>
+
   <!-- STORIES BEHIND THE STOREFRONT -->
   <div class="tour">
     <input type="checkbox" id="tour3">
     <label class="tour-head" for="tour3">
-      <img class="tour-photo" src="/images/la-guarida-workshop-group.jpg" alt="A group workshop at La Guarida, a local cultural center in Tulum, on the Stories Behind the Storefront tour">
+      <img class="tour-photo" src="/images/la-guarida-workshop-group.jpg" alt="A group workshop at La Guarida, a local cultural center in Tulum, on the Stories Behind the Storefronts tour">
       <div class="tour-tag">Culture &amp; food</div>
       <div class="tour-info">
         <div class="tour-bar">
-          <span class="tour-name">Stories Behind the Storefront</span>
+          <span class="tour-name">Stories Behind the Storefronts</span>
           </div>
         <p class="tour-oneline">Explore the local side of Tulum. Get the chisme (gossip).</p>
-        <span class="tour-toggle">+</span>
+        <span class="tour-toggle">More info <span class="tour-toggle-icon">+</span></span>
       </div>
     </label>
     <div class="tour-body">
@@ -262,7 +268,7 @@ import Layout from '../layouts/Layout.astro';
           <span class="meta-pill">Food &amp; drinks included</span>
           <span class="meta-pill">Walking</span>
         </div>
-        <img class="tour-addon-photo" src="/images/IMG_2627.jpeg" alt="Exploring a mural on the Stories Behind the Storefront tour in Tulum" style="aspect-ratio:3/4;object-position:center 25%;">
+        <img class="tour-addon-photo" src="/images/IMG_2627.jpeg" alt="Exploring a mural on the Stories Behind the Storefronts tour in Tulum" style="aspect-ratio:3/4;object-position:center 25%;">
         <div class="tour-itin">
           <p class="tour-itin-h">Sample Itinerary</p>
           <ul class="tour-itin-list">
@@ -300,7 +306,7 @@ import Layout from '../layouts/Layout.astro';
           <span class="tour-name">Food Tour</span>
           </div>
         <p class="tour-oneline">Explore prehispanic Mexican food and the amazing fusions that make Tulum one of the best places to eat.</p>
-        <span class="tour-toggle">+</span>
+        <span class="tour-toggle">More info <span class="tour-toggle-icon">+</span></span>
       </div>
     </label>
     <div class="tour-body">
@@ -340,28 +346,25 @@ import Layout from '../layouts/Layout.astro';
 
   </div>
 
-  <div class="tours-note">
-    <strong>Honeymooners, couples, friend groups, solo travelers, all welcome.</strong> Every tour is small. Bigger group, retreat, or event? That becomes a private tour, sized and priced for your group.
-  </div>
-
-  <div class="tours-note">
-    <strong>Want something more low-key?</strong> The Food Tour and Stories Behind the Storefront are easy, walkable days if cenotes and jungle hikes aren't your thing.
-  </div>
-
-  <div class="tours-gallery">
-    <img src="/images/secret-cenote-cave.jpg" alt="Entering the Secret Cenote through the cave">
-    <img src="/images/muyil-river-float-group.jpg" alt="Group on the Muyil River Float tour">
-    <img src="/images/punta-laguna-canoes.jpg" alt="Canoes at Punta Laguna">
-    <img src="/images/tours-gallery-boat.jpg" alt="Boating through the mangroves">
-    <img src="/images/tours-gallery-picnic.jpg" alt="Picnic with local fruit on tour">
-    <img src="/images/food-tour-street-snack.jpg" alt="A street snack on the Food Tour in Tulum">
-    <img src="/images/food-tour-sitdown.jpg" alt="A sit-down restaurant experience on the Food Tour in Tulum">
+  <div class="tours-gallery-wrap">
+    <div class="tours-gallery">
+      <img src="/images/secret-cenote-cave.jpg" alt="Entering the Secret Cenote through the cave">
+      <img src="/images/muyil-river-float-group.jpg" alt="Group on the Muyil River Float tour">
+      <img src="/images/punta-laguna-canoes.jpg" alt="Canoes at Punta Laguna">
+      <img src="/images/tours-gallery-boat.jpg" alt="Boating through the mangroves">
+      <img src="/images/tours-gallery-picnic.jpg" alt="Picnic with local fruit on tour">
+      <img src="/images/food-tour-street-snack.jpg" alt="A street snack on the Food Tour in Tulum">
+      <img src="/images/food-tour-sitdown.jpg" alt="A sit-down restaurant experience on the Food Tour in Tulum">
+    </div>
+    <button type="button" class="scroll-arrow tours-gallery-arrow tours-gallery-arrow-left" aria-label="Scroll gallery left" onclick="this.closest('.tours-gallery-wrap').querySelector('.tours-gallery').scrollBy({left:-320,behavior:'smooth'})">←</button>
+    <button type="button" class="scroll-arrow tours-gallery-arrow tours-gallery-arrow-right" aria-label="Scroll gallery right" onclick="this.closest('.tours-gallery-wrap').querySelector('.tours-gallery').scrollBy({left:320,behavior:'smooth'})">→</button>
   </div>
 
 </section>
 
 <section class="reviews" id="tour-reviews">
-  <p class="sec-eye" style="color:var(--white);">Don't take our word for it</p>
+  <div class="reviews-inner">
+  <p class="sec-eye" style="color:var(--white);">Our reviews</p>
   <h2>What people say</h2>
   <p class="scroll-hint">← swipe to read more →</p>
   <div class="review-scroll">
@@ -388,6 +391,7 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </div>
   <a href="https://www.google.com/maps/place/Queerness+Experiences/@20.4203707,-87.5893973,94594m/data=!3m1!1e3!4m8!3m7!1s0x213eac5d05676035:0x9ad4bb88e0a769c2!8m2!3d20.4200372!4d-87.259726!9m1!1b1!16s%2Fg%2F11w4tpph1c?hl=en" target="_blank" rel="noopener" class="btn-reviews">Read all reviews on Google →</a>
+  </div>
 </section>
 
 <section class="faq" id="tour-faq">
@@ -395,7 +399,7 @@ import Layout from '../layouts/Layout.astro';
   <h2>Reservations &amp;<br>cancellations</h2>
   <div class="faq-list">
     <div class="faq-item">
-      <input type="checkbox" id="tfaq1" checked>
+      <input type="checkbox" id="tfaq1">
       <label class="faq-q" for="tfaq1">How do I reserve a tour?<span class="tog">+</span></label>
       <div class="faq-a"><div class="faq-a-inner">Fill out the form below with your dates and the tour you want, and I'll check availability. Once we've confirmed a date, your spot is reserved with a 50% deposit via Zelle, Wise, or PayPal (5% fee applies to PayPal).</div></div>
     </div>
@@ -409,7 +413,7 @@ import Layout from '../layouts/Layout.astro';
 
 <section class="cta" id="book">
   <p class="cta-eye">Check availability</p>
-  <h2>When are you<br>arriving?</h2>
+  <h2>Let's set up<br>your tour</h2>
   <p>Tell me your dates and which tour caught your eye. I'll check availability and follow up with everything you need to lock it in.</p>
   <form class="cta-form" name="contact" method="POST" data-netlify="true" action="/thank-you">
     <input type="hidden" name="form-name" value="contact" />
@@ -417,25 +421,26 @@ import Layout from '../layouts/Layout.astro';
       <input class="cta-in" type="text" name="first_name" placeholder="First name" required>
       <input class="cta-in" type="text" name="last_name" placeholder="Last name">
     </div>
-    <input class="cta-in" type="text" name="pronouns" placeholder="Pronouns (e.g. she/her, they/them)">
+    <input class="cta-in" type="text" name="pronouns" placeholder="Pronouns">
     <input class="cta-in" type="email" name="email" placeholder="Email" required>
     <input class="cta-in" type="tel" name="whatsapp" placeholder="WhatsApp (include country code, e.g. +1 555 123 4567)">
     <input class="cta-in" type="text" name="dates" placeholder="Dates you're coming to Tulum">
     <input class="cta-in" type="text" name="group-size" placeholder="How many people in your group?">
-    <select class="cta-in cta-select" name="tour">
-      <option value="" disabled selected>Which tour interests you?</option>
-      <option>Secret Cenote</option>
-      <option>Intro to Cenotes Tour</option>
-      <option>Muyil River Float</option>
-      <option>Secret Cenote + Muyil (both)</option>
-      <option>Stories Behind the Storefront</option>
-      <option>Food Tour</option>
-      <option>Monkey Spotting + Lagoon Jungle Adventure</option>
-      <option>Group trip or retreat</option>
-      <option>Not sure yet, help me choose</option>
-    </select>
+    <div>
+      <label class="fl" style="display:block;margin-bottom:8px;">Which tour(s) interest you? Pick as many as you like</label>
+      <div class="tour-checks">
+        <label class="tour-check"><input type="checkbox" name="tour" value="Secret Cenote"> Secret Cenote</label>
+        <label class="tour-check"><input type="checkbox" name="tour" value="Intro to Cenotes Tour"> Intro to Cenotes Tour</label>
+        <label class="tour-check"><input type="checkbox" name="tour" value="Muyil River Float"> Muyil River Float</label>
+        <label class="tour-check"><input type="checkbox" name="tour" value="Stories Behind the Storefronts"> Stories Behind the Storefronts</label>
+        <label class="tour-check"><input type="checkbox" name="tour" value="Food Tour"> Food Tour</label>
+        <label class="tour-check"><input type="checkbox" name="tour" value="Monkey Spotting + Lagoon Jungle Adventure"> Monkey Spotting</label>
+        <label class="tour-check"><input type="checkbox" name="tour" value="Group trip or retreat"> Group trip or retreat</label>
+        <label class="tour-check"><input type="checkbox" name="tour" value="Not sure yet"> Not sure yet, help me choose</label>
+      </div>
+    </div>
     <textarea class="cta-in" name="message" rows="3" placeholder="What's up? Tell me what you're looking for"></textarea>
-    <button type="submit" class="btn-cta-form">Send. I'll reply within 24 hours</button>
+    <button type="submit" class="btn-cta-form">Send</button>
   </form>
 </section>
 
@@ -470,24 +475,25 @@ a{color:inherit;text-decoration:none;}
 
 /* NAV */
 /* HEADER */
-.head{background:var(--magenta);padding:var(--s-md) var(--s-sm) var(--s-lg);position:relative;}
+.head{background:var(--magenta);padding:var(--s-md) var(--s-sm) var(--s-sm);position:relative;}
 .head-top{position:relative;overflow:hidden;margin:calc(var(--s-md) * -1) calc(var(--s-sm) * -1) 0;padding:var(--s-md) var(--s-sm) var(--s-md);}
 .shape-y{position:absolute;top:0;right:0;width:38%;height:100%;background:var(--yellow);clip-path:polygon(28% 0,100% 0,100% 100%,0 100%);z-index:0;}
 .head-eye{font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.8);margin-bottom:var(--s-sm);position:relative;z-index:2;}
 .head h1{font-family:var(--ff);font-size:44px;line-height:0.94;text-transform:uppercase;color:var(--white);position:relative;z-index:2;-webkit-text-stroke:1.5px rgba(0,0,0,0.3);paint-order:stroke fill;margin-bottom:var(--s-sm);}
-.head p{font-size:14.5px;color:rgba(255,255,255,0.9);line-height:1.7;position:relative;z-index:2;max-width:520px;}
+.head p{font-size:19px;color:rgba(255,255,255,0.9);line-height:1.7;position:relative;z-index:2;max-width:520px;}
 
 /* ACCORDION — image-first */
-.tours{padding:var(--s-md) var(--s-sm) var(--s-lg);}
+.tours{padding:var(--s-md) var(--s-sm) var(--s-sm);}
 .tour{border:3px solid var(--dark);margin-bottom:var(--s-sm);box-shadow:5px 5px 0 var(--dark);overflow:hidden;background:var(--bone);}
 .tour input{position:absolute;opacity:0;pointer-events:none;}
 .tour-head{cursor:pointer;position:relative;display:block;}
 .tour-photo{width:100%;aspect-ratio:3/2;object-fit:cover;background:repeating-linear-gradient(135deg,rgba(26,26,24,0.05),rgba(26,26,24,0.05) 12px,rgba(26,26,24,0.09) 12px,rgba(26,26,24,0.09) 24px);display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(26,26,24,0.4);text-align:center;padding:12px;border-bottom:3px solid var(--dark);}
 .tour-bar{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;background:var(--white);}
-.tour-oneline{margin:0;padding:0 40px 14px 16px;font-size:14px;color:var(--muted);line-height:1.5;}
+.tour-oneline{margin:0;padding:0 16px 6px 16px;font-size:14px;color:var(--muted);line-height:1.5;}
 .tour-name{font-family:var(--ff);font-size:22px;color:var(--dark);text-transform:uppercase;line-height:1;}
-.tour-toggle{font-family:var(--fb);font-size:22px;font-weight:700;color:var(--magenta);line-height:1;transition:transform 0.2s;position:absolute;right:16px;bottom:12px;}
-.tour input:checked ~ .tour-head .tour-toggle{transform:rotate(45deg);}
+.tour-toggle{font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--magenta);display:flex;align-items:center;gap:6px;text-align:left;padding:0 16px 12px;}
+.tour-toggle-icon{font-size:18px;line-height:1;transition:transform 0.2s;display:inline-block;}
+.tour input:checked ~ .tour-head .tour-toggle-icon{transform:rotate(45deg);}
 .tour-tag{position:absolute;top:0;left:0;background:var(--magenta);color:var(--white);font-family:var(--fb);font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:5px 10px;border-right:3px solid var(--dark);border-bottom:3px solid var(--dark);z-index:2;}
 .tour-body{max-height:0;overflow:hidden;transition:max-height 0.3s ease;background:var(--white);}
 .tour input:checked ~ .tour-body{max-height:3000px;}
@@ -511,7 +517,16 @@ a{color:inherit;text-decoration:none;}
 .tours-note{background:var(--yellow);border:3px solid var(--dark);box-shadow:5px 5px 0 var(--dark);padding:16px 18px;font-size:13.5px;color:var(--dark);line-height:1.65;font-weight:500;margin-top:var(--s-md);}
 
 /* TOURS GALLERY — scroll for more photos */
+.tours-gallery-wrap{position:relative;}
 .tours-gallery{display:flex;gap:12px;overflow-x:auto;scrollbar-width:none;margin-top:var(--s-md);scroll-snap-type:x mandatory;}
+.tours-gallery-arrow{display:none;}
+@media(min-width:720px){
+  .tours-gallery-arrow{display:flex;position:absolute;top:calc(50% + var(--s-md)/2);transform:translateY(-50%);}
+  .tours-gallery-arrow-left{left:-19px;}
+  .tours-gallery-arrow-right{right:-19px;}
+  .head p{max-width:900px;}
+  .food-feature{max-width:900px;}
+}
 .tours-gallery::-webkit-scrollbar{display:none;}
 .tours-gallery img{flex:0 0 78%;max-width:320px;aspect-ratio:4/5;object-fit:cover;border:3px solid var(--dark);box-shadow:5px 5px 0 var(--magenta);scroll-snap-align:start;}
 @media(min-width:720px){
@@ -533,10 +548,14 @@ a{color:inherit;text-decoration:none;}
 .cta-in:focus{border-color:var(--terra);}
 .cta-select{color:var(--dark);}
 .cta-select option{background:var(--bone);color:var(--dark);}
+.tour-checks{display:grid;grid-template-columns:1fr 1fr;gap:8px;text-align:left;}
+@media(max-width:479px){.tour-checks{grid-template-columns:1fr;}}
+.tour-check{display:flex;align-items:center;gap:10px;background:var(--bone);border:2px solid var(--yellow);padding:11px 14px;font-family:var(--fb);font-size:14px;color:var(--dark);cursor:pointer;}
+.tour-check input{width:18px;height:18px;accent-color:var(--magenta);flex-shrink:0;cursor:pointer;}
 .btn-cta-form{background:var(--yellow);color:var(--dark);padding:15px;font-size:13px;font-weight:700;font-family:var(--fb);letter-spacing:0.04em;text-transform:uppercase;border:3px solid var(--yellow);cursor:pointer;}
 
 /* FOOTER */
-footer{background:var(--dark);padding:var(--s-md) var(--s-sm);border-top:3px solid var(--yellow);display:flex;flex-direction:column;gap:var(--s-sm);}
+footer{background:var(--blue);padding:var(--s-md) var(--s-sm);border-top:3px solid var(--yellow);display:flex;flex-direction:column;gap:var(--s-sm);}
 .flogo{font-family:var(--fb);font-size:16px;font-weight:700;color:var(--magenta);line-height:1.15;}
 .flinks{display:flex;flex-wrap:wrap;gap:var(--s-sm);list-style:none;}
 .flinks a{font-size:12px;font-weight:500;color:rgba(255,255,255,0.5);}

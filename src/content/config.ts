@@ -13,6 +13,7 @@ const blog = defineCollection({
     heroImage: z.string().optional(),  // path like /images/post-hero.jpg
     heroAlt: z.string().optional(),    // alt text with keyword
     heroPosition: z.string().optional(), // CSS object-position, e.g. "center 78%", for hero crops that need it
+    heroCaption: z.string().optional(), // small caption line shown under the hero image
     draft: z.boolean().default(false), // true = won't publish
     // Optional FAQ pairs, output as FAQPage structured data so AI answer
     // engines (ChatGPT, Perplexity, Google AI Overviews) can parse and

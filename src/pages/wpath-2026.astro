@@ -79,23 +79,25 @@ import Layout from '../layouts/Layout.astro';
   <div class="wp-hero-inner">
     <div class="wp-hero-eyebrow">Queerness Experiences · WPATH 2026</div>
     <div class="wp-hero-date">November 7–12, 2026 · Hyatt Regency Mexico City · Polanco</div>
-    <div class="wp-hero-title">Explore</div>
-    <div class="wp-hero-title-sub">Mexico City</div>
+    <h1 style="margin:0;">
+      <div class="wp-hero-title">Explore</div>
+      <div class="wp-hero-title-sub">Mexico City</div>
+    </h1>
     <p class="wp-hero-sub">Eight curated experiences for WPATH attendees eager to explore Mexico City, created by queer travel experts.</p>
     <a href="#register" class="wp-hero-btn">Pre-register now — no cost</a>
     <div class="wp-hero-note">No cost to pre-register · Reserve your interest</div>
 
+    <div class="wp-guide-label" style="text-align:center;margin-bottom:16px;">Creators of these experiences</div>
     <div class="wp-guides">
       <div class="wp-guide">
         <img class="wp-guide-photo" src="/images/wpath-santi-guide.jpg" alt="Santi Solis queer guide Mexico City">
-        <div>
-          <div class="wp-guide-label">Creators of these experiences</div>
+        <div class="wp-guide-box">
           <div class="wp-guide-text"><strong>Santi Solis</strong> (they/them), former UCLA wildlife biologist, founder of Queerness Experiences, IGLTA speaker, recently modeled in a FOLX campaign.</div>
         </div>
       </div>
       <div class="wp-guide">
         <img class="wp-guide-photo" src="/images/wpath-charlie-guide.png" alt="Charlie Pulenta queer guide Mexico City">
-        <div>
+        <div class="wp-guide-box">
           <div class="wp-guide-text"><strong>Charlie Pulenta</strong>, creator of the Sapphic Calendar for Mexico City and Guadalajara, also runs the queer bazaar.</div>
         </div>
       </div>
@@ -597,11 +599,12 @@ import Layout from '../layouts/Layout.astro';
   .wp-hero-sub{font-size:18px;color:rgba(255,255,255,0.65);font-weight:300;line-height:1.8;max-width:420px;margin-bottom:36px;}
   .wp-hero-btn{display:block;background:var(--wbrass);color:var(--wmahogany);padding:16px 32px;border-radius:2px;font-size:14.5px;font-weight:500;letter-spacing:2px;text-decoration:none;text-transform:uppercase;margin-bottom:12px;text-align:center;max-width:320px;}
   .wp-hero-note{font-size:14.5px;color:rgba(255,255,255,0.4);font-style:italic;margin-bottom:40px;}
-  .wp-guides{display:flex;flex-direction:row;gap:14px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.1);flex-wrap:wrap;}
-  .wp-guide{display:flex;align-items:center;gap:10px;flex:1;min-width:200px;}
-  .wp-guide-photo{width:40px;height:40px;border-radius:50%;object-fit:cover;object-position:center top;flex-shrink:0;border:1px solid var(--wbrass);}
+  .wp-guides{display:flex;flex-direction:row;gap:24px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.1);flex-wrap:wrap;justify-content:center;}
+  .wp-guide{display:flex;flex-direction:column;align-items:center;gap:14px;flex:1;min-width:180px;max-width:240px;}
+  .wp-guide-photo{width:140px;height:140px;border-radius:50%;object-fit:cover;object-position:center top;flex-shrink:0;border:3px solid var(--wbrass);box-shadow:0 6px 16px rgba(0,0,0,0.35);}
+  .wp-guide-box{background:rgba(255,255,255,0.06);border:1px solid rgba(184,146,74,0.35);border-radius:4px;padding:16px 18px;text-align:center;}
   .wp-guide-label{font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:var(--wbrass);margin-bottom:2px;}
-  .wp-guide-text{font-size:14.5px;color:rgba(255,255,255,0.5);line-height:1.5;font-weight:300;}
+  .wp-guide-text{font-size:14.5px;color:rgba(255,255,255,0.75);line-height:1.5;font-weight:300;}
   .wp-guide-text strong{color:rgba(255,255,255,0.85);font-weight:500;}
 
   .wp-tulum-strip{background:var(--wblue-dark);border-top:1px solid rgba(255,255,255,0.08);padding:14px 24px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;text-align:center;}
@@ -634,8 +637,8 @@ import Layout from '../layouts/Layout.astro';
   .wp-card-details{max-height:0;overflow:hidden;transition:max-height 0.35s ease;}
   .wp-card-toggle-check:checked ~ .wp-card-details{max-height:300px;}
 
-  .wp-cards-list{display:flex;flex-direction:column;gap:0;background:var(--wcream);}
-  .wp-card{background:var(--wwhite);border-bottom:1px solid var(--wborder);position:relative;}
+  .wp-cards-list{display:flex;flex-direction:column;gap:16px;background:var(--wcream);padding:16px;}
+  .wp-card{background:var(--wwhite);border:1px solid var(--wborder);border-radius:4px;overflow:hidden;position:relative;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
   .wp-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--wbrass) 0%,var(--wbrass-light) 100%);}
   .wp-nightlife-card::before{background:linear-gradient(90deg,var(--wcopper) 0%,var(--wcopper-light) 100%);}
   .wp-card-photo-wrap{position:relative;width:100%;aspect-ratio:1/1;overflow:hidden;background:var(--wblue);}
@@ -714,8 +717,7 @@ import Layout from '../layouts/Layout.astro';
     .wp-hero-btn{display:inline-block;text-align:left;}
     .wp-guides{gap:36px;}
     .wp-section-label{padding:36px 48px 32px;}
-    .wp-cards-list{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-left:1px solid var(--wborder);border-right:1px solid var(--wborder);}
-    .wp-card{border-right:1px solid var(--wborder);}
+    .wp-cards-list{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;padding:24px;}
     .wp-card-body{padding:24px 24px 28px;}
     .wp-cta-strip{padding:48px;}
     .wp-cta-strip-title{font-size:39.5px;}
