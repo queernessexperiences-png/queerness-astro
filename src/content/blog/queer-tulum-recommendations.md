@@ -21,7 +21,7 @@ A few of the places I actually send friends to when they visit: the number one r
   <input type="checkbox" id="racc1" class="post-acc-toggle" checked>
   <label for="racc1" class="post-acc-head"><span>Negro Huitlacoxe — the number one restaurant in Tulum</span><span class="post-acc-plus">+</span></label>
   <div class="post-acc-body"><div class="post-acc-body-inner">
-    <img class="post-photo" src="/images/negro-huitlacoche-food.jpg" alt="Huitlacoche taco and chilaquiles with a fried egg at Negro Huitlacoche, Tulum">
+    <img class="post-photo" src="/images/negro-huitlacoche-food.jpg" alt="Huitlacoche taco and a side of grilled corn at Negro Huitlacoche, Tulum" style="object-position:15% center;">
     <p><strong>Pre-Hispanic Mexican food · Tulum Centro</strong></p>
     <p>A restaurant built around a corn mill, heirloom corn, fire, and pre-Hispanic Mexican cooking. Grilled elote, huitlacoche tacos in dual-toned heirloom tortillas — I recommend the one in the blue tortilla. Everything cooked over open flame in a tree-shaded courtyard. Currently ranked the number one restaurant in Tulum, and it earns it. Go hungry.</p>
   </div></div>
