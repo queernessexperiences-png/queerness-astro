@@ -11,11 +11,11 @@ import Layout from '../layouts/Layout.astro';
     <p>Camp Queerness: overnight camp, reimagined for sapphic, queer, and trans adults. This time, exploring the jungle, and of course, with Mexican flair.</p>
   </div>
   <img src="/images/IMG_3923.jpeg" alt="Kayaking at sunset near Tulum" style="width:100%;border:3px solid var(--dark);box-shadow:6px 6px 0 var(--yellow);aspect-ratio:16/9;object-fit:cover;margin-top:var(--s-md);position:relative;z-index:2;">
-  <p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,0.9);max-width:640px;margin-top:var(--s-md);position:relative;z-index:2;">Kayaking through the Sian Ka'an biosphere reserve, dancing, singing, painting, eating incredible food, and sharing stories with people who get it. Created by Santi Solis, a queer, bilingual, and bicultural camp counselor at heart. I worked at camps most of my life and only ever got to go as a day camper myself, so this is the camp I always wanted. Being bicultural is what lets me bridge both worlds and give you the real thing, not a resort version of it.</p>
+  <p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,0.9);max-width:640px;margin-top:var(--s-md);position:relative;z-index:2;">Kayaking through the Sian Ka'an biosphere reserve, dancing, singing, painting, eating incredible food, and sharing stories with people who get it. Created by Santi Solis, a queer, bilingual, bicultural UCLA-trained biologist. Born in Mexico and living in Tulum for almost ten years, I bring you the real thing, not a resort version of it.</p>
   <div class="hero-grid" style="margin-top:var(--s-md);">
     <img src="/images/camp-queerness-picnic.jpg" alt="Friends painting together over a spread of fresh fruit in the jungle near Tulum" style="object-position:center 15%;">
     <img src="/images/IMG_1374.jpeg" alt="Swinging out over a cenote on a Camp Queerness trip in Tulum">
-    <img src="/images/IMG_3762.jpeg" alt="Birdwatching near a lagoon in Tulum" style="object-position:85% center;">
+    <img src="/images/IMG_3762-crop.jpeg" alt="Birdwatching with binoculars near a lagoon in Tulum">
     <img src="/images/22943efe-94cd-4c5a-b7bd-48c4afb5ba28.jpg" alt="Friends laughing together over drinks in Tulum">
   </div>
 </header>
@@ -26,7 +26,6 @@ import Layout from '../layouts/Layout.astro';
   <p class="sec-eye">What's in store</p>
   <h2>Camp<br>Itinerary</h2>
 
-  <p class="activity-group-h">Things you'll do</p>
   <div class="mini-carousel">
     <input type="radio" name="car-do" id="car-do-1" checked>
     <input type="radio" name="car-do" id="car-do-2">
@@ -42,6 +41,7 @@ import Layout from '../layouts/Layout.astro';
       <label for="car-do-3"></label>
     </div>
   </div>
+  <p class="activity-group-h">Things you'll do</p>
   <div class="activity-boxes">
     <div class="activity-box">Kayak at sunset on the lagoon</div>
     <div class="activity-box">Float through canals built by the ancient Maya</div>
@@ -55,26 +55,25 @@ import Layout from '../layouts/Layout.astro';
     <div class="activity-box">Take naps</div>
   </div>
 
-  <p class="activity-group-h">Things you'll eat</p>
   <div class="mini-carousel mini-carousel-2">
     <input type="radio" name="car-eat" id="car-eat-1" checked>
     <input type="radio" name="car-eat" id="car-eat-2">
     <div class="mini-carousel-track">
       <img src="/images/camp-queerness-picnic.jpg" alt="Friends painting together over a spread of fresh fruit in the jungle near Tulum" style="object-position:center 15%;">
-      <img src="/images/food-feature-mango.jpg" alt="Santi picking out fresh mangoes at a local market in Tulum">
+      <img src="/images/food-feature-mango-crop.jpg" alt="A huge pile of fresh mangoes at a local market in Tulum">
     </div>
     <div class="mini-carousel-dots">
       <label for="car-eat-1"></label>
       <label for="car-eat-2"></label>
     </div>
   </div>
+  <p class="activity-group-h">Things you'll eat</p>
   <div class="activity-boxes">
     <div class="activity-box">Mexican and pre-Hispanic food</div>
     <div class="activity-box">Stuff our faces with mangoes and avocados</div>
     <div class="activity-box">Meals created by an amazing private chef</div>
   </div>
 
-  <p class="activity-group-h">Things you'll learn</p>
   <div class="mini-carousel mini-carousel-2">
     <input type="radio" name="car-learn" id="car-learn-1" checked>
     <input type="radio" name="car-learn" id="car-learn-2">
@@ -87,6 +86,7 @@ import Layout from '../layouts/Layout.astro';
       <label for="car-learn-2"></label>
     </div>
   </div>
+  <p class="activity-group-h">Things you'll learn</p>
   <div class="activity-boxes">
     <div class="activity-box">Mexican music, culture, and art</div>
     <div class="activity-box">Queer activism in Latin America</div>
@@ -179,6 +179,11 @@ import Layout from '../layouts/Layout.astro';
       <label class="faq-q" for="gfaq5">I'm bringing my group to Tulum, can you give me your local insight?<span class="tog">+</span></label>
       <div class="faq-a"><div class="faq-a-inner">Yes. If you're bringing a queer group to Tulum, reach out and I'll help you get local insight, connect you with local businesses and private chefs, or co-host with you. <a href="/bring-your-group">Let's plan it together →</a></div></div>
     </div>
+    <div class="faq-item">
+      <input type="checkbox" id="gfaq6">
+      <label class="faq-q" for="gfaq6">Is Tulum safe and welcoming for queer and trans people?<span class="tog">+</span></label>
+      <div class="faq-a"><div class="faq-a-inner">Yes. Tulum is a genuinely inclusive town where queer and trans people can just exist, not just visit. For the full, honest breakdown, read <a href="/blog/is-tulum-queer-trans-friendly">Is Tulum LGBTQ+ Friendly?</a></div></div>
+    </div>
   </div>
 </section>
 
@@ -206,7 +211,7 @@ a{color:inherit;text-decoration:none;}
 /* HEADER */
 .head{background:var(--terra);padding:var(--s-md) var(--s-sm) var(--s-lg);position:relative;}
 .head-top{position:relative;overflow:hidden;margin:calc(var(--s-md) * -1) calc(var(--s-sm) * -1) 0;padding:var(--s-md) var(--s-sm) var(--s-md);}
-.shape-y{position:absolute;top:0;right:0;width:40%;height:100%;background:var(--yellow);clip-path:polygon(28% 0,100% 0,100% 100%,0 100%);z-index:0;}
+.shape-y{position:absolute;top:0;right:0;width:40%;height:65%;background:var(--yellow);clip-path:polygon(28% 0,100% 0,100% 100%,0 100%);z-index:0;}
 .head-eye{font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-bottom:4px;position:relative;z-index:2;}
 .head h1{font-family:var(--ff);font-size:40px;line-height:0.96;text-transform:uppercase;color:var(--white);position:relative;z-index:2;-webkit-text-stroke:1.5px rgba(0,0,0,0.3);paint-order:stroke fill;margin-bottom:var(--s-sm);}
 .head p{font-size:14.5px;color:rgba(255,255,255,0.9);line-height:1.7;position:relative;z-index:2;max-width:520px;}
@@ -225,7 +230,7 @@ a{color:inherit;text-decoration:none;}
 .status-confirmed{background:var(--magenta);color:var(--white);}
 .status-soon{background:var(--yellow);color:var(--dark);}
 .activity-group-h{font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--magenta);margin:var(--s-md) 0 10px;}
-.mini-carousel{position:relative;overflow:hidden;aspect-ratio:16/9;border:3px solid var(--dark);box-shadow:6px 6px 0 var(--magenta);}
+.mini-carousel{position:relative;overflow:hidden;aspect-ratio:16/9;border:3px solid var(--dark);box-shadow:6px 6px 0 var(--magenta);margin-top:var(--s-md);}
 .mini-carousel input{position:absolute;opacity:0;pointer-events:none;}
 .mini-carousel-track{display:flex;width:300%;height:100%;transition:transform 0.4s ease;}
 .mini-carousel-track img{width:33.3333%;height:100%;object-fit:cover;flex-shrink:0;}
@@ -242,7 +247,7 @@ a{color:inherit;text-decoration:none;}
 .mini-carousel input:nth-of-type(3):checked ~ .mini-carousel-dots label:nth-child(3){background:var(--magenta);}
 .activity-group-h:first-of-type{margin-top:var(--s-md);}
 .activity-boxes{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
-.activity-box{background:var(--bone);border:3px solid var(--dark);box-shadow:5px 5px 0 var(--magenta);padding:16px;font-family:var(--fb);font-weight:700;font-size:14.5px;color:var(--dark);display:flex;align-items:center;min-height:90px;line-height:1.35;}
+.activity-box{background:var(--bone);border:3px solid var(--dark);box-shadow:5px 5px 0 var(--magenta);padding:16px;font-family:var(--fb);font-weight:700;font-size:14.5px;color:var(--dark);display:flex;align-items:center;min-height:90px;line-height:1.35;min-width:0;}
 .activity-box-photo{background-size:cover;background-position:center;position:relative;padding:0;overflow:hidden;}
 .activity-box-photo span{background:rgba(0,0,0,0.55);color:var(--white);padding:8px 12px;width:100%;height:100%;display:flex;align-items:center;}
 @media(min-width:600px){.activity-boxes{grid-template-columns:1fr 1fr 1fr;}}
