@@ -35,6 +35,12 @@ import Layout from '../layouts/Layout.astro';
       <img src="/images/IMG_2264.jpeg" alt="Climbing down into a private cenote in Tulum">
       <img src="/images/IMG_3923.jpeg" alt="Kayaking at sunset near Tulum">
     </div>
+    <label for="car-do-3" class="mc-arrow mc-prev" data-show="1">←</label>
+    <label for="car-do-2" class="mc-arrow mc-next" data-show="1">→</label>
+    <label for="car-do-1" class="mc-arrow mc-prev" data-show="2">←</label>
+    <label for="car-do-3" class="mc-arrow mc-next" data-show="2">→</label>
+    <label for="car-do-2" class="mc-arrow mc-prev" data-show="3">←</label>
+    <label for="car-do-1" class="mc-arrow mc-next" data-show="3">→</label>
     <div class="mini-carousel-dots">
       <label for="car-do-1"></label>
       <label for="car-do-2"></label>
@@ -59,9 +65,13 @@ import Layout from '../layouts/Layout.astro';
     <input type="radio" name="car-eat" id="car-eat-1" checked>
     <input type="radio" name="car-eat" id="car-eat-2">
     <div class="mini-carousel-track">
-      <img src="/images/camp-queerness-picnic.jpg" alt="Friends painting together over a spread of fresh fruit in the jungle near Tulum" style="object-position:center 15%;">
+      <img src="/images/camp-queerness-picnic.jpg" alt="Friends painting together over a spread of fresh fruit in the jungle near Tulum" style="object-fit:contain;background:var(--bone);">
       <img src="/images/food-feature-mango-crop.jpg" alt="A huge pile of fresh mangoes at a local market in Tulum">
     </div>
+    <label for="car-eat-2" class="mc-arrow mc-prev" data-show="1">←</label>
+    <label for="car-eat-2" class="mc-arrow mc-next" data-show="1">→</label>
+    <label for="car-eat-1" class="mc-arrow mc-prev" data-show="2">←</label>
+    <label for="car-eat-1" class="mc-arrow mc-next" data-show="2">→</label>
     <div class="mini-carousel-dots">
       <label for="car-eat-1"></label>
       <label for="car-eat-2"></label>
@@ -81,6 +91,10 @@ import Layout from '../layouts/Layout.astro';
       <img src="/images/la-guarida-theater.jpg" alt="A cultural workshop at La Guarida in Tulum">
       <img src="/images/IMG_2627.jpeg" alt="A mural exploring Mexican culture in Tulum" style="object-position:center 20%;">
     </div>
+    <label for="car-learn-2" class="mc-arrow mc-prev" data-show="1">←</label>
+    <label for="car-learn-2" class="mc-arrow mc-next" data-show="1">→</label>
+    <label for="car-learn-1" class="mc-arrow mc-prev" data-show="2">←</label>
+    <label for="car-learn-1" class="mc-arrow mc-next" data-show="2">→</label>
     <div class="mini-carousel-dots">
       <label for="car-learn-1"></label>
       <label for="car-learn-2"></label>
@@ -94,14 +108,14 @@ import Layout from '../layouts/Layout.astro';
   </div>
 </section>
 
-<section style="background:var(--bone);padding:var(--s-lg) var(--s-sm);max-width:1120px;margin:0 auto;">
+<section style="background:var(--bone);padding:var(--s-md) var(--s-sm);max-width:1120px;margin:0 auto;">
   <p class="sec-eye">Home base</p>
   <h2>Where<br>you'll stay</h2>
-  <p style="background:var(--white);border:3px solid var(--dark);box-shadow:6px 6px 0 var(--magenta);padding:18px 22px;font-size:17px;font-weight:500;color:var(--dark);line-height:1.6;">We're renting out a private villa in a super quiet neighborhood of Tulum, just outside of the town center. Close enough for easy access to explore during free time, but far enough that you'll get to hear the sounds of the jungle.</p>
+  <p style="background:var(--white);border:3px solid var(--dark);box-shadow:6px 6px 0 var(--magenta);padding:26px 28px;font-size:19px;font-weight:500;color:var(--dark);line-height:1.7;margin-top:var(--s-md);max-width:640px;">We're renting out a private villa in a super quiet neighborhood of Tulum, just outside of the town center. Close enough for easy access to explore during free time, but far enough that you'll get to hear the sounds of the jungle.</p>
 </section>
 
 <!-- CAMP QUEERNESS — the whole page is this, not boxed as one card among others -->
-<section style="background:var(--white);padding:var(--s-lg) var(--s-sm);max-width:1120px;margin:0 auto;">
+<section style="background:var(--white);padding:var(--s-md) var(--s-sm);max-width:1120px;margin:0 auto;">
   <div class="trips-about-grid" style="margin:var(--s-md) 0;">
     <img src="/images/group-trips-photo.jpg" alt="A group smiling together on a Queerness Experiences trip in Tulum">
     <img src="/images/IMG_4652.jpeg" alt="Friends swimming through the mangroves in Tulum">
@@ -230,7 +244,7 @@ a{color:inherit;text-decoration:none;}
 .status-confirmed{background:var(--magenta);color:var(--white);}
 .status-soon{background:var(--yellow);color:var(--dark);}
 .activity-group-h{font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--magenta);margin:var(--s-md) 0 10px;}
-.mini-carousel{position:relative;overflow:hidden;aspect-ratio:16/9;border:3px solid var(--dark);box-shadow:6px 6px 0 var(--magenta);margin-top:var(--s-md);}
+.mini-carousel{position:relative;overflow:hidden;aspect-ratio:4/3;border:3px solid var(--dark);box-shadow:6px 6px 0 var(--magenta);margin-top:var(--s-md);}
 .mini-carousel input{position:absolute;opacity:0;pointer-events:none;}
 .mini-carousel-track{display:flex;width:300%;height:100%;transition:transform 0.4s ease;}
 .mini-carousel-track img{width:33.3333%;height:100%;object-fit:cover;flex-shrink:0;}
@@ -241,6 +255,12 @@ a{color:inherit;text-decoration:none;}
 .mini-carousel input:nth-of-type(3):checked ~ .mini-carousel-track{transform:translateX(-66.6666%);}
 .mini-carousel-2 input:nth-of-type(2):checked ~ .mini-carousel-track{transform:translateX(-50%);}
 .mini-carousel-dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:2;}
+.mc-arrow{display:none;position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:34px;height:34px;align-items:center;justify-content:center;background:rgba(0,0,0,0.5);color:var(--white);font-size:18px;font-weight:700;border-radius:50%;cursor:pointer;}
+.mc-arrow.mc-prev{left:10px;}
+.mc-arrow.mc-next{right:10px;}
+.mini-carousel input:nth-of-type(1):checked ~ .mc-arrow[data-show="1"]{display:flex;}
+.mini-carousel input:nth-of-type(2):checked ~ .mc-arrow[data-show="2"]{display:flex;}
+.mini-carousel input:nth-of-type(3):checked ~ .mc-arrow[data-show="3"]{display:flex;}
 .mini-carousel-dots label{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,0.6);border:2px solid var(--dark);cursor:pointer;display:block;}
 .mini-carousel input:nth-of-type(1):checked ~ .mini-carousel-dots label:nth-child(1){background:var(--magenta);}
 .mini-carousel input:nth-of-type(2):checked ~ .mini-carousel-dots label:nth-child(2){background:var(--magenta);}
@@ -275,7 +295,7 @@ footer{background:var(--dark);padding:var(--s-md) var(--s-sm);border-top:3px sol
   .head{padding:var(--s-lg) 40px;}
   .head h1{font-size:60px;}
   .head-top{margin:calc(var(--s-lg) * -1) -40px 0;padding:var(--s-lg) 40px var(--s-md);}
-  .head .hero-grid{width:100%;max-width:680px;}
+  .head .hero-grid{width:100%;}
   .trips{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;padding:var(--s-md) 40px var(--s-lg);max-width:1000px;margin:0 auto;}
   .trip{margin-bottom:0;}
   .trips-about-inner{display:grid;grid-template-columns:1fr 440px;gap:48px;align-items:center;}
