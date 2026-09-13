@@ -8,8 +8,9 @@ import Layout from '../layouts/Layout.astro';
     <div class="shape-y"></div>
     <p class="head-eye">★ Camp Queerness · Tulum</p>
     <h1>A Queer Summer<br>Camp for Grownups.</h1>
-    <p>Camp Queerness: overnight camp, reimagined for sapphic, queer, and trans adults. This time, exploring the jungle, and of course, with Mexican flair.</p>
   </div>
+  <p class="head-body">Camp Queerness: overnight camp, reimagined for sapphic, queer, and trans adults. This time, exploring the jungle, and of course, with Mexican flair.</p>
+  <p class="head-body" style="margin-top:12px;">For sapphic, queer, and trans travelers who prioritize small, local businesses, want to learn about culture respectfully, and are excited to be shown a side of Mexico they never had access to before, all in a space that's affirming to their identity.</p>
   <img src="/images/IMG_3923.jpeg" alt="Kayaking at sunset near Tulum" style="width:100%;border:3px solid var(--dark);box-shadow:6px 6px 0 var(--yellow);aspect-ratio:16/9;object-fit:cover;margin-top:var(--s-md);position:relative;z-index:2;">
   <p style="font-size:15px;line-height:1.7;color:rgba(255,255,255,0.9);max-width:640px;margin-top:var(--s-md);position:relative;z-index:2;">Kayaking through the Sian Ka'an biosphere reserve, dancing, singing, painting, eating incredible food, and sharing stories with people who get it. Created by Santi Solis, a queer, bilingual, bicultural UCLA-trained biologist. Born in Mexico and living in Tulum for almost ten years, I bring you the real thing, not a resort version of it.</p>
   <div class="hero-grid" style="margin-top:var(--s-md);">
@@ -26,46 +27,44 @@ import Layout from '../layouts/Layout.astro';
   <p class="sec-eye">What's in store</p>
   <h2>Camp<br>Itinerary</h2>
 
-  <div class="mini-carousel">
+  <div class="activity-group activity-group-do">
+  <div class="mini-carousel mini-carousel-2">
     <input type="radio" name="car-do" id="car-do-1" checked>
     <input type="radio" name="car-do" id="car-do-2">
-    <input type="radio" name="car-do" id="car-do-3">
     <div class="mini-carousel-track">
-      <img src="/images/IMG_1374.jpeg" alt="Swinging out over a cenote on a Camp Queerness trip in Tulum">
-      <img src="/images/IMG_2264.jpeg" alt="Climbing down into a private cenote in Tulum">
-      <img src="/images/IMG_3923.jpeg" alt="Kayaking at sunset near Tulum">
+      <img src="/images/22943efe-94cd-4c5a-b7bd-48c4afb5ba28.jpg" alt="Friends laughing together over drinks in Tulum">
+      <img src="/images/IMG_3911.jpeg" alt="Friends together on a Camp Queerness trip in Tulum">
     </div>
-    <label for="car-do-3" class="mc-arrow mc-prev" data-show="1">←</label>
+    <label for="car-do-2" class="mc-arrow mc-prev" data-show="1">←</label>
     <label for="car-do-2" class="mc-arrow mc-next" data-show="1">→</label>
     <label for="car-do-1" class="mc-arrow mc-prev" data-show="2">←</label>
-    <label for="car-do-3" class="mc-arrow mc-next" data-show="2">→</label>
-    <label for="car-do-2" class="mc-arrow mc-prev" data-show="3">←</label>
-    <label for="car-do-1" class="mc-arrow mc-next" data-show="3">→</label>
+    <label for="car-do-1" class="mc-arrow mc-next" data-show="2">→</label>
     <div class="mini-carousel-dots">
       <label for="car-do-1"></label>
       <label for="car-do-2"></label>
-      <label for="car-do-3"></label>
     </div>
   </div>
   <p class="activity-group-h">Things you'll do</p>
   <div class="activity-boxes">
     <div class="activity-box">Kayak at sunset on the lagoon</div>
     <div class="activity-box">Float through canals built by the ancient Maya</div>
-    <div class="activity-box activity-box-photo" style="background-image:url('/images/IMG_6302.jpeg');">
-      <span>Rappel into a cenote</span>
-    </div>
+    <div class="activity-box">Rappel into a cenote</div>
     <div class="activity-box">Explore the jungle and search for birds and monkeys</div>
     <div class="activity-box">Explore a private cenote</div>
     <div class="activity-box">Learn new dance moves</div>
     <div class="activity-box">Have picnics</div>
     <div class="activity-box">Take naps</div>
+    <div class="activity-box">Cooking class</div>
+    <div class="activity-box">Mezcal tasting</div>
+  </div>
   </div>
 
+  <div class="activity-group activity-group-eat">
   <div class="mini-carousel mini-carousel-2">
     <input type="radio" name="car-eat" id="car-eat-1" checked>
     <input type="radio" name="car-eat" id="car-eat-2">
     <div class="mini-carousel-track">
-      <img src="/images/camp-queerness-picnic.jpg" alt="Friends painting together over a spread of fresh fruit in the jungle near Tulum" style="object-fit:contain;background:var(--bone);">
+      <img src="/images/camp-queerness-picnic-food-crop.jpg" alt="Friends painting together over a spread of fresh mangoes, avocados, and oranges in the jungle near Tulum">
       <img src="/images/food-feature-mango-crop.jpg" alt="A huge pile of fresh mangoes at a local market in Tulum">
     </div>
     <label for="car-eat-2" class="mc-arrow mc-prev" data-show="1">←</label>
@@ -83,7 +82,9 @@ import Layout from '../layouts/Layout.astro';
     <div class="activity-box">Stuff our faces with mangoes and avocados</div>
     <div class="activity-box">Meals created by an amazing private chef</div>
   </div>
+  </div>
 
+  <div class="activity-group activity-group-learn">
   <div class="mini-carousel mini-carousel-2">
     <input type="radio" name="car-learn" id="car-learn-1" checked>
     <input type="radio" name="car-learn" id="car-learn-2">
@@ -105,6 +106,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="activity-box">Mexican music, culture, and art</div>
     <div class="activity-box">Queer activism in Latin America</div>
     <div class="activity-box">Fun cultural nuances</div>
+  </div>
   </div>
 </section>
 
@@ -164,9 +166,19 @@ import Layout from '../layouts/Layout.astro';
   <h2>Questions about<br>Camp Queerness</h2>
   <div class="faq-list">
     <div class="faq-item">
-      <input type="checkbox" id="gfaq1" checked>
+      <input type="checkbox" id="gfaq6" checked>
+      <label class="faq-q" for="gfaq6">Is Tulum safe and welcoming for queer and trans people?<span class="tog">+</span></label>
+      <div class="faq-a"><div class="faq-a-inner">Yes. Tulum is a genuinely inclusive town where queer and trans people can just exist, not just visit. For the full, honest breakdown, read <a href="/blog/is-tulum-queer-trans-friendly">Is Tulum LGBTQ+ Friendly?</a></div></div>
+    </div>
+    <div class="faq-item">
+      <input type="checkbox" id="gfaq1">
       <label class="faq-q" for="gfaq1">Who can join Camp Queerness?<span class="tog">+</span></label>
       <div class="faq-a"><div class="faq-a-inner">Camp Queerness is specifically for queer, sapphic, and trans travelers. Period.</div></div>
+    </div>
+    <div class="faq-item">
+      <input type="checkbox" id="gfaq-call">
+      <label class="faq-q" for="gfaq-call">Can I talk to you before I book?<span class="tog">+</span></label>
+      <div class="faq-a"><div class="faq-a-inner">Yes! Join the waitlist below and let me know you'd like to talk first, and we'll schedule a call.</div></div>
     </div>
     <div class="faq-item">
       <input type="checkbox" id="gfaq-stay">
@@ -225,7 +237,8 @@ a{color:inherit;text-decoration:none;}
 /* HEADER */
 .head{background:var(--terra);padding:var(--s-md) var(--s-sm) var(--s-lg);position:relative;}
 .head-top{position:relative;overflow:hidden;margin:calc(var(--s-md) * -1) calc(var(--s-sm) * -1) 0;padding:var(--s-md) var(--s-sm) var(--s-md);}
-.shape-y{position:absolute;top:0;right:0;width:40%;height:65%;background:var(--yellow);clip-path:polygon(28% 0,100% 0,100% 100%,0 100%);z-index:0;}
+.shape-y{position:absolute;top:0;right:0;width:40%;height:100%;background:var(--yellow);clip-path:polygon(28% 0,100% 0,100% 100%,0 100%);z-index:0;}
+.head-body{font-size:17px;line-height:1.6;color:rgba(255,255,255,0.95);position:relative;z-index:2;max-width:640px;}
 .head-eye{font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-bottom:4px;position:relative;z-index:2;}
 .head h1{font-family:var(--ff);font-size:40px;line-height:0.96;text-transform:uppercase;color:var(--white);position:relative;z-index:2;-webkit-text-stroke:1.5px rgba(0,0,0,0.3);paint-order:stroke fill;margin-bottom:var(--s-sm);}
 .head p{font-size:14.5px;color:rgba(255,255,255,0.9);line-height:1.7;position:relative;z-index:2;max-width:520px;}
@@ -244,6 +257,11 @@ a{color:inherit;text-decoration:none;}
 .status-confirmed{background:var(--magenta);color:var(--white);}
 .status-soon{background:var(--yellow);color:var(--dark);}
 .activity-group-h{font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--magenta);margin:var(--s-md) 0 10px;}
+.activity-group{padding:var(--s-md);margin-bottom:var(--s-md);}
+.activity-group-do{background:rgba(200,24,90,0.06);}
+.activity-group-eat{background:rgba(245,166,35,0.10);}
+.activity-group-learn{background:rgba(27,77,107,0.07);}
+.activity-group .activity-box{background:var(--white);}
 .mini-carousel{position:relative;overflow:hidden;aspect-ratio:4/3;border:3px solid var(--dark);box-shadow:6px 6px 0 var(--magenta);margin-top:var(--s-md);}
 .mini-carousel input{position:absolute;opacity:0;pointer-events:none;}
 .mini-carousel-track{display:flex;width:300%;height:100%;transition:transform 0.4s ease;}

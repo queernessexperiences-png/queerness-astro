@@ -7,7 +7,7 @@ const displayDate = (updatedDate || pubDate).toLocaleDateString('en-US', { year:
 // recommendations post itself funnels to the paid guidebook instead.
 const isRecsPost = slug === 'queer-tulum-recommendations';
 const ctaHref = isRecsPost ? '/guidebook' : '/blog/queer-tulum-recommendations';
-const ctaTopText = isRecsPost ? 'Want it all planned out?' : 'Want the free recommendations?';
+const ctaTopText = isRecsPost ? 'Want it all planned out, plus a local to message with questions?' : 'Want the free recommendations?';
 const ctaTopLink = isRecsPost ? 'Get the Full Guidebook →' : 'See the Free Recommendations →';
 const ctaH2 = isRecsPost ? 'Get the full Tulum guidebook' : 'Get my free Tulum recommendations';
 const ctaText = isRecsPost

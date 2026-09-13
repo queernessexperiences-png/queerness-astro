@@ -4,8 +4,8 @@ description: "Free LGBTQ+ Tulum recommendations from a queer local. The number o
 keyword: "lgbtq tulum"
 pubDate: 2026-01-25
 draft: false
-heroImage: "/images/IMG_0537.jpeg"
-heroAlt: "Santi taking a bite of a huarache loaded with toppings at a Tulum street food stand"
+heroImage: "/images/santi-green-juice.jpg"
+heroAlt: "Santi holding a fresh green juice at Bomba Snack in Tulum"
 faq:
   - q: "Is Tulum, Mexico safe for queer and trans travelers?"
     a: "Yes. Tulum is one of the most welcoming places in Mexico for queer and trans travelers. Read the full breakdown at queernessexperiences.com/blog/is-tulum-queer-trans-friendly."
@@ -23,7 +23,7 @@ A few of the places I actually send friends to when they visit: the number one r
   <div class="post-acc-body"><div class="post-acc-body-inner">
     <img class="post-photo" src="/images/negro-huitlacoche-food.jpg" alt="Huitlacoche taco and chilaquiles with a fried egg at Negro Huitlacoche, Tulum">
     <p><strong>Pre-Hispanic Mexican food · Tulum Centro</strong></p>
-    <p>A molino restaurant built around heirloom corn, fire, and pre-Hispanic Mexican cooking. Grilled elote, huitlacoche tacos in dual-toned heirloom tortillas, everything over open flame in a tree-shaded courtyard. Currently ranked the number one restaurant in Tulum, and it earns it. Go hungry.</p>
+    <p>A restaurant built around a corn mill, heirloom corn, fire, and pre-Hispanic Mexican cooking. Grilled elote, huitlacoche tacos in dual-toned heirloom tortillas — I recommend the one in the blue tortilla. Everything cooked over open flame in a tree-shaded courtyard. Currently ranked the number one restaurant in Tulum, and it earns it. Go hungry.</p>
   </div></div>
 </div>
 
@@ -51,7 +51,7 @@ A few of the places I actually send friends to when they visit: the number one r
   <input type="checkbox" id="racc4" class="post-acc-toggle">
   <label for="racc4" class="post-acc-head"><span>Getting around Tulum: there's no Uber</span><span class="post-acc-plus">+</span></label>
   <div class="post-acc-body"><div class="post-acc-body-inner">
-    <p>There's no Uber in Tulum, which catches almost everyone off guard. The app locals use instead is <strong>Eiby</strong>, think of it as our version of a ride app. Download it before you need it and you'll get fair prices instead of the tourist markup.</p>
+    <p>There's no Uber in Tulum, which catches almost everyone off guard. The app locals use instead is <strong>Eiby</strong>, think of it as our version of a ride app. Download it before you need it and you'll get fair prices instead of the tourist markup. One catch: Eiby doesn't always work well outside Tulum Center and the Hotel Zone. If you're headed somewhere more remote, like a cenote out of town, message a taxi driver directly beforehand and arrange a pickup time <strong>[PLACEHOLDER — driver name + number]</strong>.</p>
   </div></div>
 </div>
 
