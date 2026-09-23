@@ -48,7 +48,8 @@ const orgSchema = {
 
 <!-- QUEER-FRIENDLY BAR — under hero -->
 <section style="background:var(--yellow);border-bottom:6px solid var(--blue);padding:20px var(--s-sm);">
-  <p style="font-size:17px;color:var(--dark);line-height:1.6;font-weight:500;max-width:640px;margin:0 auto;text-align:center;">Tulum being queer and trans friendly surprises people. It's not a queer-centric town, but you'll see queer and gender-diverse people any time you walk out on the street. We're a regular part of the community and of daily life here.</p>
+  <p style="font-size:17px;color:var(--dark);line-height:1.6;font-weight:500;max-width:640px;margin:0 auto var(--s-sm);text-align:center;">Tulum being queer and trans friendly surprises people. It's not a queer-centric town, but you'll see queer and gender-diverse people any time you walk out on the street.</p>
+  <p style="font-size:17px;color:var(--dark);line-height:1.6;font-weight:500;max-width:640px;margin:0 auto;text-align:center;">We're a regular part of the community and of daily life here.</p>
 </section>
 
 <style>
@@ -71,7 +72,6 @@ const orgSchema = {
     <div class="bridge-text">
       <p class="small" style="margin-top:0;">Meet the founder</p>
       <p><strong>I'm Santi (they/them).</strong> Born in Mexico. Raised in the U.S. Came home to build a life in Tulum.</p>
-      <a href="/about" class="bridge-more">More about me →</a>
       <p class="small bridge-facts-label">Fun facts about me</p>
       <div class="creds" aria-label="Fun facts">
         <div class="cred"><div class="cnum">01</div><div><div class="ct">Former UCLA Wildlife Biologist</div><div class="cd">I studied marmots. Let's get nerdy about the plants and animals along the way.</div></div></div>
@@ -81,6 +81,7 @@ const orgSchema = {
         <div class="cred"><div class="cnum">05</div><div><div class="ct">FOLX Campaign Model</div><div class="cd">Recently cast as a model for FOLX, the queer and trans telehealth company.</div></div></div>
         <div class="cred"><div class="cnum">06</div><div><div class="ct">Brave Trails Volunteer</div><div class="cd">Volunteered at Brave Trails, a camp for queer and trans youth.</div></div></div>
       </div>
+      <a href="/about" class="bridge-more">More about me →</a>
     </div>
   </div>
 </section>
@@ -88,21 +89,24 @@ const orgSchema = {
 <!-- GUIDE — above tours -->
 <section class="guide" id="guide">
   <div class="guide-inner">
-    <div class="guide-intro">
-      <p class="sec-eye" style="color:var(--yellow);">Free Tulum recommendations</p>
-      <h2>Stop planning.<br><span class="accent">Start enjoying.</span></h2>
-      <p class="guide-lead">My real recommendations for when you visit, free.</p>
+    <div>
+      <div class="guide-intro">
+        <p class="sec-eye" style="color:var(--yellow);">Free Tulum recommendations</p>
+        <h2>Stop planning.<br><span class="accent">Start enjoying.</span></h2>
+        <p class="guide-lead">My real recommendations for when you visit, free.</p>
+      </div>
+      <div class="guide-box">
+        <ul class="ginc">
+          <li>My favorite coffee shop, restaurant, and a queer-friendly bar</li>
+          <li>No Uber in Tulum: here's the taxi app locals use for the best prices</li>
+          <li>ATMs are set up to charge you on the conversion. Here's the way around it.</li>
+          <li>A playlist to get you excited for the trip</li>
+        </ul>
+        <a href="/blog/queer-tulum-recommendations" class="btn-p" style="text-align:center;">Get the Free Recommendations →</a>
+        <div class="gstat">Book any tour and the full guidebook is yours free.</div>
+      </div>
     </div>
-    <div class="guide-box">
-      <ul class="ginc">
-        <li>My favorite coffee shop, restaurant, and a queer-friendly bar</li>
-        <li>No Uber in Tulum: here's the taxi app locals use for the best prices</li>
-        <li>ATMs are set up to charge you on the conversion. Here's the way around it.</li>
-        <li>A playlist to get you excited for the trip</li>
-      </ul>
-      <a href="/blog/queer-tulum-recommendations" class="btn-p" style="text-align:center;">Get the Free Recommendations →</a>
-      <div class="gstat">Book any tour and the full guidebook is yours free.</div>
-    </div>
+    <img class="guide-photo" src="/images/story-horse-group-coffee.jpg" alt="Friends sharing coffee and food together at a cafe table in Tulum" style="object-position:center 30%;">
   </div>
 </section>
 
@@ -261,9 +265,12 @@ const orgSchema = {
 
 <!-- GROUP TRIPS COMING UP -->
 <section class="groups" id="groups">
-  <p class="sec-eye">Coming up</p>
   <div class="groups-two-col">
-    <img class="groups-hero-photo" src="/images/camp-queerness-picnic.jpg" alt="Friends painting together over a picnic spread of fresh fruit during Camp Queerness near Tulum">
+    <div class="groups-photo-col">
+      <p class="sec-eye">Coming up</p>
+      <img class="groups-hero-photo" src="/images/camp-queerness-picnic.jpg" alt="Friends painting together over a picnic spread of fresh fruit during Camp Queerness near Tulum">
+      <p class="groups-photo-caption">Picnic with Queerness Experiences</p>
+    </div>
     <div>
       <h2>Camp<br>Queerness</h2>
       <p class="groups-tagline">Summer camp, reimagined for sapphic, queer, and trans grownups, with an added Mexican flair.</p>

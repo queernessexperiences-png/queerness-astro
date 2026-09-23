@@ -98,6 +98,12 @@ here are the two easy ways, pick ONE:
 
 ## 9.5. WPATH page polish
 - [ ] Fix responsive sizing of the guide photos (Santi/Charlie) — too small on mobile, too big on desktop
+- [ ] Add a picture somewhere in the homepage FAQ section, right before the "Before you book" FAQ block — Santi wants one there but hasn't decided which photo yet
+
+## 10.5. URL slugs — SEO cleanup (do carefully, needs redirects)
+- [ ] `/group-trips` → something more SEO-friendly (e.g. `/camp-queerness`)
+- [ ] `/tours` → consider a more keyword-rich slug (e.g. `/tulum-tours`)
+- [ ] Whatever the new slugs are, add 301 redirects from the OLD slugs so existing Google rankings/links don't break — do this at the same time as the Wix redirects (step 7)
 
 ## 10. Future marketing ideas (not launch blockers)
 - [ ] Video sales letters (VSLs) — for tours and/or group trips pages
