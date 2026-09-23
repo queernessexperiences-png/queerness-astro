@@ -75,3 +75,7 @@ club entry — that number is outdated.
   no FAQ, Santi doesn't want to be a referral source.
 - Safety Tips section, a few local/organic store name spellings (chan
   selvita, Woolis market, cocoa amor) — still need real details from Santi.
+- Jiu-jitsu listing (Saturdays, women + trans people, run by a friend of
+  Santi's) — Santi wants to message the instructor first to confirm it's
+  still running before this goes live in the guide, since she's been
+  traveling a lot for competitions.
