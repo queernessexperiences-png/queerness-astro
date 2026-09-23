@@ -56,7 +56,7 @@ Is Tulum safe and friendly for LGBTQIA+ people? Yes, and there are some specific
 
 If you dig deeper, sure, individual biases exist here like anywhere. But this place makes it possible for me to run a tour and group trip agency where I can take great people out in their bathing suits after top surgery, or in a bikini while they've decided to keep their beard, and just have an awesome day at the cenote.
 
-You'll see it everywhere once you know to look. Women holding hands and raising families together. Gay men in skirts at the parties we recommend. Local Mayan teenagers riding their scooters in full makeup, completely unbothered. Gender expression here doesn't always look the way it does in the US, but it's there, all throughout town, in ways that feel woven into daily life rather than confined to one scene.
+You'll see it everywhere once you know to look. Women holding hands and raising families together. Gay men in skirts at the parties we recommend. Gender diverse local Mayan teenagers riding their scooters in full makeup with their friends. Gender expression here doesn't always look the way it does in the US, but it's there, all throughout town, in ways that feel woven into daily life rather than confined to one scene.
 
 ## A real conversation about language
 
@@ -67,11 +67,11 @@ You'll see it everywhere once you know to look. Women holding hands and raising 
   </div>
   <div>
     <p>I want to talk about something nobody else writing about Tulum mentions: pronouns and language.</p>
-    <p>In English, I use they/them exclusively. In Spanish, a language where almost every word carries a gender, even I sometimes default to masculine, feminine, and neutral forms all in the same sentence. When I'm in queer spaces, it's easy to flow using neutral language. But outside of queer spaces, even I have a hard time changing all of the endings consistently. It's genuinely hard to switch every gendered word, and I've made peace with that in myself.</p>
+    <p>In English, I use they/them exclusively. In Spanish, a language where almost every word carries a gender, even I sometimes default to masculine, feminine, and neutral forms all in the same sentence. In queer spaces, I flow using exclusively gender-neutral language. Outside of queer spaces, even I sometimes slip into gendered language without meaning to, but I've found joy in being able to mix all pronouns in one sentence.</p>
   </div>
 </div>
 
-I hold the general population to a different standard than I hold the queer community here. Within queer spaces in Tulum, people are remarkably good about using gender-neutral language, and I've watched that shift quickly over the last several years. That's real, visible progress.
+I love how in queer spaces here, people generally use neutral language throughout, even though a word will occasionally still slip into the masculine or feminine. And it's not only happening in queer spaces: there are people outside the queer community making an active effort too. It's a change in language, and change takes time.
 
 <div class="post-two-col post-two-col-reverse">
   <div>
