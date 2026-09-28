@@ -73,8 +73,17 @@ club entry — that number is outdated.
   replacement needed.
 - Weed/smoke shop question — decided: leave out of the guidebook entirely,
   no FAQ, Santi doesn't want to be a referral source.
-- Safety Tips section, a few local/organic store name spellings (chan
-  selvita, Woolis market, cocoa amor) — still need real details from Santi.
+- Grocery stores — done (2026-09-27). Local/organic: Chancelvita,
+  Woolies Market, Coco Amor. Big supermarkets: Comer, Chedraui. In a pinch
+  near La Veleta: Super Aquí (Santi doesn't especially recommend it, but
+  it works if you're stuck). Added to the free recommendations post AND
+  as its own dedicated page in the guidebook PDF (between Where to Eat and
+  Nightlife). PDF regenerated and re-uploaded to Gumroad.
+- National Park rules — moved (2026-09-27) from the Welcome/Money page to
+  its own page immediately before Beach Clubs, so it sits right above the
+  Ikal entry. Also added: with an Ikal car/moto reservation, you're not
+  limited to the park's posted hours, so you can time entry for sunrise
+  or sunset.
 - Jiu-jitsu listing (Saturdays, women + trans people, run by a friend of
   Santi's) — Santi wants to message the instructor first to confirm it's
   still running before this goes live in the guide, since she's been

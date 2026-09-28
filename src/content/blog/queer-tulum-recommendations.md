@@ -118,6 +118,15 @@ I'm Santi (they/them), queer, nonbinary, Mexican, and I've called Tulum home for
   </div></div>
 </div>
 
+<div class="post-acc-item">
+  <input type="checkbox" id="racc8" class="post-acc-toggle">
+  <label for="racc8" class="post-acc-head"><span>Where to get groceries</span><span class="post-acc-plus">More info <span class="post-acc-plus-icon">+</span></span></label>
+  <div class="post-acc-body"><div class="post-acc-body-inner">
+    <p>For local and organic options, check out Chancelvita, Woolies Market, and Coco Amor. For a full grocery run, Comer and Chedraui are the reliable big supermarkets. If you're staying near La Veleta and need something in a pinch, there's also Super Aquí, though it's not one I'd go out of my way to recommend.</p>
+    <label for="racc8" class="post-acc-close">− Close</label>
+  </div></div>
+</div>
+
   </div>
 </div>
 

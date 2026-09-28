@@ -100,6 +100,12 @@ here are the two easy ways, pick ONE:
 - [ ] Fix responsive sizing of the guide photos (Santi/Charlie) — too small on mobile, too big on desktop
 - [ ] Add a picture somewhere in the homepage FAQ section, right before the "Before you book" FAQ block — Santi wants one there but hasn't decided which photo yet
 
+## 10.4. Untangle from Wix (do after launch, no rush)
+- [ ] Transfer Google Workspace subscription off Wix reseller billing → direct with Google (message drafted, needs to go to Wix support — keeps same inbox/data, just changes who's billed)
+- [ ] Transfer domain registration (queernessexperiences.com) off Wix to a different registrar (Namecheap, Cloudflare, etc.) — separate process, ~1 week due to ICANN transfer lock
+- [ ] Only after both of the above: safe to cancel the Wix website plan itself
+- ⚠️ Do NOT cancel the Wix plan until the Workspace email is confirmed transferred — it's reseller-managed and will likely take email down with it
+
 ## 10.5. URL slugs — SEO cleanup (do carefully, needs redirects)
 - [ ] `/group-trips` → something more SEO-friendly (e.g. `/camp-queerness`)
 - [ ] `/tours` → consider a more keyword-rich slug (e.g. `/tulum-tours`)
