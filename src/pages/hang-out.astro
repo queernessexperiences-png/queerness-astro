@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Make Queer Friends in Tulum | Queerness Experiences" description={"In Tulum and looking for queer friends? Join Santi for dance class, jiu jitsu, life drawing night, or theatre in Spanish."}>
+
+<section class="contact" id="hang-out">
+  <p class="sec-eye">In the area?</p>
+  <h1>Make queer friends<br>in Tulum</h1>
+  <p class="contact-lead">Dance class, jiu jitsu, life drawing night, theatre in Spanish, and whatever else is happening that week. Tell me when you're here and I'll send you what's on.</p>
+  <form class="form" name="hang-out" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
+    <input type="hidden" name="form-name" value="hang-out" />
+    <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+    <div style="display:flex;gap:12px;">
+      <div style="flex:1;"><label class="fl">First name</label><input class="fi" type="text" name="first-name" placeholder="First name" required></div>
+      <div style="flex:1;"><label class="fl">Pronouns</label><input class="fi" type="text" name="pronouns" placeholder="they/them, she/her..."></div>
+    </div>
+    <div><label class="fl">Email</label><input class="fi" type="email" name="email" placeholder="your@email.com" required></div>
+    <div><label class="fl">WhatsApp (optional)</label><input class="fi" type="tel" name="whatsapp" placeholder="Include country code, e.g. +1 555 123 4567"></div>
+    <div><label class="fl">When are you in Tulum?</label><input class="fi" type="text" name="dates" placeholder="e.g. Nov 3 to 10, or I live here" required></div>
+    <div><label class="fl">What sounds fun?</label><input class="fi" type="text" name="activity" placeholder="Dance, theatre, surprise me"></div>
+    <div><label class="fl">Anything else?</label><textarea class="fi" name="message" rows="3" placeholder="Tell me a bit about you" style="resize:vertical;font-family:var(--fb);"></textarea></div>
+    <button type="submit" class="fsub">Send My Hang-Out Request</button>
+  </form>
+</section>
+
+</Layout>
